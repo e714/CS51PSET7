@@ -14,7 +14,7 @@ let dragon_inverse_speed = Some 10
 
 class dragon p : world_object_i =
 object (self)
-  inherit world_object p
+  inherit world_object p as old
 
   (******************************)
   (***** Instance Variables *****)
@@ -43,13 +43,14 @@ object (self)
   (********************************)
 
   (* ### TODO: Part 1 Basic ### *)
-(*
-  method! get_name = raise TODO
 
-  method! draw = raise TODO
+  method! get_name = "dragon"
 
-  method! draw_z_axis = raise TODO
-*)
+  method! draw = Draw.circle old#get_pos World.obj_width World.obj_height 
+           Graphics.red Graphics.black ""
+
+  method! draw_z_axis = 3
+
 
   (* ### TODO: Part 3 Actions ### *)
 
