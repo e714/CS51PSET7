@@ -3,6 +3,7 @@ open Event51
 open Helpers
 open WorldObject
 open WorldObjectI
+open Movable
 
 (* ### Part 2 Movement ### *)
 let human_inverse_speed = Some 1
@@ -19,9 +20,10 @@ let max_sensing_range = 5
 (** Humans travel the world searching for towns to trade for gold.
     They are able to sense towns within close range, and they will return
     to King's Landing once they have traded with enough towns. *)
-class human p : world_object_i =
+class human p : movable_t =
 object(self)
-  inherit world_object p as old
+  inherit world_object p
+  inherit movable p human_inverse_speed
 
   (******************************)
   (***** Instance Variables *****)
@@ -63,7 +65,7 @@ object(self)
 
   method! get_name = "human"
 
-  method! draw = Draw.circle old#get_pos World.obj_width World.obj_height 
+  method! draw = Draw.circle self#get_pos World.obj_width World.obj_height 
            (Graphics.rgb 0xC9 0xC0 0xBB) Graphics.black ""
 
   method! draw_z_axis = 2
@@ -83,9 +85,9 @@ object(self)
 
   (* ### TODO: Part 2 Movement ### *)
 
-(*
-  method! next_direction = raise TODO
-*)
+
+  method! next_direction = Some (Direction.random World.rand)
+
 
   (* ### TODO: Part 5 Smart Humans ### *)
 

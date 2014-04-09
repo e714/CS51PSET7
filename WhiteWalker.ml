@@ -2,6 +2,8 @@ open Core.Std
 open Helpers
 open WorldObject
 open WorldObjectI
+open KingsLanding
+open Movable
 
 (* ### Part 2 Movement ### *)
 let walker_inverse_speed = Some 1
@@ -11,9 +13,10 @@ let max_destroyed_objects = 100
 
 (** A White Walker will roam the world until it has destroyed a satisfactory
     number of towns *)
-class white_walker p : world_object_i =
+class white_walker p (k: KingsLanding.kings_landing) : movable_t =
 object (self)
-  inherit world_object p as old
+  inherit world_object p
+  inherit movable p walker_inverse_speed
 
   (******************************)
   (***** Instance Variables *****)
@@ -43,7 +46,7 @@ object (self)
 
   method! get_name = "white_walker"
 
-  method! draw = Draw.circle old#get_pos World.obj_width World.obj_height 
+  method! draw = Draw.circle self#get_pos World.obj_width World.obj_height 
            (Graphics.rgb 0x89 0xCF 0xF0) Graphics.black ""
 
   method! draw_z_axis = 4
@@ -56,9 +59,13 @@ object (self)
   (***************************)
 
   (* ### TODO: Part 2 Movement ### *)
-(*
-  method! next_direction = raise TODO
-*)
+
+  method! next_direction = 
+    if (World.rand World.size = 0) || (World.rand World.size = 1) then
+      Direction.natural self#get_pos k#get_pos
+    else Some (Direction.random World.rand)
+
+
 
   (* ### TODO: Part 6 Custom Events ### *)
 
