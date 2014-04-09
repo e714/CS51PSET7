@@ -30,6 +30,7 @@ object(self)
   (******************************)
 
   (* ### TODO: Part 3 Actions ### *)
+  val mutable gold_object : int list = []
 
   (* ### TODO: Part 5 Smart Humans ### *)
 
@@ -40,6 +41,9 @@ object(self)
   (***********************)
 
   (* ### TODO: Part 3 Actions ### *)
+
+  initializer
+    self#register_handler World.action_event self#do_action;
 
   (* ### TODO: Part 6 Custom Events ### *)
 
@@ -54,6 +58,28 @@ object(self)
   (**************************)
 
   (* ### TODO: Part 3 Actions ### *)
+  method private deposit_gold (obj: world_object_i) : int list =
+    obj#receive_gold gold_object
+
+  method private extract_gold (obj: world_object_i) : int option =
+    obj#forfeit_gold ()
+
+  method private do_action _ : unit =
+    let neighbors = World.get self#get_pos in
+    let rec forloop (neighbors : world_object_i list) (numob: int) : int =
+    match neighbors with
+    | [] -> numob
+    | obj :: remain -> 
+      gold_object <- self#deposit_gold obj ;
+      match self#extract_gold obj with
+      | None -> forloop remain numob
+      | Some s -> gold_object <- s :: gold_object;
+                  forloop remain (numob+1) 
+    in 
+    let numob = forloop neighbors 0 in
+    self#draw_circle (Graphics.rgb 0xC9 0xC0 0xBB) 
+                                   Graphics.black (string_of_int numob);
+
 
   (* ### TODO: Part 5 Smart Humans ### *)
 
@@ -65,8 +91,7 @@ object(self)
 
   method! get_name = "human"
 
-  method! draw = Draw.circle self#get_pos World.obj_width World.obj_height 
-           (Graphics.rgb 0xC9 0xC0 0xBB) Graphics.black ""
+  method! draw = self#draw_circle (Graphics.rgb 0xC9 0xC0 0xBB) Graphics.black ""
 
   method! draw_z_axis = 2
 
