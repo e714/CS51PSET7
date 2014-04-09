@@ -1,0 +1,57 @@
+"Dragon.ml" 7 92 96 "Dragon.ml" 7 92 113
+type(
+  int
+)
+ident(
+  def gold_theft_amount "Dragon.ml" 10 149 149 "Dragon.ml" 1 0 -1
+)
+"Dragon.ml" 7 92 116 "Dragon.ml" 7 92 120
+type(
+  int
+)
+"Dragon.ml" 10 149 153 "Dragon.ml" 10 149 173
+type(
+  int
+)
+ident(
+  def dragon_starting_life "Dragon.ml" 13 210 210 "Dragon.ml" 1 0 -1
+)
+"Dragon.ml" 10 149 176 "Dragon.ml" 10 149 178
+type(
+  int
+)
+"Dragon.ml" 13 210 214 "Dragon.ml" 13 210 234
+type(
+  int option
+)
+ident(
+  def dragon_inverse_speed "Dragon.ml" 15 246 246 "Dragon.ml" 1 0 -1
+)
+"Dragon.ml" 13 210 242 "Dragon.ml" 13 210 244
+type(
+  int
+)
+"Dragon.ml" 13 210 237 "Dragon.ml" 13 210 244
+type(
+  int option
+)
+"Dragon.ml" 15 246 259 "Dragon.ml" 15 246 260
+type(
+  int * int
+)
+"Dragon.ml" 16 280 288 "Dragon.ml" 16 280 292
+type(
+  < danger : world_object_i -> unit; die : unit; draw : unit;
+    draw_z_axis : int; forfeit_gold : int option;
+    get_danger_event : world_object_i Event51.Event51.event;
+    get_die_event : unit Event51.Event51.event; get_name : string;
+    get_pos : int * int; is_obstacle : bool; receive_damage : unit;
+    receive_gold : int list -> int list; smells_like_gold : int option; .. >
+)
+"Dragon.ml" 17 294 317 "Dragon.ml" 17 294 318
+type(
+  int * int
+)
+ident(
+  int_ref p "Dragon.ml" 15 246 259 "Dragon.ml" 15 246 260
+)

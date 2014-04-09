@@ -1,0 +1,31 @@
+"Dany.ml" 7 98 102 "Dany.ml" 7 98 119
+type(
+  int
+)
+ident(
+  def spawn_dragon_gold "Dany.ml" 11 223 223 "Dany.ml" 1 0 -1
+)
+"Dany.ml" 7 98 122 "Dany.ml" 7 98 125
+type(
+  int
+)
+"Dany.ml" 11 223 234 "Dany.ml" 11 223 235
+type(
+  int * int
+)
+"Dany.ml" 12 255 263 "Dany.ml" 12 255 267
+type(
+  < danger : world_object_i -> unit; die : unit; draw : unit;
+    draw_z_axis : int; forfeit_gold : int option;
+    get_danger_event : world_object_i Event51.event;
+    get_die_event : unit Event51.event; get_name : string;
+    get_pos : int * int; is_obstacle : bool; receive_damage : unit;
+    receive_gold : int list -> int list; smells_like_gold : int option; .. >
+)
+"Dany.ml" 13 269 292 "Dany.ml" 13 269 293
+type(
+  int * int
+)
+ident(
+  int_ref p "Dany.ml" 11 223 234 "Dany.ml" 11 223 235
+)

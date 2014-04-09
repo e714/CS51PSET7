@@ -1,0 +1,46 @@
+"WhiteWalker.ml" 7 93 97 "WhiteWalker.ml" 7 93 117
+type(
+  int option
+)
+ident(
+  def walker_inverse_speed "WhiteWalker.ml" 10 163 163 "WhiteWalker.ml" 1 0 -1
+)
+"WhiteWalker.ml" 7 93 125 "WhiteWalker.ml" 7 93 126
+type(
+  int
+)
+"WhiteWalker.ml" 7 93 120 "WhiteWalker.ml" 7 93 126
+type(
+  int option
+)
+"WhiteWalker.ml" 10 163 167 "WhiteWalker.ml" 10 163 188
+type(
+  int
+)
+ident(
+  def max_destroyed_objects "WhiteWalker.ml" 14 296 296 "WhiteWalker.ml" 1 0 -1
+)
+"WhiteWalker.ml" 10 163 191 "WhiteWalker.ml" 10 163 194
+type(
+  int
+)
+"WhiteWalker.ml" 14 296 315 "WhiteWalker.ml" 14 296 316
+type(
+  int * int
+)
+"WhiteWalker.ml" 15 336 344 "WhiteWalker.ml" 15 336 348
+type(
+  < danger : world_object_i -> unit; die : unit; draw : unit;
+    draw_z_axis : int; forfeit_gold : int option;
+    get_danger_event : world_object_i Event51.Event51.event;
+    get_die_event : unit Event51.Event51.event; get_name : string;
+    get_pos : int * int; is_obstacle : bool; receive_damage : unit;
+    receive_gold : int list -> int list; smells_like_gold : int option; .. >
+)
+"WhiteWalker.ml" 16 350 373 "WhiteWalker.ml" 16 350 374
+type(
+  int * int
+)
+ident(
+  int_ref p "WhiteWalker.ml" 14 296 315 "WhiteWalker.ml" 14 296 316
+)

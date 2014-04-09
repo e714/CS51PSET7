@@ -1,0 +1,2697 @@
+"Main.ml" 5 51 55 "Main.ml" 5 51 64
+type(
+  int
+)
+ident(
+  def num_ponds "Main.ml" 6 70 70 "Main.ml" 1 0 -1
+)
+"Main.ml" 5 51 67 "Main.ml" 5 51 69
+type(
+  int
+)
+"Main.ml" 6 70 74 "Main.ml" 6 70 83
+type(
+  int
+)
+ident(
+  def pond_size "Main.ml" 7 89 89 "Main.ml" 1 0 -1
+)
+"Main.ml" 6 70 86 "Main.ml" 6 70 88
+type(
+  int
+)
+"Main.ml" 7 89 93 "Main.ml" 7 89 102
+type(
+  unit -> unit
+)
+ident(
+  def gen_ponds "Main.ml" 13 267 267 "Main.ml" 1 0 -1
+)
+"Main.ml" 7 89 103 "Main.ml" 7 89 105
+type(
+  unit
+)
+"Main.ml" 8 115 117 "Main.ml" 8 115 133
+type(
+  int -> int -> (unit -> unit) -> (int * int -> unit) -> unit
+)
+ident(
+  ext_ref World.spawn_iter
+)
+"Main.ml" 8 115 134 "Main.ml" 8 115 143
+type(
+  int
+)
+ident(
+  int_ref num_ponds "Main.ml" 5 51 55 "Main.ml" 5 51 64
+)
+"Main.ml" 8 115 144 "Main.ml" 8 115 153
+type(
+  int
+)
+ident(
+  int_ref pond_size "Main.ml" 6 70 74 "Main.ml" 6 70 83
+)
+"Main.ml" 9 154 178 "Main.ml" 9 154 180
+type(
+  unit
+)
+"Main.ml" 9 154 184 "Main.ml" 9 154 186
+type(
+  unit
+)
+"Main.ml" 9 154 178 "Main.ml" 9 154 186
+type(
+  unit -> unit
+)
+"Main.ml" 10 188 212 "Main.ml" 10 188 213
+type(
+  int * int
+)
+ident(
+  def p "Main.ml" 10 188 217 "Main.ml" 10 188 241
+)
+"Main.ml" 10 188 217 "Main.ml" 10 188 223
+type(
+  Pond.pond -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 10 188 225 "Main.ml" 10 188 238
+type(
+  int * int -> Pond.pond
+)
+"Main.ml" 10 188 239 "Main.ml" 10 188 240
+type(
+  int * int
+)
+ident(
+  int_ref p "Main.ml" 10 188 212 "Main.ml" 10 188 213
+)
+"Main.ml" 10 188 225 "Main.ml" 10 188 240
+call(
+  stack
+)
+type(
+  Pond.pond
+)
+"Main.ml" 10 188 217 "Main.ml" 10 188 241
+type(
+  unit
+)
+"Main.ml" 10 188 212 "Main.ml" 10 188 241
+type(
+  int * int -> unit
+)
+"Main.ml" 8 115 117 "Main.ml" 10 188 242
+call(
+  tail
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"Main.ml" 7 89 103 "Main.ml" 10 188 242
+type(
+  unit -> unit
+)
+"Main.ml" 13 267 271 "Main.ml" 13 267 280
+type(
+  int
+)
+ident(
+  def num_towns "Main.ml" 14 286 286 "Main.ml" 1 0 -1
+)
+"Main.ml" 13 267 283 "Main.ml" 13 267 285
+type(
+  int
+)
+"Main.ml" 14 286 290 "Main.ml" 14 286 299
+type(
+  int
+)
+ident(
+  def town_size "Main.ml" 15 305 305 "Main.ml" 1 0 -1
+)
+"Main.ml" 14 286 302 "Main.ml" 14 286 304
+type(
+  int
+)
+"Main.ml" 15 305 309 "Main.ml" 15 305 318
+type(
+  unit -> unit
+)
+ident(
+  def gen_towns "Main.ml" 21 536 536 "Main.ml" 1 0 -1
+)
+"Main.ml" 15 305 319 "Main.ml" 15 305 321
+type(
+  unit
+)
+"Main.ml" 16 331 337 "Main.ml" 16 331 344
+type(
+  int ref
+)
+ident(
+  def gold_id "Main.ml" 17 359 361 "Main.ml" 19 465 534
+)
+"Main.ml" 16 331 347 "Main.ml" 16 331 350
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Main.ml" 16 331 352 "Main.ml" 16 331 354
+type(
+  int
+)
+"Main.ml" 16 331 347 "Main.ml" 16 331 355
+type(
+  int ref
+)
+"Main.ml" 17 359 361 "Main.ml" 17 359 377
+type(
+  int -> int -> (unit -> unit) -> (int * int -> unit) -> unit
+)
+ident(
+  ext_ref World.spawn_iter
+)
+"Main.ml" 17 359 378 "Main.ml" 17 359 387
+type(
+  int
+)
+ident(
+  int_ref num_towns "Main.ml" 13 267 271 "Main.ml" 13 267 280
+)
+"Main.ml" 17 359 388 "Main.ml" 17 359 397
+type(
+  int
+)
+ident(
+  int_ref town_size "Main.ml" 14 286 290 "Main.ml" 14 286 299
+)
+"Main.ml" 18 398 422 "Main.ml" 18 398 424
+type(
+  unit
+)
+"Main.ml" 18 398 428 "Main.ml" 18 398 435
+type(
+  int ref
+)
+ident(
+  int_ref gold_id "Main.ml" 16 331 337 "Main.ml" 16 331 344
+)
+"Main.ml" 18 398 439 "Main.ml" 18 398 460
+type(
+  unit -> int
+)
+ident(
+  ext_ref Town.get_next_gold_id
+)
+"Main.ml" 18 398 461 "Main.ml" 18 398 463
+type(
+  unit
+)
+"Main.ml" 18 398 439 "Main.ml" 18 398 463
+call(
+  stack
+)
+type(
+  int
+)
+"Main.ml" 18 398 428 "Main.ml" 18 398 463
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Main.ml" 18 398 422 "Main.ml" 18 398 463
+type(
+  unit -> unit
+)
+"Main.ml" 19 465 489 "Main.ml" 19 465 490
+type(
+  int * int
+)
+ident(
+  def p "Main.ml" 19 465 494 "Main.ml" 19 465 533
+)
+"Main.ml" 19 465 494 "Main.ml" 19 465 500
+type(
+  Town.town -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 19 465 502 "Main.ml" 19 465 515
+type(
+  int * int -> Town.town
+)
+"Main.ml" 19 465 516 "Main.ml" 19 465 517
+type(
+  int * int
+)
+ident(
+  int_ref p "Main.ml" 19 465 489 "Main.ml" 19 465 490
+)
+"Main.ml" 19 465 502 "Main.ml" 19 465 517
+call(
+  stack
+)
+type(
+  Town.town
+)
+"Main.ml" 19 465 494 "Main.ml" 19 465 533
+type(
+  unit
+)
+"Main.ml" 19 465 489 "Main.ml" 19 465 533
+type(
+  int * int -> unit
+)
+"Main.ml" 17 359 361 "Main.ml" 19 465 534
+call(
+  tail
+)
+type(
+  unit
+)
+"Main.ml" 16 331 333 "Main.ml" 19 465 534
+type(
+  unit
+)
+type(
+  unit
+)
+"Main.ml" 15 305 319 "Main.ml" 19 465 534
+type(
+  unit -> unit
+)
+"Main.ml" 21 536 540 "Main.ml" 21 536 548
+type(
+  unit -> Dany.dany
+)
+ident(
+  def gen_dany "Main.ml" 24 577 577 "Main.ml" 1 0 -1
+)
+"Main.ml" 21 536 549 "Main.ml" 21 536 551
+type(
+  unit
+)
+"Main.ml" 22 554 556 "Main.ml" 22 554 569
+type(
+  int * int -> Dany.dany
+)
+"Main.ml" 22 554 571 "Main.ml" 22 554 572
+type(
+  int
+)
+"Main.ml" 22 554 573 "Main.ml" 22 554 574
+type(
+  int
+)
+"Main.ml" 22 554 571 "Main.ml" 22 554 574
+type(
+  int * int
+)
+"Main.ml" 22 554 556 "Main.ml" 22 554 575
+call(
+  tail
+)
+type(
+  Dany.dany
+)
+"Main.ml" 21 536 549 "Main.ml" 22 554 575
+type(
+  unit -> Dany.dany
+)
+"Main.ml" 24 577 581 "Main.ml" 24 577 589
+type(
+  unit -> Wall.wall
+)
+ident(
+  def gen_wall "Main.ml" 27 640 640 "Main.ml" 1 0 -1
+)
+"Main.ml" 24 577 590 "Main.ml" 24 577 592
+type(
+  unit
+)
+"Main.ml" 25 595 597 "Main.ml" 25 595 610
+type(
+  int * int -> Wall.wall
+)
+"Main.ml" 25 595 612 "Main.ml" 25 595 622
+type(
+  int
+)
+ident(
+  ext_ref World.size
+)
+"Main.ml" 25 595 622 "Main.ml" 25 595 623
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Main.ml" 25 595 623 "Main.ml" 25 595 624
+type(
+  int
+)
+"Main.ml" 25 595 612 "Main.ml" 25 595 624
+type(
+  int
+)
+"Main.ml" 25 595 625 "Main.ml" 25 595 635
+type(
+  int
+)
+ident(
+  ext_ref World.size
+)
+"Main.ml" 25 595 635 "Main.ml" 25 595 636
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Main.ml" 25 595 636 "Main.ml" 25 595 637
+type(
+  int
+)
+"Main.ml" 25 595 625 "Main.ml" 25 595 637
+type(
+  int
+)
+"Main.ml" 25 595 612 "Main.ml" 25 595 637
+type(
+  int * int
+)
+"Main.ml" 25 595 597 "Main.ml" 25 595 638
+call(
+  tail
+)
+type(
+  Wall.wall
+)
+"Main.ml" 24 577 590 "Main.ml" 25 595 638
+type(
+  unit -> Wall.wall
+)
+"Main.ml" 27 640 644 "Main.ml" 27 640 654
+type(
+  unit -> Dragon.dragon
+)
+ident(
+  def gen_dragon "Main.ml" 30 687 687 "Main.ml" 1 0 -1
+)
+"Main.ml" 27 640 655 "Main.ml" 27 640 657
+type(
+  unit
+)
+"Main.ml" 28 660 662 "Main.ml" 28 660 679
+type(
+  int * int -> Dragon.dragon
+)
+"Main.ml" 28 660 681 "Main.ml" 28 660 682
+type(
+  int
+)
+"Main.ml" 28 660 683 "Main.ml" 28 660 684
+type(
+  int
+)
+"Main.ml" 28 660 681 "Main.ml" 28 660 684
+type(
+  int * int
+)
+"Main.ml" 28 660 662 "Main.ml" 28 660 685
+call(
+  tail
+)
+type(
+  Dragon.dragon
+)
+"Main.ml" 27 640 655 "Main.ml" 28 660 685
+type(
+  unit -> Dragon.dragon
+)
+"Main.ml" 30 687 691 "Main.ml" 30 687 707
+type(
+  unit -> WhiteWalker.white_walker
+)
+ident(
+  def gen_white_walker "Main.ml" 33 773 773 "Main.ml" 1 0 -1
+)
+"Main.ml" 30 687 708 "Main.ml" 30 687 710
+type(
+  unit
+)
+"Main.ml" 31 713 715 "Main.ml" 31 713 743
+type(
+  int * int -> WhiteWalker.white_walker
+)
+"Main.ml" 31 713 745 "Main.ml" 31 713 755
+type(
+  int
+)
+ident(
+  ext_ref World.size
+)
+"Main.ml" 31 713 755 "Main.ml" 31 713 756
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Main.ml" 31 713 756 "Main.ml" 31 713 757
+type(
+  int
+)
+"Main.ml" 31 713 745 "Main.ml" 31 713 757
+type(
+  int
+)
+"Main.ml" 31 713 758 "Main.ml" 31 713 768
+type(
+  int
+)
+ident(
+  ext_ref World.size
+)
+"Main.ml" 31 713 768 "Main.ml" 31 713 769
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Main.ml" 31 713 769 "Main.ml" 31 713 770
+type(
+  int
+)
+"Main.ml" 31 713 758 "Main.ml" 31 713 770
+type(
+  int
+)
+"Main.ml" 31 713 745 "Main.ml" 31 713 770
+type(
+  int * int
+)
+"Main.ml" 31 713 715 "Main.ml" 31 713 771
+call(
+  tail
+)
+type(
+  WhiteWalker.white_walker
+)
+"Main.ml" 30 687 708 "Main.ml" 31 713 771
+type(
+  unit -> WhiteWalker.white_walker
+)
+"Main.ml" 33 773 777 "Main.ml" 33 773 785
+type(
+  unit -> KingsLanding.kings_landing
+)
+ident(
+  def gen_city "Main.ml" 38 962 962 "Main.ml" 1 0 -1
+)
+"Main.ml" 33 773 786 "Main.ml" 33 773 788
+type(
+  unit
+)
+"Main.ml" 35 872 874 "Main.ml" 35 872 904
+type(
+  int * int -> KingsLanding.kings_landing
+)
+"Main.ml" 35 872 906 "Main.ml" 35 872 916
+type(
+  int
+)
+ident(
+  ext_ref World.size
+)
+"Main.ml" 35 872 916 "Main.ml" 35 872 917
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"Main.ml" 35 872 917 "Main.ml" 35 872 918
+type(
+  int
+)
+"Main.ml" 35 872 906 "Main.ml" 35 872 918
+type(
+  int
+)
+"Main.ml" 35 872 919 "Main.ml" 35 872 929
+type(
+  int
+)
+ident(
+  ext_ref World.size
+)
+"Main.ml" 35 872 929 "Main.ml" 35 872 930
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"Main.ml" 35 872 930 "Main.ml" 35 872 931
+type(
+  int
+)
+"Main.ml" 35 872 919 "Main.ml" 35 872 931
+type(
+  int
+)
+"Main.ml" 35 872 906 "Main.ml" 35 872 931
+type(
+  int * int
+)
+"Main.ml" 35 872 874 "Main.ml" 35 872 932
+call(
+  tail
+)
+type(
+  KingsLanding.kings_landing
+)
+"Main.ml" 33 773 786 "Main.ml" 35 872 932
+type(
+  unit -> KingsLanding.kings_landing
+)
+"Main.ml" 38 962 966 "Main.ml" 38 962 983
+type(
+  unit -> unit
+)
+ident(
+  def part1_initializer "Main.ml" 50 1365 1365 "Main.ml" 1 0 -1
+)
+"Main.ml" 38 962 984 "Main.ml" 38 962 986
+type(
+  unit
+)
+"Main.ml" 39 996 998 "Main.ml" 39 996 1004
+type(
+  Pond.pond -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 39 996 1006 "Main.ml" 39 996 1019
+type(
+  int * int -> Pond.pond
+)
+"Main.ml" 39 996 1021 "Main.ml" 39 996 1022
+type(
+  int
+)
+"Main.ml" 39 996 1023 "Main.ml" 39 996 1024
+type(
+  int
+)
+"Main.ml" 39 996 1021 "Main.ml" 39 996 1024
+type(
+  int * int
+)
+"Main.ml" 39 996 1006 "Main.ml" 39 996 1025
+call(
+  stack
+)
+type(
+  Pond.pond
+)
+"Main.ml" 39 996 998 "Main.ml" 39 996 1026
+type(
+  unit
+)
+"Main.ml" 40 1028 1030 "Main.ml" 40 1028 1036
+type(
+  Town.town -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 40 1028 1038 "Main.ml" 40 1028 1051
+type(
+  int * int -> Town.town
+)
+"Main.ml" 40 1028 1053 "Main.ml" 40 1028 1054
+type(
+  int
+)
+"Main.ml" 40 1028 1055 "Main.ml" 40 1028 1056
+type(
+  int
+)
+"Main.ml" 40 1028 1053 "Main.ml" 40 1028 1056
+type(
+  int * int
+)
+"Main.ml" 40 1028 1038 "Main.ml" 40 1028 1057
+call(
+  stack
+)
+type(
+  Town.town
+)
+"Main.ml" 40 1028 1030 "Main.ml" 40 1028 1058
+type(
+  unit
+)
+"Main.ml" 41 1060 1062 "Main.ml" 41 1060 1068
+type(
+  KingsLanding.kings_landing -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 41 1060 1070 "Main.ml" 41 1060 1100
+type(
+  int * int -> KingsLanding.kings_landing
+)
+"Main.ml" 41 1060 1102 "Main.ml" 41 1060 1103
+type(
+  int
+)
+"Main.ml" 41 1060 1104 "Main.ml" 41 1060 1105
+type(
+  int
+)
+"Main.ml" 41 1060 1102 "Main.ml" 41 1060 1105
+type(
+  int * int
+)
+"Main.ml" 41 1060 1070 "Main.ml" 41 1060 1106
+call(
+  stack
+)
+type(
+  KingsLanding.kings_landing
+)
+"Main.ml" 41 1060 1062 "Main.ml" 41 1060 1107
+type(
+  unit
+)
+"Main.ml" 42 1109 1111 "Main.ml" 42 1109 1117
+type(
+  Human.human -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 42 1109 1119 "Main.ml" 42 1109 1134
+type(
+  int * int -> Human.human
+)
+"Main.ml" 42 1109 1136 "Main.ml" 42 1109 1137
+type(
+  int
+)
+"Main.ml" 42 1109 1138 "Main.ml" 42 1109 1139
+type(
+  int
+)
+"Main.ml" 42 1109 1136 "Main.ml" 42 1109 1139
+type(
+  int * int
+)
+"Main.ml" 42 1109 1119 "Main.ml" 42 1109 1140
+call(
+  stack
+)
+type(
+  Human.human
+)
+"Main.ml" 42 1109 1111 "Main.ml" 42 1109 1141
+type(
+  unit
+)
+"Main.ml" 43 1143 1145 "Main.ml" 43 1143 1151
+type(
+  Dany.dany -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 43 1143 1153 "Main.ml" 43 1143 1166
+type(
+  int * int -> Dany.dany
+)
+"Main.ml" 43 1143 1168 "Main.ml" 43 1143 1169
+type(
+  int
+)
+"Main.ml" 43 1143 1170 "Main.ml" 43 1143 1171
+type(
+  int
+)
+"Main.ml" 43 1143 1168 "Main.ml" 43 1143 1171
+type(
+  int * int
+)
+"Main.ml" 43 1143 1153 "Main.ml" 43 1143 1172
+call(
+  stack
+)
+type(
+  Dany.dany
+)
+"Main.ml" 43 1143 1145 "Main.ml" 43 1143 1173
+type(
+  unit
+)
+"Main.ml" 44 1175 1177 "Main.ml" 44 1175 1183
+type(
+  Dragon.dragon -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 44 1175 1185 "Main.ml" 44 1175 1202
+type(
+  int * int -> Dragon.dragon
+)
+"Main.ml" 44 1175 1204 "Main.ml" 44 1175 1205
+type(
+  int
+)
+"Main.ml" 44 1175 1206 "Main.ml" 44 1175 1207
+type(
+  int
+)
+"Main.ml" 44 1175 1204 "Main.ml" 44 1175 1207
+type(
+  int * int
+)
+"Main.ml" 44 1175 1185 "Main.ml" 44 1175 1208
+call(
+  stack
+)
+type(
+  Dragon.dragon
+)
+"Main.ml" 44 1175 1177 "Main.ml" 44 1175 1209
+type(
+  unit
+)
+"Main.ml" 45 1211 1213 "Main.ml" 45 1211 1219
+type(
+  Wall.wall -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 45 1211 1221 "Main.ml" 45 1211 1234
+type(
+  int * int -> Wall.wall
+)
+"Main.ml" 45 1211 1236 "Main.ml" 45 1211 1237
+type(
+  int
+)
+"Main.ml" 45 1211 1238 "Main.ml" 45 1211 1239
+type(
+  int
+)
+"Main.ml" 45 1211 1236 "Main.ml" 45 1211 1239
+type(
+  int * int
+)
+"Main.ml" 45 1211 1221 "Main.ml" 45 1211 1240
+call(
+  stack
+)
+type(
+  Wall.wall
+)
+"Main.ml" 45 1211 1213 "Main.ml" 45 1211 1241
+type(
+  unit
+)
+"Main.ml" 46 1243 1245 "Main.ml" 46 1243 1251
+type(
+  WhiteWalker.white_walker -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 46 1243 1253 "Main.ml" 46 1243 1281
+type(
+  int * int -> WhiteWalker.white_walker
+)
+"Main.ml" 46 1243 1283 "Main.ml" 46 1243 1284
+type(
+  int
+)
+"Main.ml" 46 1243 1285 "Main.ml" 46 1243 1286
+type(
+  int
+)
+"Main.ml" 46 1243 1283 "Main.ml" 46 1243 1286
+type(
+  int * int
+)
+"Main.ml" 46 1243 1253 "Main.ml" 46 1243 1287
+call(
+  stack
+)
+type(
+  WhiteWalker.white_walker
+)
+"Main.ml" 46 1243 1245 "Main.ml" 46 1243 1288
+type(
+  unit
+)
+"Main.ml" 45 1211 1213 "Main.ml" 46 1243 1288
+type(
+  unit
+)
+"Main.ml" 44 1175 1177 "Main.ml" 46 1243 1288
+type(
+  unit
+)
+"Main.ml" 43 1143 1145 "Main.ml" 46 1243 1288
+type(
+  unit
+)
+"Main.ml" 42 1109 1111 "Main.ml" 46 1243 1288
+type(
+  unit
+)
+"Main.ml" 41 1060 1062 "Main.ml" 46 1243 1288
+type(
+  unit
+)
+"Main.ml" 40 1028 1030 "Main.ml" 46 1243 1288
+type(
+  unit
+)
+"Main.ml" 39 996 998 "Main.ml" 46 1243 1288
+type(
+  unit
+)
+type(
+  unit
+)
+"Main.ml" 38 962 984 "Main.ml" 46 1243 1288
+type(
+  unit -> unit
+)
+"Main.ml" 50 1365 1369 "Main.ml" 50 1365 1386
+type(
+  unit -> unit
+)
+ident(
+  def part2_initializer "Main.ml" 56 1539 1539 "Main.ml" 1 0 -1
+)
+"Main.ml" 50 1365 1387 "Main.ml" 50 1365 1389
+type(
+  unit
+)
+"Main.ml" 51 1399 1401 "Main.ml" 51 1399 1407
+type(
+  KingsLanding.kings_landing -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 51 1399 1409 "Main.ml" 51 1399 1417
+type(
+  unit -> KingsLanding.kings_landing
+)
+ident(
+  int_ref gen_city "Main.ml" 33 773 777 "Main.ml" 33 773 785
+)
+"Main.ml" 51 1399 1418 "Main.ml" 51 1399 1420
+type(
+  unit
+)
+"Main.ml" 51 1399 1409 "Main.ml" 51 1399 1420
+call(
+  stack
+)
+type(
+  KingsLanding.kings_landing
+)
+"Main.ml" 51 1399 1401 "Main.ml" 51 1399 1421
+type(
+  unit
+)
+"Main.ml" 52 1423 1425 "Main.ml" 52 1423 1431
+type(
+  Human.human -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 52 1423 1433 "Main.ml" 52 1423 1448
+type(
+  int * int -> Human.human
+)
+"Main.ml" 52 1423 1450 "Main.ml" 52 1423 1460
+type(
+  int
+)
+ident(
+  ext_ref World.size
+)
+"Main.ml" 52 1423 1460 "Main.ml" 52 1423 1461
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"Main.ml" 52 1423 1461 "Main.ml" 52 1423 1462
+type(
+  int
+)
+"Main.ml" 52 1423 1450 "Main.ml" 52 1423 1462
+type(
+  int
+)
+"Main.ml" 52 1423 1462 "Main.ml" 52 1423 1463
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Main.ml" 52 1423 1463 "Main.ml" 52 1423 1464
+type(
+  int
+)
+"Main.ml" 52 1423 1450 "Main.ml" 52 1423 1464
+type(
+  int
+)
+"Main.ml" 52 1423 1465 "Main.ml" 52 1423 1475
+type(
+  int
+)
+ident(
+  ext_ref World.size
+)
+"Main.ml" 52 1423 1475 "Main.ml" 52 1423 1476
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"Main.ml" 52 1423 1476 "Main.ml" 52 1423 1477
+type(
+  int
+)
+"Main.ml" 52 1423 1465 "Main.ml" 52 1423 1477
+type(
+  int
+)
+"Main.ml" 52 1423 1450 "Main.ml" 52 1423 1477
+type(
+  int * int
+)
+"Main.ml" 52 1423 1433 "Main.ml" 52 1423 1478
+call(
+  stack
+)
+type(
+  Human.human
+)
+"Main.ml" 52 1423 1425 "Main.ml" 52 1423 1479
+type(
+  unit
+)
+"Main.ml" 53 1481 1483 "Main.ml" 53 1481 1489
+type(
+  Dragon.dragon -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 53 1481 1491 "Main.ml" 53 1481 1501
+type(
+  unit -> Dragon.dragon
+)
+ident(
+  int_ref gen_dragon "Main.ml" 27 640 644 "Main.ml" 27 640 654
+)
+"Main.ml" 53 1481 1502 "Main.ml" 53 1481 1504
+type(
+  unit
+)
+"Main.ml" 53 1481 1491 "Main.ml" 53 1481 1504
+call(
+  stack
+)
+type(
+  Dragon.dragon
+)
+"Main.ml" 53 1481 1483 "Main.ml" 53 1481 1505
+type(
+  unit
+)
+"Main.ml" 54 1507 1509 "Main.ml" 54 1507 1515
+type(
+  WhiteWalker.white_walker -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 54 1507 1517 "Main.ml" 54 1507 1533
+type(
+  unit -> WhiteWalker.white_walker
+)
+ident(
+  int_ref gen_white_walker "Main.ml" 30 687 691 "Main.ml" 30 687 707
+)
+"Main.ml" 54 1507 1534 "Main.ml" 54 1507 1536
+type(
+  unit
+)
+"Main.ml" 54 1507 1517 "Main.ml" 54 1507 1536
+call(
+  stack
+)
+type(
+  WhiteWalker.white_walker
+)
+"Main.ml" 54 1507 1509 "Main.ml" 54 1507 1537
+type(
+  unit
+)
+"Main.ml" 53 1481 1483 "Main.ml" 54 1507 1537
+type(
+  unit
+)
+"Main.ml" 52 1423 1425 "Main.ml" 54 1507 1537
+type(
+  unit
+)
+"Main.ml" 51 1399 1401 "Main.ml" 54 1507 1537
+type(
+  unit
+)
+type(
+  unit
+)
+"Main.ml" 50 1365 1387 "Main.ml" 54 1507 1537
+type(
+  unit -> unit
+)
+"Main.ml" 56 1539 1543 "Main.ml" 56 1539 1560
+type(
+  unit -> unit
+)
+ident(
+  def part3_initializer "Main.ml" 72 1891 1891 "Main.ml" 1 0 -1
+)
+"Main.ml" 56 1539 1561 "Main.ml" 56 1539 1563
+type(
+  unit
+)
+"Main.ml" 57 1573 1575 "Main.ml" 57 1573 1581
+type(
+  KingsLanding.kings_landing -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 57 1573 1583 "Main.ml" 57 1573 1591
+type(
+  unit -> KingsLanding.kings_landing
+)
+ident(
+  int_ref gen_city "Main.ml" 33 773 777 "Main.ml" 33 773 785
+)
+"Main.ml" 57 1573 1592 "Main.ml" 57 1573 1594
+type(
+  unit
+)
+"Main.ml" 57 1573 1583 "Main.ml" 57 1573 1594
+call(
+  stack
+)
+type(
+  KingsLanding.kings_landing
+)
+"Main.ml" 57 1573 1575 "Main.ml" 57 1573 1595
+type(
+  unit
+)
+"Main.ml" 58 1597 1599 "Main.ml" 58 1597 1605
+type(
+  Dany.dany -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 58 1597 1607 "Main.ml" 58 1597 1615
+type(
+  unit -> Dany.dany
+)
+ident(
+  int_ref gen_dany "Main.ml" 21 536 540 "Main.ml" 21 536 548
+)
+"Main.ml" 58 1597 1616 "Main.ml" 58 1597 1618
+type(
+  unit
+)
+"Main.ml" 58 1597 1607 "Main.ml" 58 1597 1618
+call(
+  stack
+)
+type(
+  Dany.dany
+)
+"Main.ml" 58 1597 1599 "Main.ml" 58 1597 1619
+type(
+  unit
+)
+"Main.ml" 59 1621 1623 "Main.ml" 59 1621 1629
+type(
+  Wall.wall -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 59 1621 1631 "Main.ml" 59 1621 1639
+type(
+  unit -> Wall.wall
+)
+ident(
+  int_ref gen_wall "Main.ml" 24 577 581 "Main.ml" 24 577 589
+)
+"Main.ml" 59 1621 1640 "Main.ml" 59 1621 1642
+type(
+  unit
+)
+"Main.ml" 59 1621 1631 "Main.ml" 59 1621 1642
+call(
+  stack
+)
+type(
+  Wall.wall
+)
+"Main.ml" 59 1621 1623 "Main.ml" 59 1621 1643
+type(
+  unit
+)
+"Main.ml" 60 1645 1647 "Main.ml" 60 1645 1653
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 60 1645 1655 "Main.ml" 60 1645 1664
+type(
+  unit -> unit
+)
+ident(
+  int_ref gen_ponds "Main.ml" 7 89 93 "Main.ml" 7 89 102
+)
+"Main.ml" 60 1645 1665 "Main.ml" 60 1645 1667
+type(
+  unit
+)
+"Main.ml" 60 1645 1655 "Main.ml" 60 1645 1667
+call(
+  stack
+)
+type(
+  unit
+)
+"Main.ml" 60 1645 1647 "Main.ml" 60 1645 1668
+type(
+  unit
+)
+"Main.ml" 61 1670 1672 "Main.ml" 61 1670 1678
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 61 1670 1680 "Main.ml" 61 1670 1689
+type(
+  unit -> unit
+)
+ident(
+  int_ref gen_towns "Main.ml" 15 305 309 "Main.ml" 15 305 318
+)
+"Main.ml" 61 1670 1690 "Main.ml" 61 1670 1692
+type(
+  unit
+)
+"Main.ml" 61 1670 1680 "Main.ml" 61 1670 1692
+call(
+  stack
+)
+type(
+  unit
+)
+"Main.ml" 61 1670 1672 "Main.ml" 61 1670 1693
+type(
+  unit
+)
+"Main.ml" 63 1696 1702 "Main.ml" 63 1696 1707
+type(
+  int ref
+)
+ident(
+  def count "Main.ml" 64 1720 1722 "Main.ml" 70 1860 1889
+)
+"Main.ml" 63 1696 1710 "Main.ml" 63 1696 1713
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Main.ml" 63 1696 1714 "Main.ml" 63 1696 1716
+type(
+  int
+)
+"Main.ml" 63 1696 1710 "Main.ml" 63 1696 1716
+type(
+  int ref
+)
+"Main.ml" 64 1720 1729 "Main.ml" 64 1720 1734
+type(
+  int ref
+)
+ident(
+  int_ref count "Main.ml" 63 1696 1702 "Main.ml" 63 1696 1707
+)
+"Main.ml" 64 1720 1728 "Main.ml" 64 1720 1734
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Main.ml" 64 1720 1735 "Main.ml" 64 1720 1736
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"Main.ml" 64 1720 1737 "Main.ml" 64 1720 1738
+type(
+  int
+)
+"Main.ml" 64 1720 1728 "Main.ml" 64 1720 1738
+type(
+  bool
+)
+"Main.ml" 65 1742 1746 "Main.ml" 65 1742 1752
+type(
+  Human.human -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 65 1742 1754 "Main.ml" 65 1742 1769
+type(
+  int * int -> Human.human
+)
+"Main.ml" 65 1742 1771 "Main.ml" 65 1742 1781
+type(
+  int
+)
+ident(
+  ext_ref World.size
+)
+"Main.ml" 65 1742 1781 "Main.ml" 65 1742 1782
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"Main.ml" 65 1742 1782 "Main.ml" 65 1742 1783
+type(
+  int
+)
+"Main.ml" 65 1742 1771 "Main.ml" 65 1742 1783
+type(
+  int
+)
+"Main.ml" 65 1742 1783 "Main.ml" 65 1742 1784
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Main.ml" 65 1742 1784 "Main.ml" 65 1742 1785
+type(
+  int
+)
+"Main.ml" 65 1742 1771 "Main.ml" 65 1742 1785
+type(
+  int
+)
+"Main.ml" 65 1742 1786 "Main.ml" 65 1742 1796
+type(
+  int
+)
+ident(
+  ext_ref World.size
+)
+"Main.ml" 65 1742 1796 "Main.ml" 65 1742 1797
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"Main.ml" 65 1742 1797 "Main.ml" 65 1742 1798
+type(
+  int
+)
+"Main.ml" 65 1742 1786 "Main.ml" 65 1742 1798
+type(
+  int
+)
+"Main.ml" 65 1742 1771 "Main.ml" 65 1742 1798
+type(
+  int * int
+)
+"Main.ml" 65 1742 1754 "Main.ml" 65 1742 1799
+call(
+  stack
+)
+type(
+  Human.human
+)
+"Main.ml" 65 1742 1746 "Main.ml" 65 1742 1800
+type(
+  unit
+)
+"Main.ml" 66 1802 1806 "Main.ml" 66 1802 1811
+type(
+  int ref
+)
+ident(
+  int_ref count "Main.ml" 63 1696 1702 "Main.ml" 63 1696 1707
+)
+"Main.ml" 66 1802 1816 "Main.ml" 66 1802 1821
+type(
+  int ref
+)
+ident(
+  int_ref count "Main.ml" 63 1696 1702 "Main.ml" 63 1696 1707
+)
+"Main.ml" 66 1802 1815 "Main.ml" 66 1802 1821
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Main.ml" 66 1802 1822 "Main.ml" 66 1802 1823
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Main.ml" 66 1802 1824 "Main.ml" 66 1802 1825
+type(
+  int
+)
+"Main.ml" 66 1802 1815 "Main.ml" 66 1802 1825
+type(
+  int
+)
+"Main.ml" 66 1802 1806 "Main.ml" 66 1802 1825
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Main.ml" 65 1742 1746 "Main.ml" 67 1826 1832
+type(
+  unit
+)
+"Main.ml" 64 1720 1722 "Main.ml" 67 1826 1832
+type(
+  unit
+)
+"Main.ml" 69 1835 1837 "Main.ml" 69 1835 1843
+type(
+  Dragon.dragon -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 69 1835 1844 "Main.ml" 69 1835 1854
+type(
+  unit -> Dragon.dragon
+)
+ident(
+  int_ref gen_dragon "Main.ml" 27 640 644 "Main.ml" 27 640 654
+)
+"Main.ml" 69 1835 1855 "Main.ml" 69 1835 1857
+type(
+  unit
+)
+"Main.ml" 69 1835 1844 "Main.ml" 69 1835 1857
+call(
+  stack
+)
+type(
+  Dragon.dragon
+)
+"Main.ml" 69 1835 1837 "Main.ml" 69 1835 1858
+type(
+  unit
+)
+"Main.ml" 70 1860 1862 "Main.ml" 70 1860 1868
+type(
+  WhiteWalker.white_walker -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 70 1860 1869 "Main.ml" 70 1860 1885
+type(
+  unit -> WhiteWalker.white_walker
+)
+ident(
+  int_ref gen_white_walker "Main.ml" 30 687 691 "Main.ml" 30 687 707
+)
+"Main.ml" 70 1860 1886 "Main.ml" 70 1860 1888
+type(
+  unit
+)
+"Main.ml" 70 1860 1869 "Main.ml" 70 1860 1888
+call(
+  stack
+)
+type(
+  WhiteWalker.white_walker
+)
+"Main.ml" 70 1860 1862 "Main.ml" 70 1860 1889
+type(
+  unit
+)
+"Main.ml" 69 1835 1837 "Main.ml" 70 1860 1889
+type(
+  unit
+)
+"Main.ml" 64 1720 1722 "Main.ml" 70 1860 1889
+type(
+  unit
+)
+"Main.ml" 63 1696 1698 "Main.ml" 70 1860 1889
+type(
+  unit
+)
+"Main.ml" 61 1670 1672 "Main.ml" 70 1860 1889
+type(
+  unit
+)
+"Main.ml" 60 1645 1647 "Main.ml" 70 1860 1889
+type(
+  unit
+)
+"Main.ml" 59 1621 1623 "Main.ml" 70 1860 1889
+type(
+  unit
+)
+"Main.ml" 58 1597 1599 "Main.ml" 70 1860 1889
+type(
+  unit
+)
+"Main.ml" 57 1573 1575 "Main.ml" 70 1860 1889
+type(
+  unit
+)
+type(
+  unit
+)
+"Main.ml" 56 1539 1561 "Main.ml" 70 1860 1889
+type(
+  unit -> unit
+)
+"Main.ml" 72 1891 1895 "Main.ml" 72 1891 1912
+type(
+  unit -> unit
+)
+ident(
+  def part4_initializer "Main.ml" 77 1999 1999 "Main.ml" 1 0 -1
+)
+"Main.ml" 72 1891 1913 "Main.ml" 72 1891 1915
+type(
+  unit
+)
+"Main.ml" 73 1925 1927 "Main.ml" 73 1925 1933
+type(
+  KingsLanding.kings_landing -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 73 1925 1935 "Main.ml" 73 1925 1943
+type(
+  unit -> KingsLanding.kings_landing
+)
+ident(
+  int_ref gen_city "Main.ml" 33 773 777 "Main.ml" 33 773 785
+)
+"Main.ml" 73 1925 1944 "Main.ml" 73 1925 1946
+type(
+  unit
+)
+"Main.ml" 73 1925 1935 "Main.ml" 73 1925 1946
+call(
+  stack
+)
+type(
+  KingsLanding.kings_landing
+)
+"Main.ml" 73 1925 1927 "Main.ml" 73 1925 1947
+type(
+  unit
+)
+"Main.ml" 74 1949 1951 "Main.ml" 74 1949 1957
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 74 1949 1959 "Main.ml" 74 1949 1968
+type(
+  unit -> unit
+)
+ident(
+  int_ref gen_ponds "Main.ml" 7 89 93 "Main.ml" 7 89 102
+)
+"Main.ml" 74 1949 1969 "Main.ml" 74 1949 1971
+type(
+  unit
+)
+"Main.ml" 74 1949 1959 "Main.ml" 74 1949 1971
+call(
+  stack
+)
+type(
+  unit
+)
+"Main.ml" 74 1949 1951 "Main.ml" 74 1949 1972
+type(
+  unit
+)
+"Main.ml" 75 1974 1976 "Main.ml" 75 1974 1982
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 75 1974 1984 "Main.ml" 75 1974 1993
+type(
+  unit -> unit
+)
+ident(
+  int_ref gen_towns "Main.ml" 15 305 309 "Main.ml" 15 305 318
+)
+"Main.ml" 75 1974 1994 "Main.ml" 75 1974 1996
+type(
+  unit
+)
+"Main.ml" 75 1974 1984 "Main.ml" 75 1974 1996
+call(
+  stack
+)
+type(
+  unit
+)
+"Main.ml" 75 1974 1976 "Main.ml" 75 1974 1997
+type(
+  unit
+)
+"Main.ml" 74 1949 1951 "Main.ml" 75 1974 1997
+type(
+  unit
+)
+"Main.ml" 73 1925 1927 "Main.ml" 75 1974 1997
+type(
+  unit
+)
+type(
+  unit
+)
+"Main.ml" 72 1891 1913 "Main.ml" 75 1974 1997
+type(
+  unit -> unit
+)
+"Main.ml" 77 1999 2003 "Main.ml" 77 1999 2020
+type(
+  unit -> unit
+)
+ident(
+  def final_initializer "Main.ml" 85 2231 2231 "Main.ml" 1 0 -1
+)
+"Main.ml" 77 1999 2021 "Main.ml" 77 1999 2023
+type(
+  unit
+)
+"Main.ml" 78 2033 2035 "Main.ml" 78 2033 2041
+type(
+  KingsLanding.kings_landing -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 78 2033 2043 "Main.ml" 78 2033 2051
+type(
+  unit -> KingsLanding.kings_landing
+)
+ident(
+  int_ref gen_city "Main.ml" 33 773 777 "Main.ml" 33 773 785
+)
+"Main.ml" 78 2033 2052 "Main.ml" 78 2033 2054
+type(
+  unit
+)
+"Main.ml" 78 2033 2043 "Main.ml" 78 2033 2054
+call(
+  stack
+)
+type(
+  KingsLanding.kings_landing
+)
+"Main.ml" 78 2033 2035 "Main.ml" 78 2033 2055
+type(
+  unit
+)
+"Main.ml" 79 2057 2059 "Main.ml" 79 2057 2065
+type(
+  Dany.dany -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 79 2057 2067 "Main.ml" 79 2057 2075
+type(
+  unit -> Dany.dany
+)
+ident(
+  int_ref gen_dany "Main.ml" 21 536 540 "Main.ml" 21 536 548
+)
+"Main.ml" 79 2057 2076 "Main.ml" 79 2057 2078
+type(
+  unit
+)
+"Main.ml" 79 2057 2067 "Main.ml" 79 2057 2078
+call(
+  stack
+)
+type(
+  Dany.dany
+)
+"Main.ml" 79 2057 2059 "Main.ml" 79 2057 2079
+type(
+  unit
+)
+"Main.ml" 80 2081 2083 "Main.ml" 80 2081 2089
+type(
+  Wall.wall -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 80 2081 2091 "Main.ml" 80 2081 2099
+type(
+  unit -> Wall.wall
+)
+ident(
+  int_ref gen_wall "Main.ml" 24 577 581 "Main.ml" 24 577 589
+)
+"Main.ml" 80 2081 2100 "Main.ml" 80 2081 2102
+type(
+  unit
+)
+"Main.ml" 80 2081 2091 "Main.ml" 80 2081 2102
+call(
+  stack
+)
+type(
+  Wall.wall
+)
+"Main.ml" 80 2081 2083 "Main.ml" 80 2081 2103
+type(
+  unit
+)
+"Main.ml" 81 2105 2107 "Main.ml" 81 2105 2113
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 81 2105 2115 "Main.ml" 81 2105 2124
+type(
+  unit -> unit
+)
+ident(
+  int_ref gen_ponds "Main.ml" 7 89 93 "Main.ml" 7 89 102
+)
+"Main.ml" 81 2105 2125 "Main.ml" 81 2105 2127
+type(
+  unit
+)
+"Main.ml" 81 2105 2115 "Main.ml" 81 2105 2127
+call(
+  stack
+)
+type(
+  unit
+)
+"Main.ml" 81 2105 2107 "Main.ml" 81 2105 2128
+type(
+  unit
+)
+"Main.ml" 82 2130 2132 "Main.ml" 82 2130 2138
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Main.ml" 82 2130 2140 "Main.ml" 82 2130 2149
+type(
+  unit -> unit
+)
+ident(
+  int_ref gen_towns "Main.ml" 15 305 309 "Main.ml" 15 305 318
+)
+"Main.ml" 82 2130 2150 "Main.ml" 82 2130 2152
+type(
+  unit
+)
+"Main.ml" 82 2130 2140 "Main.ml" 82 2130 2152
+call(
+  stack
+)
+type(
+  unit
+)
+"Main.ml" 82 2130 2132 "Main.ml" 82 2130 2153
+type(
+  unit
+)
+"Main.ml" 81 2105 2107 "Main.ml" 82 2130 2153
+type(
+  unit
+)
+"Main.ml" 80 2081 2083 "Main.ml" 82 2130 2153
+type(
+  unit
+)
+"Main.ml" 79 2057 2059 "Main.ml" 82 2130 2153
+type(
+  unit
+)
+"Main.ml" 78 2033 2035 "Main.ml" 82 2130 2153
+type(
+  unit
+)
+type(
+  unit
+)
+"Main.ml" 77 1999 2021 "Main.ml" 82 2130 2153
+type(
+  unit -> unit
+)
+"Main.ml" 85 2231 2235 "Main.ml" 85 2231 2245
+type(
+  int -> unit -> unit
+)
+ident(
+  def event_loop "Main.ml" 100 2817 2817 "Main.ml" 1 0 -1
+)
+"Main.ml" 85 2231 2246 "Main.ml" 85 2231 2250
+type(
+  int
+)
+ident(
+  def part "Main.ml" 85 2231 2251 "Main.ml" 96 2695 2700
+)
+"Main.ml" 85 2231 2251 "Main.ml" 85 2231 2253
+type(
+  unit
+)
+"Main.ml" 86 2263 2265 "Main.ml" 86 2263 2285
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Graphics.clear_graph
+)
+"Main.ml" 86 2263 2286 "Main.ml" 86 2263 2288
+type(
+  unit
+)
+"Main.ml" 86 2263 2265 "Main.ml" 86 2263 2288
+type(
+  unit
+)
+"Main.ml" 87 2291 2296 "Main.ml" 87 2291 2300
+type(
+  int
+)
+ident(
+  int_ref part "Main.ml" 85 2231 2246 "Main.ml" 85 2231 2250
+)
+"Main.ml" 87 2291 2301 "Main.ml" 87 2291 2303
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"Main.ml" 87 2291 2304 "Main.ml" 87 2291 2305
+type(
+  int
+)
+"Main.ml" 87 2291 2296 "Main.ml" 87 2291 2305
+type(
+  bool
+)
+"Main.ml" 87 2291 2311 "Main.ml" 87 2291 2329
+type(
+  unit Event51.event -> unit -> unit
+)
+ident(
+  ext_ref Event51.Event51.fire_event
+)
+"Main.ml" 87 2291 2330 "Main.ml" 87 2291 2346
+type(
+  unit Event51.event
+)
+ident(
+  ext_ref World.move_event
+)
+"Main.ml" 87 2291 2347 "Main.ml" 87 2291 2349
+type(
+  unit
+)
+"Main.ml" 87 2291 2311 "Main.ml" 87 2291 2349
+call(
+  stack
+)
+type(
+  unit
+)
+"Main.ml" 87 2291 2293 "Main.ml" 87 2291 2349
+type(
+  unit
+)
+type(
+  unit
+)
+"Main.ml" 88 2352 2357 "Main.ml" 88 2352 2361
+type(
+  int
+)
+ident(
+  int_ref part "Main.ml" 85 2231 2246 "Main.ml" 85 2231 2250
+)
+"Main.ml" 88 2352 2362 "Main.ml" 88 2352 2364
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"Main.ml" 88 2352 2365 "Main.ml" 88 2352 2366
+type(
+  int
+)
+"Main.ml" 88 2352 2357 "Main.ml" 88 2352 2366
+type(
+  bool
+)
+"Main.ml" 88 2352 2372 "Main.ml" 88 2352 2390
+type(
+  unit Event51.event -> unit -> unit
+)
+ident(
+  ext_ref Event51.Event51.fire_event
+)
+"Main.ml" 88 2352 2391 "Main.ml" 88 2352 2409
+type(
+  unit Event51.event
+)
+ident(
+  ext_ref World.action_event
+)
+"Main.ml" 88 2352 2410 "Main.ml" 88 2352 2412
+type(
+  unit
+)
+"Main.ml" 88 2352 2372 "Main.ml" 88 2352 2412
+call(
+  stack
+)
+type(
+  unit
+)
+"Main.ml" 88 2352 2354 "Main.ml" 88 2352 2412
+type(
+  unit
+)
+type(
+  unit
+)
+"Main.ml" 89 2415 2420 "Main.ml" 89 2415 2424
+type(
+  int
+)
+ident(
+  int_ref part "Main.ml" 85 2231 2246 "Main.ml" 85 2231 2250
+)
+"Main.ml" 89 2415 2425 "Main.ml" 89 2415 2427
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"Main.ml" 89 2415 2428 "Main.ml" 89 2415 2429
+type(
+  int
+)
+"Main.ml" 89 2415 2420 "Main.ml" 89 2415 2429
+type(
+  bool
+)
+"Main.ml" 89 2415 2435 "Main.ml" 89 2415 2453
+type(
+  unit Event51.event -> unit -> unit
+)
+ident(
+  ext_ref Event51.Event51.fire_event
+)
+"Main.ml" 89 2415 2454 "Main.ml" 89 2415 2469
+type(
+  unit Event51.event
+)
+ident(
+  ext_ref World.age_event
+)
+"Main.ml" 89 2415 2470 "Main.ml" 89 2415 2472
+type(
+  unit
+)
+"Main.ml" 89 2415 2435 "Main.ml" 89 2415 2472
+call(
+  stack
+)
+type(
+  unit
+)
+"Main.ml" 89 2415 2417 "Main.ml" 89 2415 2472
+type(
+  unit
+)
+type(
+  unit
+)
+"Main.ml" 91 2493 2495 "Main.ml" 91 2493 2508
+type(
+  (int * int -> unit) -> unit
+)
+ident(
+  ext_ref World.indices
+)
+"Main.ml" 91 2493 2519 "Main.ml" 91 2493 2520
+type(
+  int * int
+)
+ident(
+  def p "Main.ml" 92 2524 2528 "Main.ml" 95 2653 2694
+)
+"Main.ml" 92 2524 2532 "Main.ml" 92 2524 2538
+type(
+  WorldObjectI.world_object_i list
+)
+ident(
+  def sorted "Main.ml" 95 2653 2657 "Main.ml" 95 2653 2694
+)
+"Main.ml" 92 2524 2541 "Main.ml" 92 2524 2550
+type(
+  cmp:(WorldObjectI.world_object_i -> WorldObjectI.world_object_i -> int) ->
+  WorldObjectI.world_object_i list -> WorldObjectI.world_object_i list
+)
+ident(
+  ext_ref Core.Std.List.sort
+)
+"Main.ml" 92 2524 2561 "Main.ml" 92 2524 2562
+type(
+  WorldObjectI.world_object_i
+)
+ident(
+  def x "Main.ml" 92 2524 2563 "Main.ml" 92 2524 2603
+)
+"Main.ml" 92 2524 2563 "Main.ml" 92 2524 2564
+type(
+  WorldObjectI.world_object_i
+)
+ident(
+  def y "Main.ml" 92 2524 2568 "Main.ml" 92 2524 2603
+)
+"Main.ml" 92 2524 2568 "Main.ml" 92 2524 2575
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"Main.ml" 92 2524 2576 "Main.ml" 92 2524 2577
+type(
+  WorldObjectI.world_object_i
+)
+ident(
+  int_ref x "Main.ml" 92 2524 2561 "Main.ml" 92 2524 2562
+)
+"Main.ml" 92 2524 2576 "Main.ml" 92 2524 2589
+call(
+  stack
+)
+type(
+  int
+)
+"Main.ml" 92 2524 2590 "Main.ml" 92 2524 2591
+type(
+  WorldObjectI.world_object_i
+)
+ident(
+  int_ref y "Main.ml" 92 2524 2563 "Main.ml" 92 2524 2564
+)
+"Main.ml" 92 2524 2590 "Main.ml" 92 2524 2603
+call(
+  stack
+)
+type(
+  int
+)
+"Main.ml" 92 2524 2568 "Main.ml" 92 2524 2603
+type(
+  int
+)
+"Main.ml" 92 2524 2563 "Main.ml" 92 2524 2603
+type(
+  WorldObjectI.world_object_i -> int
+)
+"Main.ml" 92 2524 2561 "Main.ml" 92 2524 2603
+type(
+  WorldObjectI.world_object_i -> WorldObjectI.world_object_i -> int
+)
+"Main.ml" 93 2605 2633 "Main.ml" 93 2605 2642
+type(
+  int * int -> WorldObjectI.world_object_i list
+)
+ident(
+  ext_ref World.get
+)
+"Main.ml" 93 2605 2643 "Main.ml" 93 2605 2644
+type(
+  int * int
+)
+ident(
+  int_ref p "Main.ml" 91 2493 2519 "Main.ml" 91 2493 2520
+)
+"Main.ml" 93 2605 2633 "Main.ml" 93 2605 2644
+call(
+  stack
+)
+type(
+  WorldObjectI.world_object_i list
+)
+"Main.ml" 92 2524 2541 "Main.ml" 93 2605 2645
+call(
+  stack
+)
+type(
+  WorldObjectI.world_object_i list
+)
+"Main.ml" 95 2653 2657 "Main.ml" 95 2653 2666
+type(
+  WorldObjectI.world_object_i list ->
+  f:(WorldObjectI.world_object_i -> unit) -> unit
+)
+ident(
+  ext_ref Core.Std.List.iter
+)
+"Main.ml" 95 2653 2675 "Main.ml" 95 2653 2676
+type(
+  WorldObjectI.world_object_i
+)
+ident(
+  def w "Main.ml" 95 2653 2680 "Main.ml" 95 2653 2686
+)
+"Main.ml" 95 2653 2680 "Main.ml" 95 2653 2681
+type(
+  WorldObjectI.world_object_i
+)
+ident(
+  int_ref w "Main.ml" 95 2653 2675 "Main.ml" 95 2653 2676
+)
+"Main.ml" 95 2653 2680 "Main.ml" 95 2653 2686
+call(
+  tail
+)
+type(
+  unit
+)
+"Main.ml" 95 2653 2675 "Main.ml" 95 2653 2686
+type(
+  WorldObjectI.world_object_i -> unit
+)
+"Main.ml" 95 2653 2688 "Main.ml" 95 2653 2694
+type(
+  WorldObjectI.world_object_i list
+)
+ident(
+  int_ref sorted "Main.ml" 92 2524 2532 "Main.ml" 92 2524 2538
+)
+"Main.ml" 95 2653 2657 "Main.ml" 95 2653 2694
+call(
+  tail
+)
+type(
+  unit
+)
+"Main.ml" 92 2524 2528 "Main.ml" 95 2653 2694
+type(
+  unit
+)
+"Main.ml" 91 2493 2519 "Main.ml" 95 2653 2694
+type(
+  int * int -> unit
+)
+"Main.ml" 91 2493 2495 "Main.ml" 96 2695 2700
+call(
+  tail
+)
+type(
+  unit
+)
+"Main.ml" 89 2415 2417 "Main.ml" 96 2695 2700
+type(
+  unit
+)
+"Main.ml" 88 2352 2354 "Main.ml" 96 2695 2700
+type(
+  unit
+)
+"Main.ml" 87 2291 2293 "Main.ml" 96 2695 2700
+type(
+  unit
+)
+"Main.ml" 86 2263 2265 "Main.ml" 96 2695 2700
+type(
+  unit
+)
+type(
+  unit
+)
+"Main.ml" 85 2231 2251 "Main.ml" 96 2695 2700
+type(
+  unit -> unit
+)
+"Main.ml" 85 2231 2246 "Main.ml" 96 2695 2700
+type(
+  int -> unit -> unit
+)
+"Main.ml" 100 2817 2821 "Main.ml" 100 2817 2831
+type(
+  unit -> (unit -> unit) * int
+)
+ident(
+  def parse_args "Main.ml" 112 3231 3231 "Main.ml" 1 0 -1
+)
+"Main.ml" 100 2817 2832 "Main.ml" 100 2817 2834
+type(
+  unit
+)
+"Main.ml" 101 2860 2866 "Main.ml" 101 2860 2871
+type(
+  unit -> 'a
+)
+ident(
+  def usage "Main.ml" 102 2938 2940 "Main.ml" 109 3211 3228
+)
+"Main.ml" 101 2860 2872 "Main.ml" 101 2860 2874
+type(
+  unit
+)
+"Main.ml" 101 2860 2877 "Main.ml" 101 2860 2890
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Core.Std.Printf.printf
+)
+"Main.ml" 101 2860 2891 "Main.ml" 101 2860 2913
+type(
+  (string -> unit, out_channel, unit) format
+)
+"Main.ml" 101 2860 2914 "Main.ml" 101 2860 2922
+type(
+  string array
+)
+ident(
+  ext_ref Core.Std.Sys.argv
+)
+"Main.ml" 101 2860 2924 "Main.ml" 101 2860 2925
+type(
+  int
+)
+"Main.ml" 101 2860 2914 "Main.ml" 101 2860 2926
+type(
+  string
+)
+type(
+  string array -> int -> string
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Main.ml" 101 2860 2877 "Main.ml" 101 2860 2926
+call(
+  stack
+)
+type(
+  unit
+)
+"Main.ml" 101 2860 2928 "Main.ml" 101 2860 2932
+type(
+  int -> 'a
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"Main.ml" 101 2860 2933 "Main.ml" 101 2860 2934
+type(
+  int
+)
+"Main.ml" 101 2860 2928 "Main.ml" 101 2860 2934
+call(
+  tail
+)
+type(
+  'a
+)
+"Main.ml" 101 2860 2877 "Main.ml" 101 2860 2934
+type(
+  'a
+)
+"Main.ml" 101 2860 2872 "Main.ml" 101 2860 2934
+type(
+  unit -> 'a
+)
+"Main.ml" 102 2938 2943 "Main.ml" 102 2938 2955
+type(
+  string array -> int
+)
+ident(
+  ext_ref Core.Std.Array.length
+)
+"Main.ml" 102 2938 2956 "Main.ml" 102 2938 2964
+type(
+  string array
+)
+ident(
+  ext_ref Core.Std.Sys.argv
+)
+"Main.ml" 102 2938 2943 "Main.ml" 102 2938 2964
+call(
+  stack
+)
+type(
+  int
+)
+"Main.ml" 102 2938 2965 "Main.ml" 102 2938 2967
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"Main.ml" 102 2938 2968 "Main.ml" 102 2938 2969
+type(
+  int
+)
+"Main.ml" 102 2938 2943 "Main.ml" 102 2938 2969
+type(
+  bool
+)
+"Main.ml" 102 2938 2975 "Main.ml" 102 2938 2980
+type(
+  unit -> unit
+)
+ident(
+  int_ref usage "Main.ml" 101 2860 2866 "Main.ml" 101 2860 2871
+)
+"Main.ml" 102 2938 2981 "Main.ml" 102 2938 2983
+type(
+  unit
+)
+"Main.ml" 102 2938 2975 "Main.ml" 102 2938 2983
+call(
+  stack
+)
+type(
+  unit
+)
+"Main.ml" 102 2938 2940 "Main.ml" 102 2938 2983
+type(
+  unit
+)
+type(
+  unit
+)
+"Main.ml" 103 2985 2993 "Main.ml" 103 2985 3001
+type(
+  string array
+)
+ident(
+  ext_ref Core.Std.Sys.argv
+)
+"Main.ml" 103 2985 3003 "Main.ml" 103 2985 3004
+type(
+  int
+)
+"Main.ml" 103 2985 2993 "Main.ml" 103 2985 3005
+type(
+  string
+)
+type(
+  string array -> int -> string
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Main.ml" 104 3011 3015 "Main.ml" 104 3011 3022
+type(
+  string
+)
+"Main.ml" 104 3011 3026 "Main.ml" 104 3011 3043
+type(
+  unit -> unit
+)
+ident(
+  int_ref part1_initializer "Main.ml" 38 962 966 "Main.ml" 38 962 983
+)
+"Main.ml" 104 3011 3045 "Main.ml" 104 3011 3046
+type(
+  int
+)
+"Main.ml" 104 3011 3026 "Main.ml" 104 3011 3046
+type(
+  (unit -> unit) * int
+)
+"Main.ml" 105 3047 3051 "Main.ml" 105 3047 3058
+type(
+  string
+)
+"Main.ml" 105 3047 3062 "Main.ml" 105 3047 3079
+type(
+  unit -> unit
+)
+ident(
+  int_ref part2_initializer "Main.ml" 50 1365 1369 "Main.ml" 50 1365 1386
+)
+"Main.ml" 105 3047 3081 "Main.ml" 105 3047 3082
+type(
+  int
+)
+"Main.ml" 105 3047 3062 "Main.ml" 105 3047 3082
+type(
+  (unit -> unit) * int
+)
+"Main.ml" 106 3083 3087 "Main.ml" 106 3083 3094
+type(
+  string
+)
+"Main.ml" 106 3083 3098 "Main.ml" 106 3083 3115
+type(
+  unit -> unit
+)
+ident(
+  int_ref part3_initializer "Main.ml" 56 1539 1543 "Main.ml" 56 1539 1560
+)
+"Main.ml" 106 3083 3117 "Main.ml" 106 3083 3118
+type(
+  int
+)
+"Main.ml" 106 3083 3098 "Main.ml" 106 3083 3118
+type(
+  (unit -> unit) * int
+)
+"Main.ml" 107 3119 3123 "Main.ml" 107 3119 3130
+type(
+  string
+)
+"Main.ml" 107 3119 3133 "Main.ml" 107 3119 3140
+type(
+  string
+)
+"Main.ml" 107 3119 3123 "Main.ml" 107 3119 3140
+type(
+  string
+)
+"Main.ml" 107 3119 3144 "Main.ml" 107 3119 3161
+type(
+  unit -> unit
+)
+ident(
+  int_ref part4_initializer "Main.ml" 72 1891 1895 "Main.ml" 72 1891 1912
+)
+"Main.ml" 107 3119 3163 "Main.ml" 107 3119 3164
+type(
+  int
+)
+"Main.ml" 107 3119 3144 "Main.ml" 107 3119 3164
+type(
+  (unit -> unit) * int
+)
+"Main.ml" 108 3165 3169 "Main.ml" 108 3165 3176
+type(
+  string
+)
+"Main.ml" 108 3165 3179 "Main.ml" 108 3165 3186
+type(
+  string
+)
+"Main.ml" 108 3165 3169 "Main.ml" 108 3165 3186
+type(
+  string
+)
+"Main.ml" 108 3165 3190 "Main.ml" 108 3165 3207
+type(
+  unit -> unit
+)
+ident(
+  int_ref final_initializer "Main.ml" 77 1999 2003 "Main.ml" 77 1999 2020
+)
+"Main.ml" 108 3165 3209 "Main.ml" 108 3165 3210
+type(
+  int
+)
+"Main.ml" 108 3165 3190 "Main.ml" 108 3165 3210
+type(
+  (unit -> unit) * int
+)
+"Main.ml" 109 3211 3215 "Main.ml" 109 3211 3216
+type(
+  string
+)
+"Main.ml" 109 3211 3220 "Main.ml" 109 3211 3225
+type(
+  unit -> (unit -> unit) * int
+)
+ident(
+  int_ref usage "Main.ml" 101 2860 2866 "Main.ml" 101 2860 2871
+)
+"Main.ml" 109 3211 3226 "Main.ml" 109 3211 3228
+type(
+  unit
+)
+"Main.ml" 109 3211 3220 "Main.ml" 109 3211 3228
+call(
+  tail
+)
+type(
+  (unit -> unit) * int
+)
+"Main.ml" 103 2985 2987 "Main.ml" 109 3211 3228
+type(
+  (unit -> unit) * int
+)
+"Main.ml" 102 2938 2940 "Main.ml" 109 3211 3228
+type(
+  (unit -> unit) * int
+)
+"Main.ml" 101 2860 2862 "Main.ml" 109 3211 3228
+type(
+  (unit -> unit) * int
+)
+type(
+  (unit -> unit) * int
+)
+"Main.ml" 100 2817 2832 "Main.ml" 109 3211 3228
+type(
+  unit -> (unit -> unit) * int
+)
+"Main.ml" 112 3231 3235 "Main.ml" 112 3231 3238
+type(
+  unit -> unit
+)
+ident(
+  def run "Main.ml" 117 3341 3341 "Main.ml" 1 0 -1
+)
+"Main.ml" 112 3231 3239 "Main.ml" 112 3231 3241
+type(
+  unit
+)
+"Main.ml" 113 3251 3257 "Main.ml" 113 3251 3267
+type(
+  unit -> unit
+)
+ident(
+  def initialize "Main.ml" 114 3293 3295 "Main.ml" 114 3293 3336
+)
+"Main.ml" 113 3251 3269 "Main.ml" 113 3251 3273
+type(
+  int
+)
+ident(
+  def part "Main.ml" 114 3293 3295 "Main.ml" 114 3293 3336
+)
+"Main.ml" 113 3251 3257 "Main.ml" 113 3251 3273
+type(
+  (unit -> unit) * int
+)
+"Main.ml" 113 3251 3276 "Main.ml" 113 3251 3286
+type(
+  unit -> (unit -> unit) * int
+)
+ident(
+  int_ref parse_args "Main.ml" 100 2817 2821 "Main.ml" 100 2817 2831
+)
+"Main.ml" 113 3251 3287 "Main.ml" 113 3251 3289
+type(
+  unit
+)
+"Main.ml" 113 3251 3276 "Main.ml" 113 3251 3289
+call(
+  stack
+)
+type(
+  (unit -> unit) * int
+)
+"Main.ml" 114 3293 3295 "Main.ml" 114 3293 3307
+type(
+  (unit -> unit) -> (unit -> unit) -> unit
+)
+ident(
+  ext_ref UI.run_world
+)
+"Main.ml" 114 3293 3308 "Main.ml" 114 3293 3318
+type(
+  unit -> unit
+)
+ident(
+  int_ref initialize "Main.ml" 113 3251 3257 "Main.ml" 113 3251 3267
+)
+"Main.ml" 114 3293 3320 "Main.ml" 114 3293 3330
+type(
+  int -> unit -> unit
+)
+ident(
+  int_ref event_loop "Main.ml" 85 2231 2235 "Main.ml" 85 2231 2245
+)
+"Main.ml" 114 3293 3331 "Main.ml" 114 3293 3335
+type(
+  int
+)
+ident(
+  int_ref part "Main.ml" 113 3251 3269 "Main.ml" 113 3251 3273
+)
+"Main.ml" 114 3293 3320 "Main.ml" 114 3293 3335
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"Main.ml" 114 3293 3295 "Main.ml" 114 3293 3336
+call(
+  tail
+)
+type(
+  unit
+)
+"Main.ml" 113 3251 3253 "Main.ml" 114 3293 3336
+type(
+  unit
+)
+type(
+  unit
+)
+"Main.ml" 112 3231 3239 "Main.ml" 114 3293 3336
+type(
+  unit -> unit
+)
+"Main.ml" 117 3341 3341 "Main.ml" 117 3341 3344
+type(
+  unit -> unit
+)
+ident(
+  int_ref run "Main.ml" 112 3231 3235 "Main.ml" 112 3231 3238
+)
+"Main.ml" 117 3341 3345 "Main.ml" 117 3341 3347
+type(
+  unit
+)
+"Main.ml" 117 3341 3341 "Main.ml" 117 3341 3347
+call(
+  stack
+)
+type(
+  unit
+)
