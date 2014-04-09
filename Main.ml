@@ -16,7 +16,7 @@ let gen_towns () : unit =
   let gold_id = ref (-1) in
   World.spawn_iter num_towns town_size
                    (fun () -> gold_id := Town.get_next_gold_id ())
-                   (fun p -> ignore (new Town.town p (* !gold_id *)))
+                   (fun p -> ignore (new Town.town p !gold_id))
 
 let gen_dany () =
   new Dany.dany (0,0)

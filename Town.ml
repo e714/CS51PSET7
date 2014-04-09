@@ -45,22 +45,15 @@ object (self)
   (* ### TODO: Part 3 Actions ### *)
   method private do_action _ : unit =
     if World.rand produce_gold_probability = 1 
-       && gold_amount != max_gold then gold_amount <- gold_amount + 1
-       self#smells_like_gold = Some gold_id
+       && (gold_amount < max_gold) then gold_amount <- gold_amount + 1
     else ();
 
     if World.rand expand_probability = 1 then 
-      World.spawn 1 self#get_pos Main.gen_towns gold_id
+      World.spawn 1 self#get_pos (fun p ->ignore(new town p gold_id))
     else ();
 
     self#draw_circle (Graphics.rgb 0x96 0x4B 0x00) Graphics.black (string_of_int gold_amount)
 
-  method private forfeit_gold unit : int option =
-    if World.rand forfeit_gold_probability = 1
-       && gold_amount != 0 then
-          gold_amount <- gold_amount - 1;
-          Some gold_id
-    else None
 
 
 
@@ -81,6 +74,20 @@ object (self)
   (* ### TODO: Part 4 Aging ### *)
 
   (* ### TODO: Part 3 Actions ### *)
+
+  method smells_like_gold : int option =
+       if (gold_amount > 0) 
+       then Some (gold_id)
+       else None
+
+  method forfeit_gold : int option =
+    if World.rand forfeit_gold_probability = 1
+       && gold_amount > 0 then
+          (gold_amount <- gold_amount - 1;
+          Some (gold_id))
+    else None
+
+
 
   (* ### TODO: Part 4 Aging ### *)
 
