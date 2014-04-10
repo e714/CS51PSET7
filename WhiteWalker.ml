@@ -42,9 +42,10 @@ object (self)
   (* ### TODO: Part 3 Actions ### *)
 
   method private do_action _ : unit =
-    let neighbors = World.get self#get_pos in
-      List.iter neighbors (fun x -> if x#smells_like_gold <> None
-        then x#die;towns_destroyed<-towns_destroyed+1) 
+    match World.get self#get_pos with
+    | [] -> ()
+    | neighbors -> (List.iter neighbors (fun x -> if (x#smells_like_gold <> None)
+        then (x#die; towns_destroyed<-towns_destroyed+1)) )
 
   (* ### TODO: Part 6 Custom Events ### *)
 

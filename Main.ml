@@ -24,11 +24,11 @@ let gen_dany () =
 let gen_wall () =
   new Wall.wall (World.size-1,World.size-1)
 
-let gen_dragon () =
-  new Dragon.dragon (0,0)
+let gen_dragon kings =
+  new Dragon.dragon (0,0) kings
 
-let gen_white_walker () =
-  new WhiteWalker.white_walker (World.size-1,World.size-1)
+let gen_white_walker kings =
+  new WhiteWalker.white_walker (World.size-1,World.size-1) kings
 
 let gen_city () =
   (* Don't ignore, since we will need to pass the city to some other objects. *)
@@ -37,24 +37,24 @@ let gen_city () =
 (* Initializer functions *)
 let part1_initializer () : unit =
   ignore (new Pond.pond (0,0));
-  ignore (new Town.town (1,1));
-  ignore (new KingsLanding.kings_landing (2,2));
+  ignore (new Town.town (1,1) 0);
+  let kings = new KingsLanding.kings_landing (2,2) in
   ignore (new Human.human (3,3));
   ignore (new Dany.dany (4,4));
-  ignore (new Dragon.dragon (5,5));
+  ignore (new Dragon.dragon (5,5) kings);
   ignore (new Wall.wall (6,6));
-  ignore (new WhiteWalker.white_walker (7,7))
+  ignore (new WhiteWalker.white_walker (7,7) kings)
 
 (* DO NOT TOUCH ANYTHING BELOW THIS POINT UNTIL THE PARTS ARE RELEASED *)
 
 let part2_initializer () : unit =
-  ignore (gen_city ());
+  let kings = gen_city () in
   ignore (new Human.human (World.size/2+1,World.size/2));
-  ignore (gen_dragon ());
-  ignore (gen_white_walker ())
+  ignore (gen_dragon kings);
+  ignore (gen_white_walker kings)
 
 let part3_initializer () : unit =
-  ignore (gen_city ());
+  let kings = gen_city () in
   ignore (gen_dany ());
   ignore (gen_wall ());
   ignore (gen_ponds ());
@@ -66,8 +66,8 @@ let part3_initializer () : unit =
     count := !count - 1
   done;
 
-  ignore(gen_dragon ());
-  ignore(gen_white_walker ())
+  ignore(gen_dragon kings);
+  ignore(gen_white_walker kings)
 
 let part4_initializer () : unit =
   ignore (gen_city ());
