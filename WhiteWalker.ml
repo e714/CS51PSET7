@@ -23,18 +23,28 @@ object (self)
   (******************************)
 
   (* ### TODO: Part 3 Actions ### *)
-
+  
+  val mutable towns_destroyed = 0
+  
   (***********************)
   (***** Initializer *****)
   (***********************)
 
   (* ### TODO: Part 3 Actions ### *)
 
+  initializer
+    self#register_handler World.action_event self#do_action;
+  
   (**************************)
   (***** Event Handlers *****)
   (**************************)
 
   (* ### TODO: Part 3 Actions ### *)
+
+  method private do_action _ : unit =
+    let neighbors = World.get self#get_pos in
+      List.iter neighbors (fun x -> if x#smells_like_gold <> None
+        then x#die;towns_destroyed<-towns_destroyed+1) 
 
   (* ### TODO: Part 6 Custom Events ### *)
 
@@ -47,7 +57,7 @@ object (self)
   method! get_name = "white_walker"
 
   method! draw = Draw.circle self#get_pos World.obj_width World.obj_height 
-           (Graphics.rgb 0x89 0xCF 0xF0) Graphics.black ""
+           (Graphics.rgb 0x89 0xCF 0xF0) Graphics.black (string_of_int towns_destroyed)
 
   method! draw_z_axis = 4
 

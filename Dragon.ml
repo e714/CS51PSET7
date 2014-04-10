@@ -25,6 +25,8 @@ object (self)
 
   (* ### TODO: Part 3 Actions ### *)
 
+  val mutable stolen_gold = 0 
+
   (* ### TODO: Part 6 Events ### *)
 
   (***********************)
@@ -33,11 +35,21 @@ object (self)
 
   (* ### TODO: Part 3 Actions ### *)
 
+  initializer
+    self#register_handler World.action_event self#do_action;
+
   (**************************)
   (***** Event Handlers *****)
   (**************************)
 
   (* ### TODO: Part 3 Actions ### *)
+
+  method private do_action _ : unit =
+     if self#get_pos = k#get_pos 
+     then stolen_gold<-stolen_gold +
+       (k#forfeit_treasury gold_theft_amount
+        (self:>WorldObjectI.world_object_i))
+     else ();   
 
   (* ### TODO: Part 6 Custom Events ### *)
 
@@ -50,7 +62,7 @@ object (self)
   method! get_name = "dragon"
 
   method! draw = Draw.circle self#get_pos World.obj_width World.obj_height 
-           Graphics.red Graphics.black ""
+           Graphics.red Graphics.black (string_of_int stolen_gold)
 
   method! draw_z_axis = 3
 
