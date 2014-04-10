@@ -49,18 +49,26 @@ object (self)
   (* ### TODO: Part 3 Actions ### *)
   
   method private do_action _ : unit =
-    if World.rand gold_probability = 1 
+    (if World.rand gold_probability = 1 
     then gold_amount <- gold_amount + 1
     else ();
 
 
   (* ### TODO: Part 4 Aging ### *)
+  
+    if gold_amount >= cost_of_human && World.rand spawn_probability = 1 
+    then (gold_amount <- (gold_amount - cost_of_human); self#generate_human)
+    else())
+  
 
   (**************************)
   (***** Helper Methods *****)
   (**************************)
 
   (* ### TODO: Part 4 Aging ### *)
+
+  method private generate_human =
+    World.add self#get_pos ((new Human.human self#get_pos):> world_object_i);
 
   (****************************)
   (*** WorldObjectI Methods ***)
