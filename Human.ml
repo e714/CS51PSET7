@@ -142,10 +142,10 @@ object(self)
   (* SO TIRED. *)
   method! next_direction =
     if gold_types < List.length gold_object then
-      Direction.natural self#get_pos home#get_pos
+      World.direction_from_to self#get_pos home#get_pos
     else match self#magnet_gold with
     | None -> self#next_direction_default
-    | Some s -> Direction.natural self#get_pos s#get_pos
+    | Some s -> World.direction_from_to self#get_pos s#get_pos
 
   (* I don't think we need this anymore *)
   method private next_direction_default = None

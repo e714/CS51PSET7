@@ -44,10 +44,11 @@ object (self)
     if self#available_square self#get_pos facing then
       facing
     else
-      let dir = Some (Direction.random World.rand) in
+      World.direction_from_to self#get_pos 
+      (*let dir = Some (Direction.random World.rand) in
       if self#available_square self#get_pos dir then
         ((facing <- dir); dir)
-      else self#next_direction_default
+      else self#next_direction_default*)
 
 end
 

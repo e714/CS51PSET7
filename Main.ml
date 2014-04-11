@@ -39,7 +39,7 @@ let part1_initializer () : unit =
   ignore (new Pond.pond (0,0));
   ignore (new Town.town (1,1) 0);
   let kings = new KingsLanding.kings_landing (2,2) in
-  ignore (new Human.human (3,3) kings);
+  ignore (new Human.human (3,3) (kings :> WorldObjectI.world_object_i));
   ignore (new Dany.dany (4,4));
   ignore (new Dragon.dragon (5,5) kings);
   ignore (new Wall.wall (6,6));
@@ -49,7 +49,7 @@ let part1_initializer () : unit =
 
 let part2_initializer () : unit =
   let kings = gen_city () in
-  ignore (new Human.human (World.size/2+1,World.size/2) kings);
+  ignore (new Human.human (World.size/2+1,World.size/2) (kings :> WorldObjectI.world_object_i));
   ignore (gen_dragon kings);
   ignore (gen_white_walker kings)
 
@@ -62,7 +62,7 @@ let part3_initializer () : unit =
 
   let count = ref 20 in
   while !count > 0 do
-    ignore (new Human.human (World.size/2+1,World.size/2) kings);
+    ignore (new Human.human (World.size/2+1,World.size/2) (kings :> WorldObjectI.world_object_i));
     count := !count - 1
   done;
 

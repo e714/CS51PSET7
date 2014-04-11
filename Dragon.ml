@@ -77,7 +77,7 @@ object (self)
 
   (* ### TODO: Part 2 Movement ### *)
 
-  method! next_direction = Direction.natural self#get_pos k#get_pos
+  method! next_direction = World.direction_from_to self#get_pos k#get_pos
 
 
   (* ### TODO: Part 6 Custom Events ### *)
