@@ -9,7 +9,7 @@ open Movable
 let walker_inverse_speed = Some 1
 
 (* ### Part 6 Custom Events ### *)
-let max_destroyed_objects = 100
+let max_destroyed_objects = 10
 
 (** A White Walker will roam the world until it has destroyed a satisfactory
     number of towns *)

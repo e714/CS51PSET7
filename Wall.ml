@@ -34,12 +34,13 @@ object (self)
   (* ### TODO Part 6 Custom Events ### *)
 
   method private do_action () =
-     if town_limit > (World.fold(fun obj i -> match obj#smells_like_gold with
-       |Some x-> i+1
-       |None -> i) 0) &&
-         World.fold (fun obj b -> (obj#get_name <> "white_walker") && b) true 
-     then ignore(Printf.printf "white walkers!";flush_all();
-         new WhiteWalker.white_walker self#get_pos city);
+     let tcount = World.fold (fun obj sum -> if obj#smells_like_gold <> None 
+       then sum + 1 else sum) 0 in
+     if town_limit < tcount && (World.fold (fun obj b -> obj#get_name <> "white_walker" && b) true) 
+     then(
+       ignore(Printf.printf "white walkers! ";flush_all());
+       ignore(new WhiteWalker.white_walker self#get_pos city self))
+     
 
   (********************************)
   (***** WorldObjectI Methods *****)
