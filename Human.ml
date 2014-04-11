@@ -19,10 +19,18 @@ let human_lifetime = 1000
 (* ### Part 5 Smart Humans ### *)
 let max_sensing_range = 5
 
+class type human_t =
+object
+  inherit ageable_t
+
+  method private get_gold : int list
+  method private next_direction_default : Direction.direction option
+end
+
 (** Humans travel the world searching for towns to trade for gold.
     They are able to sense towns within close range, and they will return
     to King's Landing once they have traded with enough towns. *)
-class human p : ageable_t =
+class human p (home : world_object_i) : human_t =
 object(self)
   inherit world_object p
   inherit movable p human_inverse_speed
@@ -37,6 +45,8 @@ object(self)
   val mutable gold_object : int list = []
 
   (* ### TODO: Part 5 Smart Humans ### *)
+  val sensing_range = World.rand max_sensing_range
+  val gold_types = World.rand max_gold_types + 1
 
   (* ### TODO: Part 6 Custom Events ### *)
 
@@ -76,6 +86,26 @@ object(self)
         self#extract_gold x) 
 
   (* ### TODO: Part 5 Smart Humans ### *)
+  method private get_gold : int list = gold_object;
+
+  (* I'm tired starting here. *)
+  method private find_in_list (elt : 'a) (elts : 'a list) : bool =
+    match elts with
+    | [] -> false
+    | x :: xs -> if elt = x then true else self#find_in_list elt xs
+
+  (* VERY TIRED *)
+  method private magnet_gold : world_object_i option =
+  let x = World.objects_within_range self#get_pos gold_types in
+  let rec insideloop (x: world_object_i list) : world_object_i option =
+    match x with
+    | [] -> None
+    | y :: ys -> 
+      match y#smells_like_gold with
+      | None -> insideloop ys
+      | Some id ->
+        if self#find_in_list id self#get_gold then Some y else insideloop ys
+  in insideloop x
 
   (********************************)
   (***** WorldObjectI Methods *****)
@@ -107,7 +137,18 @@ object(self)
   (* ### TODO: Part 2 Movement ### *)
 
 
-  method! next_direction = Some (Direction.random World.rand)
+
+  (* Want this back later*)
+  (* SO TIRED. *)
+  method! next_direction =
+    if gold_types < List.length gold_object then
+      Direction.natural self#get_pos home#get_pos
+    else match self#magnet_gold with
+    | None -> self#next_direction_default
+    | Some s -> Direction.natural self#get_pos s#get_pos
+
+  (* I don't think we need this anymore *)
+  method private next_direction_default = None
 
 
   (* ### TODO: Part 5 Smart Humans ### *)
@@ -119,5 +160,6 @@ object(self)
   (***********************)
 
   (* ### TODO: Part 5 Smart Humans ### *)
+  (* method private next_direction_default = None *)
 
 end

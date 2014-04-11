@@ -68,7 +68,9 @@ object (self)
   (* ### TODO: Part 4 Aging ### *)
 
   method private generate_human =
-    World.add self#get_pos ((new Human.human self#get_pos):> world_object_i);
+    match World.rand 2 with
+    | 0 -> World.add self#get_pos ((new Baratheon.baratheon self#get_pos (self :> world_object_i)) :> world_object_i);
+    | _ -> World.add self#get_pos ((new Lannister.lannister self#get_pos (self :> world_object_i)) :> world_object_i);
 
   (****************************)
   (*** WorldObjectI Methods ***)
