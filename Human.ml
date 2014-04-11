@@ -88,24 +88,22 @@ object(self)
   (* ### TODO: Part 5 Smart Humans ### *)
   method private get_gold : int list = gold_object;
 
-  (* I'm tired starting here. *)
-  method private find_in_list (elt : 'a) (elts : 'a list) : bool =
-    match elts with
-    | [] -> false
-    | x :: xs -> if elt = x then true else self#find_in_list elt xs
-
-  (* VERY TIRED *)
-  method private magnet_gold : world_object_i option =
-  let x = World.objects_within_range self#get_pos gold_types in
-  let rec insideloop (x: world_object_i list) : world_object_i option =
-    match x with
-    | [] -> None
-    | y :: ys -> 
-      match y#smells_like_gold with
-      | None -> insideloop ys
-      | Some id ->
-        if self#find_in_list id self#get_gold then Some y else insideloop ys
-  in insideloop x
+   method private magnet_gold :world_object_i option =
+    let townlist = (List.filter (World.objects_within_range self#get_pos sensing_range)
+      (fun x -> match x#smells_like_gold with
+      |Some y -> not(List.mem gold_object y)
+      |None -> false)) in
+    let comp_dist x = Direction.distance self#get_pos x#get_pos in
+    let rec min_dist (min: float) (closest: world_object_i) (tlst: world_object_i list) : world_object_i = 
+      match tlst with 
+      | [] -> closest
+      | hd::tl -> if ((comp_dist hd) < min) 
+	              then min_dist (comp_dist hd) hd tl  
+	              else min_dist min closest tl in
+    match townlist with 
+    | [] -> None 
+    | _ -> Some (min_dist Float.max_value (match List.hd townlist with
+      | Some x -> x) townlist)
 
   (********************************)
   (***** WorldObjectI Methods *****)

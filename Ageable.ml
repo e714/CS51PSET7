@@ -60,14 +60,14 @@ object (self)
   (********************************)
 
   method! draw : unit =
-    self#draw_picture ;
-    self#draw_life
+    (self#draw_picture ;
+    self#draw_life)
 
   (***************************)
   (***** Ageable Methods *****)
   (***************************)
 
   (* ### TODO: Part 4 Aging ### *)
-  method draw_picture : unit = super#draw
+  method draw_picture : unit = self#draw
   method reset_life = lifetime <- max_lifetime
 end
