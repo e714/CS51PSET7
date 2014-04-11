@@ -49,6 +49,7 @@ object(self)
   val gold_types = World.rand max_gold_types + 1
 
   (* ### TODO: Part 6 Custom Events ### *)
+  val mutable under_attack : world_object_i option = None
 
   (***********************)
   (***** Initializer *****)
@@ -58,6 +59,7 @@ object(self)
 
   initializer
     self#register_handler World.action_event self#do_action;
+    self#register_handler home#get_danger_event self#begin_attack;
 
   (* ### TODO: Part 6 Custom Events ### *)
 
@@ -80,10 +82,10 @@ object(self)
     | None -> ()
     | Some x -> (gold_object <- x::gold_object)
 
-  method private do_action _ : unit =
+  method private do_action _ : unit = 
     let neighbors = World.get self#get_pos in
       List.iter neighbors (fun x -> self#deposit_gold x;
-        self#extract_gold x) 
+        self#extract_gold x; self#is_dragon x) 
 
   (* ### TODO: Part 5 Smart Humans ### *)
   method private get_gold : int list = gold_object;
@@ -139,11 +141,14 @@ object(self)
   (* Want this back later*)
   (* SO TIRED. *)
   method! next_direction =
-    if gold_types < List.length gold_object then
-      World.direction_from_to self#get_pos home#get_pos
-    else match self#magnet_gold with
-    | None -> self#next_direction_default
-    | Some s -> World.direction_from_to self#get_pos s#get_pos
+    match under_attack with
+    | Some drag -> World.direction_from_to self#get_pos drag#get_pos
+    | None ->
+      if gold_types < List.length gold_object then
+        World.direction_from_to self#get_pos home#get_pos
+      else match self#magnet_gold with
+      | None -> self#next_direction_default
+      | Some s -> World.direction_from_to self#get_pos s#get_pos
 
   (* I don't think we need this anymore *)
   method private next_direction_default = None
@@ -152,6 +157,16 @@ object(self)
   (* ### TODO: Part 5 Smart Humans ### *)
 
   (* ### TODO: Part 6 Custom Events ### *)
+  method private begin_attack : unit =
+    under_attack <- home#get_thief;
+    self#do_action; ()
+
+  method private is_dragon (obj : world_object_i) : unit =
+    match under_attack with
+    | None -> ()
+    | Some drag -> if obj#get_name = "dragon" then
+                     drag#receive_damage; self#die; ()
+
 
   (***********************)
   (**** Human Methods ****)

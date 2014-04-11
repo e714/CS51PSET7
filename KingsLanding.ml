@@ -36,6 +36,8 @@ object (self)
 
   (* ### TODO: Part 6 Custom Events ### *)
   val gold_event : int Event51.event = (Event51.new_event())
+  val danger_event: world_object_i Event51.event = (Event51.new_event())
+  val mutable current_thief : Dragon.dragon option = None
 
   (***********************)
   (***** Initializer *****)
@@ -96,8 +98,15 @@ object (self)
 
   (* ### TODO: Part 6 Custom Events ### *)
   method get_gold_event : int Event51.event = gold_event
+  method! get_danger_event: world_object_i Event51.event = danger_event
 
   method get_gold : int = gold_amount
+
+  method! danger (thief: world_object_i) : unit =
+    current_thief <- Some thief;
+    Event51.fire_event self#get_danger_event thief; ()
+
+  method get_thief : Dragon.dragon option : current_thief
 
   (**********************************)
   (***** King's Landing Methods *****)
