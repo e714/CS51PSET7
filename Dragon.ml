@@ -14,7 +14,7 @@ let dragon_starting_life = 20
 (* ### Part 2 Movement ### *)
 let dragon_inverse_speed = Some 10
 
-class dragon p (k: KingsLanding.kings_landing): movable_t =
+class dragon p (k: KingsLanding.kings_landing) (home: int*int) : movable_t =
 object (self)
   inherit world_object p
   inherit movable p dragon_inverse_speed
@@ -28,6 +28,7 @@ object (self)
   val mutable stolen_gold = 0 
 
   (* ### TODO: Part 6 Events ### *)
+  val mutable life : int = dragon_starting_life
 
   (***********************)
   (***** Initializer *****)
@@ -45,6 +46,13 @@ object (self)
   (* ### TODO: Part 3 Actions ### *)
 
   method private do_action _ : unit =
+     let neighbors = World.get self#get_pos in
+     if self#is_dany neighbors then
+      (stolen_gold <- 0; ())
+    else
+      if k#get_gold < gold_theft_amount/2 then
+        self#die else
+
      if self#get_pos = k#get_pos 
      then stolen_gold<-stolen_gold +
        (k#forfeit_treasury gold_theft_amount
@@ -52,6 +60,10 @@ object (self)
      else ();   
 
   (* ### TODO: Part 6 Custom Events ### *)
+  method private is_dany (hmm : world_object_i list) : bool =
+    match hmm with
+    | [] -> false
+    | x :: xs -> if x#get_name = "dany" then true else self#is_dany xs
 
   (********************************)
   (***** WorldObjectI Methods *****)
@@ -70,6 +82,11 @@ object (self)
   (* ### TODO: Part 3 Actions ### *)
 
   (* ### TODO: Part 6 Custom Events ### *)
+  method! receive_damage : unit =
+    life <- life-1;
+    if life <= 0 then
+      (self#die; ())
+    else ();
 
   (***************************)
   (***** Movable Methods *****)
@@ -77,7 +94,9 @@ object (self)
 
   (* ### TODO: Part 2 Movement ### *)
 
-  method! next_direction = World.direction_from_to self#get_pos k#get_pos
+  method! next_direction = if stolen_gold = 0 then
+    World.direction_from_to self#get_pos k#get_pos
+    else World.direction_from_to self#get_pos home
 
 
   (* ### TODO: Part 6 Custom Events ### *)

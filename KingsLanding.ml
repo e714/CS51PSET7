@@ -20,9 +20,11 @@ class kings_landing p :
 object
   inherit world_object_i
   method forfeit_treasury : int -> world_object_i -> int
+  method get_gold_event : int Event51.event
+  method get_gold : int
 end =
 object (self)
-  inherit world_object p as old
+  inherit world_object p
 
   (******************************)
   (***** Instance Variables *****)
@@ -33,6 +35,7 @@ object (self)
   val mutable gold_amount : int = starting_gold
 
   (* ### TODO: Part 6 Custom Events ### *)
+  val gold_event : int Event51.event = (Event51.new_event())
 
   (***********************)
   (***** Initializer *****)
@@ -80,7 +83,7 @@ object (self)
 
   method! get_name = "kings_landing"
 
-  method! draw = Draw.circle old#get_pos World.obj_width World.obj_height 
+  method! draw = Draw.circle self#get_pos World.obj_width World.obj_height 
            (Graphics.rgb 0xFF 0xD7 0x00) Graphics.black (string_of_int gold_amount)
 
   method! draw_z_axis = 1
@@ -88,9 +91,13 @@ object (self)
   (* ### TODO: Part 3 Actions ### *)
 
   method receive_gold (lst : int list) : int list =
+    Event51.fire_event self#get_gold_event self#get_gold;
     gold_amount<-gold_amount+(min max_gold_deposit (List.length lst));[]
 
   (* ### TODO: Part 6 Custom Events ### *)
+  method get_gold_event : int Event51.event = gold_event
+
+  method get_gold : int = gold_amount
 
   (**********************************)
   (***** King's Landing Methods *****)
