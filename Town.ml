@@ -13,7 +13,7 @@ let get_next_gold_id () =
 (* ### Part 3 Actions ### *)
 let max_gold = 5
 let produce_gold_probability = 50
-let expand_probability = 3000
+let expand_probability = 4000
 let forfeit_gold_probability = 3
 
 (* ### Part 4 Aging ### *)
@@ -23,8 +23,6 @@ let town_lifetime = 2000
     pollenated. *)
 class town p (gold_id: int): ageable_t =
 object (self)
-  inherit world_object p as old
-  inherit ageable p None (World.rand town_lifetime) town_lifetime
   inherit carbon_based p None (World.rand town_lifetime) town_lifetime
 
   (******************************)
@@ -92,9 +90,10 @@ object (self)
 
   (* ### TODO: Part 4 Aging ### *)
   
-  method receive_gold (lst : int list) : int list =
-    if List.exists lst (fun x -> gold_id<>x)  
-    then (self#reset_life; lst)
-    else lst
+  method! receive_gold gold_lst =
+    if List.fold_left ~f:(fun rest id -> rest || (id <> gold_id)) 
+		      ~init:false gold_lst
+    then self#reset_life;
+    gold_lst
 
 end
