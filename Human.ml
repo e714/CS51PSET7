@@ -100,8 +100,8 @@ object(self)
       match tlst with 
       | [] -> closest
       | hd::tl -> if ((comp_dist hd) < min) 
-	              then min_dist (comp_dist hd) hd tl  
-	              else min_dist min closest tl in
+                then min_dist (comp_dist hd) hd tl  
+                else min_dist min closest tl in
     match townlist with 
     | [] -> None 
     | _ -> Some (min_dist Float.max_value (match List.hd townlist with
@@ -157,9 +157,9 @@ object(self)
   (* ### TODO: Part 5 Smart Humans ### *)
 
   (* ### TODO: Part 6 Custom Events ### *)
-  method private begin_attack : unit =
-    under_attack <- home#get_thief;
-    self#do_action; ()
+  method private begin_attack (thief: world_object_i): unit =
+    under_attack <- Some thief;
+    (self#do_action (); ())
 
   method private is_dragon (obj : world_object_i) : unit =
     match under_attack with
