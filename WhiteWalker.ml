@@ -13,9 +13,8 @@ let max_destroyed_objects = 100
 
 (** A White Walker will roam the world until it has destroyed a satisfactory
     number of towns *)
-class white_walker p (k: KingsLanding.kings_landing) : movable_t =
+class white_walker p (k: KingsLanding.kings_landing) home : movable_t =
 object (self)
-  inherit world_object p
   inherit movable p walker_inverse_speed
 
   (******************************)
@@ -42,11 +41,14 @@ object (self)
   (* ### TODO: Part 3 Actions ### *)
 
   method private do_action _ : unit =
-    match World.get self#get_pos with
-    | [] -> ()
-    | neighbors -> (List.iter neighbors (fun x -> if (x#smells_like_gold <> None)
-        then (x#die; towns_destroyed<-towns_destroyed+1)) )
-
+    if self#dangerous then
+      match World.get self#get_pos with
+      | [] -> ()
+      | neighbors -> (List.iter neighbors (fun x -> if (x#smells_like_gold <> None)
+          then (x#die; towns_destroyed<-towns_destroyed+1)))
+    else 
+      if home#get_pos = self#get_pos then self#die else()
+    
   (* ### TODO: Part 6 Custom Events ### *)
 
   (********************************)
@@ -72,12 +74,13 @@ object (self)
   (* ### TODO: Part 2 Movement ### *)
 
   method! next_direction = 
-    if (World.rand World.size = 0) || (World.rand World.size = 1) then
-      Direction.natural self#get_pos k#get_pos
-    else Some (Direction.random World.rand)
-
+    if self#dangerous then
+      (if (World.rand World.size = 0) || (World.rand World.size = 1) then
+        Direction.natural self#get_pos k#get_pos
+      else Some (Direction.random World.rand))
+    else World.direction_from_to self#get_pos home#get_pos
 
 
   (* ### TODO: Part 6 Custom Events ### *)
-
+  method private dangerous = (towns_destroyed < max_destroyed_objects)
 end
