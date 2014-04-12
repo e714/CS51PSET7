@@ -91,12 +91,14 @@ object(self)
   method private get_gold : int list = gold_object;
 
    method private magnet_gold :world_object_i option =
-    let townlist = (List.filter (World.objects_within_range self#get_pos sensing_range)
+    let townlist = (List.filter (World.objects_within_range 
+      self#get_pos sensing_range)
       (fun x -> match x#smells_like_gold with
       |Some y -> not(List.mem gold_object y)
       |None -> false)) in
     let comp_dist x = Direction.distance self#get_pos x#get_pos in
-    let rec min_dist (min: float) (closest: world_object_i) (tlst: world_object_i list) : world_object_i = 
+    let rec min_dist (min: float) (closest: world_object_i) 
+      (tlst: world_object_i list) : world_object_i = 
       match tlst with 
       | [] -> closest
       | hd::tl -> if ((comp_dist hd) < min) 
@@ -115,7 +117,8 @@ object(self)
 
   method! get_name = "human"
 
-  (* method! draw = self#draw_circle (Graphics.rgb 0xC9 0xC0 0xBB) Graphics.black (string_of_int (List.length gold_object))*)
+  (* method! draw = self#draw_circle (Graphics.rgb 0xC9 0xC0 0xBB) 
+    Graphics.black (string_of_int (List.length gold_object))*)
 
   method! draw_z_axis = 2
 
@@ -128,7 +131,8 @@ object(self)
 
   (* ### TODO: Part 4 Aging ### *)
   
-  method! draw_picture = self#draw_circle (Graphics.rgb 0xC9 0xC0 0xBB) Graphics.black (string_of_int (List.length gold_object))
+  method! draw_picture = self#draw_circle (Graphics.rgb 0xC9 0xC0 0xBB) 
+    Graphics.black (string_of_int (List.length gold_object))
   
   (***************************)
   (***** Movable Methods *****)

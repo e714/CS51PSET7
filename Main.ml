@@ -1,6 +1,10 @@
 open Core.Std
 open Event51
 
+(* Name: Michael Ma
+   Partner's Name: Allen Chen*)
+
+
 (* Generating ponds *)
 let num_ponds = 12
 let pond_size = 15
@@ -31,7 +35,7 @@ let gen_white_walker kings wall =
   new WhiteWalker.white_walker (World.size-1,World.size-1) kings wall
 
 let gen_city () =
-  (* Don't ignore, since we will need to pass the city to some other objects. *)
+  (* Don't ignore, since we need to pass the city to some other objects. *)
   new KingsLanding.kings_landing (World.size/2,World.size/2)
 
 let gen_wolves_den city =

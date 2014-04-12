@@ -13,7 +13,8 @@ object (self)
   (******************************)
 
   (* ### TODO: Part 5 Smart Humans *)
-  val mutable facing : Direction.direction option = Some (Direction.random World.rand)
+  val mutable facing : Direction.direction option = 
+    Some (Direction.random World.rand)
 
   (********************************)
   (***** WorldObjectI Methods *****)
@@ -22,12 +23,14 @@ object (self)
   (* ### TODO: Part 5 Smart Humans *)
   method! get_name = "lannister"
 
-  method! draw_picture = self#draw_circle Graphics.yellow Graphics.black (string_of_int (List.length self#get_gold))
+  method! draw_picture = self#draw_circle Graphics.yellow Graphics.black 
+    (string_of_int (List.length self#get_gold))
 
   (***********************)
   (***** Human Methods *****)
   (***********************)
-  method private available_square ((x,y) : int*int) (dir : Direction.direction option) : bool =
+  method private available_square ((x,y) : int*int) 
+    (dir : Direction.direction option) : bool =
     match dir with
     | None -> false
     | Some d ->

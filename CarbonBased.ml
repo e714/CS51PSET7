@@ -14,6 +14,7 @@ object (self)
 
   initializer
     self#register_handler self#get_die_event 
-      (fun _ -> World.add self#get_pos ((new dust self#get_pos self#get_name) :> world_object_i))
+      (fun _ -> World.add self#get_pos ((new dust self#get_pos 
+        self#get_name) :> world_object_i))
 
 end

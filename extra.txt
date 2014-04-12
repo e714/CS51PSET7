@@ -1,0 +1,4 @@
+WolvesDen.ml adds a world_object_i object which functions as a spawn point for Direwolves. Another actor added were the
+Direwolves themself in Direwold.ml. WolvesDen creates one if the number of Lannisters is above 8, and there are no
+active direwolves. Then, the direwolf travels the map and kills any Lannisters it meets. After killing 5, it returns
+to the Wolves Den.

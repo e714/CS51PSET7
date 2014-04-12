@@ -74,8 +74,10 @@ object (self)
 
   method private generate_human =
     match World.rand 2 with
-    | 0 -> World.add self#get_pos ((new Baratheon.baratheon self#get_pos (self :> world_object_i)) :> world_object_i);
-    | _ -> World.add self#get_pos ((new Lannister.lannister self#get_pos (self :> world_object_i)) :> world_object_i);
+    | 0 -> World.add self#get_pos ((new Baratheon.baratheon self#get_pos 
+      (self :> world_object_i)) :> world_object_i);
+    | _ -> World.add self#get_pos ((new Lannister.lannister self#get_pos 
+      (self :> world_object_i)) :> world_object_i);
 
   (****************************)
   (*** WorldObjectI Methods ***)
@@ -86,7 +88,8 @@ object (self)
   method! get_name = "kings_landing"
 
   method! draw = Draw.circle self#get_pos World.obj_width World.obj_height 
-           (Graphics.rgb 0xFF 0xD7 0x00) Graphics.black (string_of_int gold_amount)
+            (Graphics.rgb 0xFF 0xD7 0x00) Graphics.black 
+              (string_of_int gold_amount)
 
   method! draw_z_axis = 1
 
@@ -113,8 +116,10 @@ object (self)
   (* ### TODO: Part 3 Actions ### *)
 
   method forfeit_treasury (steal_amount : int) (thief : world_object_i) : int = 
-    let amount_stolen = if gold_amount - steal_amount >= 0 then steal_amount else gold_amount in 
-      (gold_amount <- (gold_amount - amount_stolen); self#danger thief; amount_stolen)
+    let amount_stolen = if gold_amount - steal_amount >= 0 then steal_amount 
+      else gold_amount in 
+      (gold_amount <- (gold_amount - amount_stolen); 
+        self#danger thief; amount_stolen)
 
 
   (* ### TODO: Part 6 Custom Events ### *)

@@ -57,7 +57,8 @@ object (self)
 
   (* ### TODO: Part 6 Custom Events ### *)
   method private is_dany : unit =
-    if List.fold_right ~f:(fun o xs -> o#get_name <> "dany") ~init:true (World.get self#get_pos) 
+    if List.fold_right ~f:(fun o xs -> o#get_name <> "dany") 
+      ~init:true (World.get self#get_pos) 
     then  ()
     else  stolen_gold <- 0;
           if k#get_gold < gold_theft_amount/2 then self#die else ()

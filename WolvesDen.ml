@@ -36,7 +36,8 @@ object (self)
   method private do_action () =
      let tcount = World.fold (fun obj sum -> if obj#get_name = "lannister" 
        then sum + 1 else sum) 0 in
-     if lan_limit < tcount && (World.fold (fun obj b -> obj#get_name <> "direwolf" && b) true) 
+     if lan_limit < tcount && (World.fold 
+       (fun obj b -> obj#get_name <> "direwolf" && b) true) 
      then(
        ignore(Printf.printf "WOLVES! D: ";flush_all());
        ignore(new Direwolf.direwolf self#get_pos city self))

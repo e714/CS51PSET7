@@ -44,7 +44,8 @@ object (self)
     if self#dangerous then
       match World.get self#get_pos with
       | [] -> ()
-      | neighbors -> (List.iter neighbors (fun x -> if (x#smells_like_gold <> None)
+      | neighbors -> (List.iter neighbors 
+        (fun x -> if (x#smells_like_gold <> None)
           then (x#die; towns_destroyed<-towns_destroyed+1)))
     else 
       if home#get_pos = self#get_pos then self#die else()
@@ -60,7 +61,8 @@ object (self)
   method! get_name = "white_walker"
 
   method! draw = Draw.circle self#get_pos World.obj_width World.obj_height 
-           (Graphics.rgb 0x89 0xCF 0xF0) Graphics.black (string_of_int towns_destroyed)
+           (Graphics.rgb 0x89 0xCF 0xF0) Graphics.black 
+             (string_of_int towns_destroyed)
 
   method! draw_z_axis = 4
 

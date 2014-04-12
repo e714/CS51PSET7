@@ -36,7 +36,8 @@ object (self)
   method private do_action () =
      let tcount = World.fold (fun obj sum -> if obj#smells_like_gold <> None 
        then sum + 1 else sum) 0 in
-     if town_limit < tcount && (World.fold (fun obj b -> obj#get_name <> "white_walker" && b) true) 
+     if town_limit < tcount && (World.fold 
+       (fun obj b -> obj#get_name <> "white_walker" && b) true) 
      then(
        ignore(Printf.printf "white walkers! ";flush_all());
        ignore(new WhiteWalker.white_walker self#get_pos city self))

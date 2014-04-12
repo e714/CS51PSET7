@@ -44,7 +44,8 @@ object (self)
     if self#dangerous then
       match World.get self#get_pos with
       | [] -> ()
-      | neighbors -> (List.iter neighbors (fun x -> if (x#get_name = "lannister")
+      | neighbors -> (List.iter neighbors 
+          (fun x -> if (x#get_name = "lannister")
           then (x#die; lannisters_killed<-lannisters_killed+1)))
     else 
       if home#get_pos = self#get_pos then self#die else()

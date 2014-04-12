@@ -64,14 +64,16 @@ object (self)
 
   method! get_name = "town"
 
-  (* method! draw = self#draw_circle (Graphics.rgb 0x96 0x4B 0x00) Graphics.black (string_of_int gold_amount) *)
+  (* method! draw = self#draw_circle (Graphics.rgb 0x96 0x4B 0x00) 
+    Graphics.black (string_of_int gold_amount) *)
 
   method! draw_z_axis = 1
 
 
   (* ### TODO: Part 4 Aging ### *)
 
-  method! draw_picture = self#draw_circle (Graphics.rgb 0x96 0x4B 0x00) Graphics.black (string_of_int gold_amount)
+  method! draw_picture = self#draw_circle (Graphics.rgb 0x96 0x4B 0x00) 
+    Graphics.black (string_of_int gold_amount)
   
   (* ### TODO: Part 3 Actions ### *)
 
