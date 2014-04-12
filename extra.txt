@@ -1,4 +1,10 @@
-WolvesDen.ml adds a world_object_i object which functions as a spawn point for Direwolves. Another actor added were the
-Direwolves themself in Direwold.ml. WolvesDen creates one if the number of Lannisters is above 8, and there are no
+WolvesDen.ml adds a world_object_i object which functions as a spawn point for Direwolves. Another actor added were the 
+Direwolves themself in Direwold.ml. WolvesDen creates three direwolves if the number of Lannisters is above 8, and there are no
 active direwolves. Then, the direwolf travels the map and kills any Lannisters it meets. After killing 5, it returns
 to the Wolves Den.
+
+The wolves move in a very similar fashion to white walkers, but move much faster to reflect their bestial nature. We considered adding functionality so that they would be attracted to lannisters, but soon after this, the town would die from losing so many citizens, so we decided against keeping that.
+
+In addition, since we wanted to spawn a wolf pack, and this was quickly decimating the human population, we decided that we needed to give the humans the ability to fight the wolves. So, our third actor is a "Northern Hunter", a person who spawns from King's Landing when there are wolves on the map. A "Northern Hunter" will move in a random straight line until encountering a wolf, after which it will chase the wolf and the two actors will kill each other. It still costs the city ten gold to spawn the northern hunter, resulting in savings for the city if the wolf doesn't eat too many lannisters first.
+
+The main problem with spawning a northern hunter is that it will not help the town generate gold at all, and will not respond to dragon attacks. So, it is a tax on resources, especially if the northern hunter is walking around the bottom of the map and not at all useful to fight the wolves.

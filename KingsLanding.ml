@@ -73,11 +73,19 @@ object (self)
   (* ### TODO: Part 4 Aging ### *)
 
   method private generate_human =
-    match World.rand 2 with
-    | 0 -> World.add self#get_pos ((new Baratheon.baratheon self#get_pos 
-      (self :> world_object_i)) :> world_object_i);
-    | _ -> World.add self#get_pos ((new Lannister.lannister self#get_pos 
-      (self :> world_object_i)) :> world_object_i);
+    if ((World.fold 
+       (fun obj b -> obj#get_name <> "northern_hunter" && b) true)
+      &&
+      (World.fold 
+       (fun obj b -> obj#get_name = "direwolf" || b) false))
+    then World.add self#get_pos ((new Northernhunter.northern_hunter
+      self#get_pos (self :> world_object_i)) :> world_object_i)
+    else
+      match World.rand 2 with
+      | 0 -> World.add self#get_pos ((new Baratheon.baratheon self#get_pos 
+        (self :> world_object_i)) :> world_object_i);
+      | _ -> World.add self#get_pos ((new Lannister.lannister self#get_pos 
+        (self :> world_object_i)) :> world_object_i);
 
   (****************************)
   (*** WorldObjectI Methods ***)

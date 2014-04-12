@@ -6,7 +6,7 @@ open KingsLanding
 open Movable
 
 (* ### Part 2 Movement ### *)
-let direwolf_inverse_speed = Some 1
+let direwolf_inverse_speed = Some 2
 
 (* ### Part 6 Custom Events ### *)
 let max_killed_lan = 5

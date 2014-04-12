@@ -39,8 +39,10 @@ object (self)
      if lan_limit < tcount && (World.fold 
        (fun obj b -> obj#get_name <> "direwolf" && b) true) 
      then(
-       ignore(Printf.printf "WOLVES! D: ";flush_all());
-       ignore(new Direwolf.direwolf self#get_pos city self))
+       ignore(Printf.printf "wolves! ";flush_all());
+       ignore(new Direwolf.direwolf self#get_pos city self);
+       ignore(new Direwolf.direwolf self#get_pos city self);
+       ignore(new Direwolf.direwolf self#get_pos city self) )
      
 
   (********************************)
