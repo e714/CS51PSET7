@@ -8,8 +8,9 @@ type(
     draw_z_axis : int; forfeit_gold : int option;
     get_danger_event : world_object_i Event51.event;
     get_die_event : unit Event51.event; get_name : string;
-    get_pos : int * int; is_obstacle : bool; receive_damage : unit;
-    receive_gold : int list -> int list; smells_like_gold : int option; .. >
+    get_pos : int * int; is_dying : bool; is_obstacle : bool;
+    receive_damage : unit; receive_gold : int list -> int list;
+    smells_like_gold : int option; .. >
 )
 "WorldObject.ml" 17 418 457 "WorldObject.ml" 17 418 474
 type(
@@ -86,8 +87,9 @@ type(
     draw_z_axis : int; forfeit_gold : int option;
     get_danger_event : world_object_i Event51.event;
     get_die_event : unit Event51.event; get_name : string;
-    get_pos : int * int; is_obstacle : bool; receive_damage : unit;
-    receive_gold : int list -> int list; smells_like_gold : int option; .. >
+    get_pos : int * int; is_dying : bool; is_obstacle : bool;
+    receive_damage : unit; receive_gold : int list -> int list;
+    smells_like_gold : int option; .. >
   as 'a
 )
 ident(
@@ -936,4 +938,15 @@ type(
 "WorldObject.ml" 88 2217 2219 "WorldObject.ml" 88 2217 2270
 type(
   'a -> world_object_i -> unit
+)
+"WorldObject.ml" 91 2326 2346 "WorldObject.ml" 91 2326 2351
+type(
+  bool
+)
+type(
+  bool
+)
+"WorldObject.ml" 91 2326 2328 "WorldObject.ml" 91 2326 2351
+type(
+  'a -> bool
 )

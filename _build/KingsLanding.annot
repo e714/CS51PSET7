@@ -1,75 +1,1135 @@
-"KingsLanding.ml" 8 105 109 "KingsLanding.ml" 8 105 122
+"KingsLanding.ml" 8 112 116 "KingsLanding.ml" 8 112 129
 type(
   int
 )
 ident(
-  def starting_gold "KingsLanding.ml" 9 129 129 "KingsLanding.ml" 1 0 -1
+  def starting_gold "KingsLanding.ml" 9 137 137 "KingsLanding.ml" 1 0 -1
 )
-"KingsLanding.ml" 8 105 125 "KingsLanding.ml" 8 105 128
+"KingsLanding.ml" 8 112 132 "KingsLanding.ml" 8 112 135
 type(
   int
 )
-"KingsLanding.ml" 9 129 133 "KingsLanding.ml" 9 129 146
-type(
-  int
-)
-ident(
-  def cost_of_human "KingsLanding.ml" 10 152 152 "KingsLanding.ml" 1 0 -1
-)
-"KingsLanding.ml" 9 129 149 "KingsLanding.ml" 9 129 151
-type(
-  int
-)
-"KingsLanding.ml" 10 152 156 "KingsLanding.ml" 10 152 173
+"KingsLanding.ml" 9 137 141 "KingsLanding.ml" 9 137 154
 type(
   int
 )
 ident(
-  def spawn_probability "KingsLanding.ml" 11 179 179 "KingsLanding.ml" 1 0 -1
+  def cost_of_human "KingsLanding.ml" 10 161 161 "KingsLanding.ml" 1 0 -1
 )
-"KingsLanding.ml" 10 152 176 "KingsLanding.ml" 10 152 178
+"KingsLanding.ml" 9 137 157 "KingsLanding.ml" 9 137 159
 type(
   int
 )
-"KingsLanding.ml" 11 179 183 "KingsLanding.ml" 11 179 199
-type(
-  int
-)
-ident(
-  def gold_probability "KingsLanding.ml" 12 205 205 "KingsLanding.ml" 1 0 -1
-)
-"KingsLanding.ml" 11 179 202 "KingsLanding.ml" 11 179 204
-type(
-  int
-)
-"KingsLanding.ml" 12 205 209 "KingsLanding.ml" 12 205 225
+"KingsLanding.ml" 10 161 165 "KingsLanding.ml" 10 161 182
 type(
   int
 )
 ident(
-  def max_gold_deposit "KingsLanding.ml" 18 485 485 "KingsLanding.ml" 1 0 -1
+  def spawn_probability "KingsLanding.ml" 11 189 189 "KingsLanding.ml" 1 0 -1
 )
-"KingsLanding.ml" 12 205 228 "KingsLanding.ml" 12 205 229
+"KingsLanding.ml" 10 161 185 "KingsLanding.ml" 10 161 187
 type(
   int
 )
-"KingsLanding.ml" 18 485 505 "KingsLanding.ml" 18 485 506
+"KingsLanding.ml" 11 189 193 "KingsLanding.ml" 11 189 209
+type(
+  int
+)
+ident(
+  def gold_probability "KingsLanding.ml" 12 216 216 "KingsLanding.ml" 1 0 -1
+)
+"KingsLanding.ml" 11 189 212 "KingsLanding.ml" 11 189 214
+type(
+  int
+)
+"KingsLanding.ml" 12 216 220 "KingsLanding.ml" 12 216 236
+type(
+  int
+)
+ident(
+  def max_gold_deposit "KingsLanding.ml" 19 504 504 "KingsLanding.ml" 1 0 -1
+)
+"KingsLanding.ml" 12 216 239 "KingsLanding.ml" 12 216 240
+type(
+  int
+)
+"KingsLanding.ml" 19 504 524 "KingsLanding.ml" 19 504 525
 type(
   int * int
 )
-"KingsLanding.ml" 19 526 534 "KingsLanding.ml" 19 526 538
+"KingsLanding.ml" 26 698 706 "KingsLanding.ml" 26 698 710
 type(
   < danger : world_object_i -> unit; die : unit; draw : unit;
     draw_z_axis : int; forfeit_gold : int option;
+    forfeit_treasury : int -> world_object_i -> int;
     get_danger_event : world_object_i Event51.event;
-    get_die_event : unit Event51.event; get_name : string;
-    get_pos : int * int; is_obstacle : bool; receive_damage : unit;
-    receive_gold : int list -> int list; smells_like_gold : int option; .. >
+    get_die_event : unit Event51.event; get_gold : int;
+    get_gold_event : int Event51.event; get_name : string;
+    get_pos : int * int; is_dying : bool; is_obstacle : bool;
+    receive_damage : unit; receive_gold : int list -> int list;
+    smells_like_gold : int option; .. >
 )
-"KingsLanding.ml" 20 540 563 "KingsLanding.ml" 20 540 564
+"KingsLanding.ml" 27 713 736 "KingsLanding.ml" 27 713 737
 type(
   int * int
 )
 ident(
-  int_ref p "KingsLanding.ml" 18 485 505 "KingsLanding.ml" 18 485 506
+  int_ref p "KingsLanding.ml" 19 504 524 "KingsLanding.ml" 19 504 525
+)
+"KingsLanding.ml" 35 891 925 "KingsLanding.ml" 35 891 938
+type(
+  int
+)
+type(
+  int
+)
+ident(
+  int_ref starting_gold "KingsLanding.ml" 8 112 116 "KingsLanding.ml" 8 112 129
+)
+"KingsLanding.ml" 38 986 1026 "KingsLanding.ml" 38 986 1043
+type(
+  unit -> int Event51.event
+)
+ident(
+  ext_ref Event51.Event51.new_event
+)
+"KingsLanding.ml" 38 986 1043 "KingsLanding.ml" 38 986 1045
+type(
+  unit
+)
+"KingsLanding.ml" 38 986 1026 "KingsLanding.ml" 38 986 1045
+call(
+  stack
+)
+type(
+  int Event51.event
+)
+type(
+  int Event51.event
+)
+"KingsLanding.ml" 39 1048 1100 "KingsLanding.ml" 39 1048 1117
+type(
+  unit -> world_object_i Event51.event
+)
+ident(
+  ext_ref Event51.Event51.new_event
+)
+"KingsLanding.ml" 39 1048 1117 "KingsLanding.ml" 39 1048 1119
+type(
+  unit
+)
+"KingsLanding.ml" 39 1048 1100 "KingsLanding.ml" 39 1048 1119
+call(
+  stack
+)
+type(
+  world_object_i Event51.event
+)
+type(
+  world_object_i Event51.event
+)
+"KingsLanding.ml" 40 1122 1176 "KingsLanding.ml" 40 1122 1180
+type(
+  world_object_i option
+)
+type(
+  world_object_i option
+)
+"KingsLanding.ml" 48 1326 1330 "KingsLanding.ml" 48 1326 1334
+type(
+  < danger : world_object_i -> unit; die : unit; draw : unit;
+    draw_z_axis : int; forfeit_gold : int option;
+    forfeit_treasury : int -> world_object_i -> int;
+    get_danger_event : world_object_i Event51.event;
+    get_die_event : unit Event51.event; get_gold : int;
+    get_gold_event : int Event51.event; get_name : string;
+    get_pos : int * int; is_dying : bool; is_obstacle : bool;
+    receive_damage : unit; receive_gold : int list -> int list;
+    smells_like_gold : int option; .. >
+  as 'a
+)
+ident(
+  int_ref self "KingsLanding.ml" 26 698 706 "KingsLanding.ml" 26 698 710
+)
+"KingsLanding.ml" 48 1326 1330 "KingsLanding.ml" 48 1326 1351
+call(
+  tail
+)
+type(
+  unit Event51.event -> (unit -> unit) -> unit
+)
+"KingsLanding.ml" 48 1326 1352 "KingsLanding.ml" 48 1326 1370
+type(
+  unit Event51.event
+)
+ident(
+  ext_ref World.action_event
+)
+"KingsLanding.ml" 48 1326 1371 "KingsLanding.ml" 48 1326 1375
+type(
+  'a
+)
+ident(
+  int_ref self "KingsLanding.ml" 26 698 706 "KingsLanding.ml" 26 698 710
+)
+"KingsLanding.ml" 48 1326 1371 "KingsLanding.ml" 48 1326 1385
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"KingsLanding.ml" 48 1326 1330 "KingsLanding.ml" 48 1326 1385
+type(
+  'a -> unit
+)
+type(
+  unit
+)
+"KingsLanding.ml" 56 1530 1557 "KingsLanding.ml" 56 1530 1558
+type(
+  unit
+)
+"KingsLanding.ml" 57 1569 1577 "KingsLanding.ml" 57 1569 1587
+type(
+  int -> int
+)
+ident(
+  ext_ref World.rand
+)
+"KingsLanding.ml" 57 1569 1588 "KingsLanding.ml" 57 1569 1604
+type(
+  int
+)
+ident(
+  int_ref gold_probability "KingsLanding.ml" 11 189 193 "KingsLanding.ml" 11 189 209
+)
+"KingsLanding.ml" 57 1569 1577 "KingsLanding.ml" 57 1569 1604
+call(
+  stack
+)
+type(
+  int
+)
+"KingsLanding.ml" 57 1569 1605 "KingsLanding.ml" 57 1569 1606
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"KingsLanding.ml" 57 1569 1607 "KingsLanding.ml" 57 1569 1608
+type(
+  int
+)
+"KingsLanding.ml" 57 1569 1577 "KingsLanding.ml" 57 1569 1608
+type(
+  bool
+)
+"KingsLanding.ml" 58 1611 1635 "KingsLanding.ml" 58 1611 1646
+type(
+  int
+)
+ident(
+  ext_ref gold_amount
+)
+"KingsLanding.ml" 58 1611 1647 "KingsLanding.ml" 58 1611 1648
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"KingsLanding.ml" 58 1611 1649 "KingsLanding.ml" 58 1611 1650
+type(
+  int
+)
+"KingsLanding.ml" 58 1611 1635 "KingsLanding.ml" 58 1611 1650
+type(
+  int
+)
+"KingsLanding.ml" 58 1611 1620 "KingsLanding.ml" 58 1611 1650
+type(
+  unit
+)
+"KingsLanding.ml" 59 1652 1661 "KingsLanding.ml" 59 1652 1663
+type(
+  unit
+)
+"KingsLanding.ml" 57 1569 1574 "KingsLanding.ml" 59 1652 1663
+type(
+  unit
+)
+"KingsLanding.ml" 64 1710 1717 "KingsLanding.ml" 64 1710 1728
+type(
+  int
+)
+ident(
+  ext_ref gold_amount
+)
+"KingsLanding.ml" 64 1710 1729 "KingsLanding.ml" 64 1710 1731
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"KingsLanding.ml" 64 1710 1732 "KingsLanding.ml" 64 1710 1745
+type(
+  int
+)
+ident(
+  int_ref cost_of_human "KingsLanding.ml" 9 137 141 "KingsLanding.ml" 9 137 154
+)
+"KingsLanding.ml" 64 1710 1717 "KingsLanding.ml" 64 1710 1745
+type(
+  bool
+)
+"KingsLanding.ml" 64 1710 1746 "KingsLanding.ml" 64 1710 1748
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"KingsLanding.ml" 64 1710 1749 "KingsLanding.ml" 64 1710 1759
+type(
+  int -> int
+)
+ident(
+  ext_ref World.rand
+)
+"KingsLanding.ml" 64 1710 1760 "KingsLanding.ml" 64 1710 1777
+type(
+  int
+)
+ident(
+  int_ref spawn_probability "KingsLanding.ml" 10 161 165 "KingsLanding.ml" 10 161 182
+)
+"KingsLanding.ml" 64 1710 1749 "KingsLanding.ml" 64 1710 1777
+call(
+  stack
+)
+type(
+  int
+)
+"KingsLanding.ml" 64 1710 1778 "KingsLanding.ml" 64 1710 1779
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"KingsLanding.ml" 64 1710 1780 "KingsLanding.ml" 64 1710 1781
+type(
+  int
+)
+"KingsLanding.ml" 64 1710 1749 "KingsLanding.ml" 64 1710 1781
+type(
+  bool
+)
+"KingsLanding.ml" 64 1710 1717 "KingsLanding.ml" 64 1710 1781
+type(
+  bool
+)
+"KingsLanding.ml" 65 1784 1810 "KingsLanding.ml" 65 1784 1821
+type(
+  int
+)
+ident(
+  ext_ref gold_amount
+)
+"KingsLanding.ml" 65 1784 1822 "KingsLanding.ml" 65 1784 1823
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"KingsLanding.ml" 65 1784 1824 "KingsLanding.ml" 65 1784 1837
+type(
+  int
+)
+ident(
+  int_ref cost_of_human "KingsLanding.ml" 9 137 141 "KingsLanding.ml" 9 137 154
+)
+"KingsLanding.ml" 65 1784 1810 "KingsLanding.ml" 65 1784 1837
+type(
+  int
+)
+"KingsLanding.ml" 65 1784 1794 "KingsLanding.ml" 65 1784 1838
+type(
+  unit
+)
+"KingsLanding.ml" 65 1784 1840 "KingsLanding.ml" 65 1784 1844
+type(
+  'a
+)
+ident(
+  int_ref self "KingsLanding.ml" 26 698 706 "KingsLanding.ml" 26 698 710
+)
+"KingsLanding.ml" 65 1784 1840 "KingsLanding.ml" 65 1784 1859
+call(
+  tail
+)
+type(
+  unit
+)
+"KingsLanding.ml" 65 1784 1794 "KingsLanding.ml" 65 1784 1859
+type(
+  unit
+)
+"KingsLanding.ml" 66 1862 1870 "KingsLanding.ml" 66 1862 1872
+type(
+  unit
+)
+"KingsLanding.ml" 64 1710 1714 "KingsLanding.ml" 66 1862 1872
+type(
+  unit
+)
+"KingsLanding.ml" 57 1569 1574 "KingsLanding.ml" 66 1862 1872
+type(
+  unit
+)
+type(
+  unit
+)
+"KingsLanding.ml" 56 1530 1557 "KingsLanding.ml" 66 1862 1873
+type(
+  unit -> unit
+)
+type(
+  unit -> unit
+)
+"KingsLanding.ml" 56 1530 1532 "KingsLanding.ml" 66 1862 1873
+type(
+  'a -> unit -> unit
+)
+"KingsLanding.ml" 76 2052 2062 "KingsLanding.ml" 76 2052 2072
+type(
+  int -> int
+)
+ident(
+  ext_ref World.rand
+)
+"KingsLanding.ml" 76 2052 2073 "KingsLanding.ml" 76 2052 2074
+type(
+  int
+)
+"KingsLanding.ml" 76 2052 2062 "KingsLanding.ml" 76 2052 2074
+call(
+  stack
+)
+type(
+  int
+)
+"KingsLanding.ml" 77 2081 2087 "KingsLanding.ml" 77 2081 2088
+type(
+  int
+)
+"KingsLanding.ml" 77 2081 2092 "KingsLanding.ml" 77 2081 2101
+type(
+  int * int -> world_object_i -> unit
+)
+ident(
+  ext_ref World.add
+)
+"KingsLanding.ml" 77 2081 2102 "KingsLanding.ml" 77 2081 2106
+type(
+  'a
+)
+ident(
+  int_ref self "KingsLanding.ml" 26 698 706 "KingsLanding.ml" 26 698 710
+)
+"KingsLanding.ml" 77 2081 2102 "KingsLanding.ml" 77 2081 2114
+call(
+  stack
+)
+type(
+  int * int
+)
+"KingsLanding.ml" 77 2081 2117 "KingsLanding.ml" 77 2081 2140
+type(
+  int * int -> world_object_i -> Baratheon.baratheon
+)
+"KingsLanding.ml" 77 2081 2141 "KingsLanding.ml" 77 2081 2145
+type(
+  'a
+)
+ident(
+  int_ref self "KingsLanding.ml" 26 698 706 "KingsLanding.ml" 26 698 710
+)
+"KingsLanding.ml" 77 2081 2141 "KingsLanding.ml" 77 2081 2153
+call(
+  stack
+)
+type(
+  int * int
+)
+"KingsLanding.ml" 77 2081 2155 "KingsLanding.ml" 77 2081 2159
+type(
+  world_object_i
+)
+type(
+  'a
+)
+ident(
+  int_ref self "KingsLanding.ml" 26 698 706 "KingsLanding.ml" 26 698 710
+)
+"KingsLanding.ml" 77 2081 2117 "KingsLanding.ml" 77 2081 2178
+call(
+  stack
+)
+type(
+  world_object_i
+)
+type(
+  Baratheon.baratheon
+)
+"KingsLanding.ml" 77 2081 2092 "KingsLanding.ml" 77 2081 2198
+call(
+  tail
+)
+type(
+  unit
+)
+"KingsLanding.ml" 78 2201 2207 "KingsLanding.ml" 78 2201 2208
+type(
+  int
+)
+"KingsLanding.ml" 78 2201 2212 "KingsLanding.ml" 78 2201 2221
+type(
+  int * int -> world_object_i -> unit
+)
+ident(
+  ext_ref World.add
+)
+"KingsLanding.ml" 78 2201 2222 "KingsLanding.ml" 78 2201 2226
+type(
+  'a
+)
+ident(
+  int_ref self "KingsLanding.ml" 26 698 706 "KingsLanding.ml" 26 698 710
+)
+"KingsLanding.ml" 78 2201 2222 "KingsLanding.ml" 78 2201 2234
+call(
+  stack
+)
+type(
+  int * int
+)
+"KingsLanding.ml" 78 2201 2237 "KingsLanding.ml" 78 2201 2260
+type(
+  int * int -> world_object_i -> Lannister.lannister
+)
+"KingsLanding.ml" 78 2201 2261 "KingsLanding.ml" 78 2201 2265
+type(
+  'a
+)
+ident(
+  int_ref self "KingsLanding.ml" 26 698 706 "KingsLanding.ml" 26 698 710
+)
+"KingsLanding.ml" 78 2201 2261 "KingsLanding.ml" 78 2201 2273
+call(
+  stack
+)
+type(
+  int * int
+)
+"KingsLanding.ml" 78 2201 2275 "KingsLanding.ml" 78 2201 2279
+type(
+  world_object_i
+)
+type(
+  'a
+)
+ident(
+  int_ref self "KingsLanding.ml" 26 698 706 "KingsLanding.ml" 26 698 710
+)
+"KingsLanding.ml" 78 2201 2237 "KingsLanding.ml" 78 2201 2298
+call(
+  stack
+)
+type(
+  world_object_i
+)
+type(
+  Lannister.lannister
+)
+"KingsLanding.ml" 78 2201 2212 "KingsLanding.ml" 78 2201 2318
+call(
+  tail
+)
+type(
+  unit
+)
+"KingsLanding.ml" 76 2052 2056 "KingsLanding.ml" 78 2201 2319
+type(
+  unit
+)
+type(
+  unit
+)
+"KingsLanding.ml" 75 2017 2019 "KingsLanding.ml" 78 2201 2319
+type(
+  'a -> unit
+)
+"KingsLanding.ml" 86 2465 2486 "KingsLanding.ml" 86 2465 2501
+type(
+  string
+)
+type(
+  string
+)
+"KingsLanding.ml" 86 2465 2467 "KingsLanding.ml" 86 2465 2501
+type(
+  'a -> string
+)
+"KingsLanding.ml" 88 2505 2522 "KingsLanding.ml" 88 2505 2533
+type(
+  int * int -> int -> int -> int -> int -> string -> unit
+)
+ident(
+  ext_ref Draw.circle
+)
+"KingsLanding.ml" 88 2505 2534 "KingsLanding.ml" 88 2505 2538
+type(
+  'a
+)
+ident(
+  int_ref self "KingsLanding.ml" 26 698 706 "KingsLanding.ml" 26 698 710
+)
+"KingsLanding.ml" 88 2505 2534 "KingsLanding.ml" 88 2505 2546
+call(
+  stack
+)
+type(
+  int * int
+)
+"KingsLanding.ml" 88 2505 2547 "KingsLanding.ml" 88 2505 2562
+type(
+  int
+)
+ident(
+  ext_ref World.obj_width
+)
+"KingsLanding.ml" 88 2505 2563 "KingsLanding.ml" 88 2505 2579
+type(
+  int
+)
+ident(
+  ext_ref World.obj_height
+)
+"KingsLanding.ml" 89 2582 2594 "KingsLanding.ml" 89 2582 2606
+type(
+  int -> int -> int -> int
+)
+ident(
+  ext_ref Graphics.rgb
+)
+"KingsLanding.ml" 89 2582 2607 "KingsLanding.ml" 89 2582 2611
+type(
+  int
+)
+"KingsLanding.ml" 89 2582 2612 "KingsLanding.ml" 89 2582 2616
+type(
+  int
+)
+"KingsLanding.ml" 89 2582 2617 "KingsLanding.ml" 89 2582 2621
+type(
+  int
+)
+"KingsLanding.ml" 89 2582 2594 "KingsLanding.ml" 89 2582 2621
+call(
+  stack
+)
+type(
+  int
+)
+"KingsLanding.ml" 89 2582 2623 "KingsLanding.ml" 89 2582 2637
+type(
+  int
+)
+ident(
+  ext_ref Graphics.black
+)
+"KingsLanding.ml" 89 2582 2639 "KingsLanding.ml" 89 2582 2652
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"KingsLanding.ml" 89 2582 2653 "KingsLanding.ml" 89 2582 2664
+type(
+  int
+)
+ident(
+  ext_ref gold_amount
+)
+"KingsLanding.ml" 89 2582 2639 "KingsLanding.ml" 89 2582 2664
+call(
+  stack
+)
+type(
+  string
+)
+"KingsLanding.ml" 88 2505 2522 "KingsLanding.ml" 89 2582 2665
+call(
+  tail
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"KingsLanding.ml" 88 2505 2507 "KingsLanding.ml" 89 2582 2665
+type(
+  'a -> unit
+)
+"KingsLanding.ml" 91 2669 2693 "KingsLanding.ml" 91 2669 2694
+type(
+  int
+)
+type(
+  int
+)
+"KingsLanding.ml" 91 2669 2671 "KingsLanding.ml" 91 2669 2694
+type(
+  'a -> int
+)
+"KingsLanding.ml" 95 2738 2761 "KingsLanding.ml" 95 2738 2764
+type(
+  int list
+)
+ident(
+  def lst "KingsLanding.ml" 95 2738 2777 "KingsLanding.ml" 97 2850 2922
+)
+"KingsLanding.ml" 96 2791 2795 "KingsLanding.ml" 96 2791 2813
+type(
+  int Event51.event -> int -> unit
+)
+ident(
+  ext_ref Event51.Event51.fire_event
+)
+"KingsLanding.ml" 96 2791 2814 "KingsLanding.ml" 96 2791 2818
+type(
+  'a
+)
+ident(
+  int_ref self "KingsLanding.ml" 26 698 706 "KingsLanding.ml" 26 698 710
+)
+"KingsLanding.ml" 96 2791 2814 "KingsLanding.ml" 96 2791 2833
+call(
+  stack
+)
+type(
+  int Event51.event
+)
+"KingsLanding.ml" 96 2791 2834 "KingsLanding.ml" 96 2791 2838
+type(
+  'a
+)
+ident(
+  int_ref self "KingsLanding.ml" 26 698 706 "KingsLanding.ml" 26 698 710
+)
+"KingsLanding.ml" 96 2791 2834 "KingsLanding.ml" 96 2791 2847
+call(
+  stack
+)
+type(
+  int
+)
+"KingsLanding.ml" 96 2791 2795 "KingsLanding.ml" 96 2791 2847
+call(
+  stack
+)
+type(
+  unit
+)
+"KingsLanding.ml" 97 2850 2867 "KingsLanding.ml" 97 2850 2878
+type(
+  int
+)
+ident(
+  ext_ref gold_amount
+)
+"KingsLanding.ml" 97 2850 2878 "KingsLanding.ml" 97 2850 2879
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"KingsLanding.ml" 97 2850 2880 "KingsLanding.ml" 97 2850 2883
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.min
+)
+"KingsLanding.ml" 97 2850 2884 "KingsLanding.ml" 97 2850 2900
+type(
+  int
+)
+ident(
+  int_ref max_gold_deposit "KingsLanding.ml" 12 216 220 "KingsLanding.ml" 12 216 236
+)
+"KingsLanding.ml" 97 2850 2902 "KingsLanding.ml" 97 2850 2913
+type(
+  int list -> int
+)
+ident(
+  ext_ref Core.Std.List.length
+)
+"KingsLanding.ml" 97 2850 2914 "KingsLanding.ml" 97 2850 2917
+type(
+  int list
+)
+ident(
+  int_ref lst "KingsLanding.ml" 95 2738 2761 "KingsLanding.ml" 95 2738 2764
+)
+"KingsLanding.ml" 97 2850 2902 "KingsLanding.ml" 97 2850 2917
+call(
+  stack
+)
+type(
+  int
+)
+"KingsLanding.ml" 97 2850 2880 "KingsLanding.ml" 97 2850 2918
+call(
+  stack
+)
+type(
+  int
+)
+"KingsLanding.ml" 97 2850 2867 "KingsLanding.ml" 97 2850 2919
+type(
+  int
+)
+"KingsLanding.ml" 97 2850 2854 "KingsLanding.ml" 97 2850 2919
+type(
+  unit
+)
+"KingsLanding.ml" 97 2850 2920 "KingsLanding.ml" 97 2850 2922
+type(
+  int list
+)
+"KingsLanding.ml" 97 2850 2854 "KingsLanding.ml" 97 2850 2922
+type(
+  int list
+)
+"KingsLanding.ml" 96 2791 2795 "KingsLanding.ml" 97 2850 2922
+type(
+  int list
+)
+type(
+  int list
+)
+"KingsLanding.ml" 95 2738 2760 "KingsLanding.ml" 97 2850 2922
+type(
+  int list -> int list
+)
+type(
+  int list -> int list
+)
+"KingsLanding.ml" 95 2738 2740 "KingsLanding.ml" 97 2850 2922
+type(
+  'a -> int list -> int list
+)
+"KingsLanding.ml" 100 2970 3016 "KingsLanding.ml" 100 2970 3026
+type(
+  int Event51.event
+)
+type(
+  int Event51.event
+)
+ident(
+  ext_ref gold_event
+)
+"KingsLanding.ml" 100 2970 2972 "KingsLanding.ml" 100 2970 3026
+type(
+  'a -> int Event51.event
+)
+"KingsLanding.ml" 101 3028 3087 "KingsLanding.ml" 101 3028 3099
+type(
+  world_object_i Event51.event
+)
+type(
+  world_object_i Event51.event
+)
+ident(
+  ext_ref danger_event
+)
+"KingsLanding.ml" 101 3028 3030 "KingsLanding.ml" 101 3028 3099
+type(
+  'a -> world_object_i Event51.event
+)
+"KingsLanding.ml" 103 3103 3129 "KingsLanding.ml" 103 3103 3140
+type(
+  int
+)
+type(
+  int
+)
+ident(
+  ext_ref gold_amount
+)
+"KingsLanding.ml" 103 3103 3105 "KingsLanding.ml" 103 3103 3140
+type(
+  'a -> int
+)
+"KingsLanding.ml" 105 3144 3162 "KingsLanding.ml" 105 3144 3167
+type(
+  world_object_i
+)
+ident(
+  def thief "KingsLanding.ml" 105 3144 3185 "KingsLanding.ml" 107 3229 3283
+)
+"KingsLanding.ml" 106 3195 3221 "KingsLanding.ml" 106 3195 3226
+type(
+  world_object_i
+)
+ident(
+  int_ref thief "KingsLanding.ml" 105 3144 3162 "KingsLanding.ml" 105 3144 3167
+)
+"KingsLanding.ml" 106 3195 3216 "KingsLanding.ml" 106 3195 3226
+type(
+  world_object_i option
+)
+"KingsLanding.ml" 106 3195 3199 "KingsLanding.ml" 106 3195 3226
+type(
+  unit
+)
+"KingsLanding.ml" 107 3229 3233 "KingsLanding.ml" 107 3229 3251
+type(
+  world_object_i Event51.event -> world_object_i -> unit
+)
+ident(
+  ext_ref Event51.Event51.fire_event
+)
+"KingsLanding.ml" 107 3229 3252 "KingsLanding.ml" 107 3229 3256
+type(
+  'a
+)
+ident(
+  int_ref self "KingsLanding.ml" 26 698 706 "KingsLanding.ml" 26 698 710
+)
+"KingsLanding.ml" 107 3229 3252 "KingsLanding.ml" 107 3229 3273
+call(
+  stack
+)
+type(
+  world_object_i Event51.event
+)
+"KingsLanding.ml" 107 3229 3274 "KingsLanding.ml" 107 3229 3279
+type(
+  world_object_i
+)
+ident(
+  int_ref thief "KingsLanding.ml" 105 3144 3162 "KingsLanding.ml" 105 3144 3167
+)
+"KingsLanding.ml" 107 3229 3233 "KingsLanding.ml" 107 3229 3279
+call(
+  stack
+)
+type(
+  unit
+)
+"KingsLanding.ml" 107 3229 3281 "KingsLanding.ml" 107 3229 3283
+type(
+  unit
+)
+"KingsLanding.ml" 107 3229 3233 "KingsLanding.ml" 107 3229 3283
+type(
+  unit
+)
+"KingsLanding.ml" 106 3195 3199 "KingsLanding.ml" 107 3229 3283
+type(
+  unit
+)
+type(
+  unit
+)
+"KingsLanding.ml" 105 3144 3161 "KingsLanding.ml" 107 3229 3283
+type(
+  world_object_i -> unit
+)
+type(
+  world_object_i -> unit
+)
+"KingsLanding.ml" 105 3144 3146 "KingsLanding.ml" 107 3229 3283
+type(
+  'a -> world_object_i -> unit
+)
+"KingsLanding.ml" 115 3449 3476 "KingsLanding.ml" 115 3449 3488
+type(
+  int
+)
+ident(
+  def steal_amount "KingsLanding.ml" 115 3449 3496 "KingsLanding.ml" 117 3630 3716
+)
+"KingsLanding.ml" 115 3449 3497 "KingsLanding.ml" 115 3449 3502
+type(
+  world_object_i
+)
+ident(
+  def thief "KingsLanding.ml" 115 3449 3521 "KingsLanding.ml" 117 3630 3716
+)
+"KingsLanding.ml" 116 3531 3539 "KingsLanding.ml" 116 3531 3552
+type(
+  int
+)
+ident(
+  def amount_stolen "KingsLanding.ml" 117 3630 3637 "KingsLanding.ml" 117 3630 3715
+)
+"KingsLanding.ml" 116 3531 3558 "KingsLanding.ml" 116 3531 3569
+type(
+  int
+)
+ident(
+  ext_ref gold_amount
+)
+"KingsLanding.ml" 116 3531 3570 "KingsLanding.ml" 116 3531 3571
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"KingsLanding.ml" 116 3531 3572 "KingsLanding.ml" 116 3531 3584
+type(
+  int
+)
+ident(
+  int_ref steal_amount "KingsLanding.ml" 115 3449 3476 "KingsLanding.ml" 115 3449 3488
+)
+"KingsLanding.ml" 116 3531 3558 "KingsLanding.ml" 116 3531 3584
+type(
+  int
+)
+"KingsLanding.ml" 116 3531 3585 "KingsLanding.ml" 116 3531 3587
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"KingsLanding.ml" 116 3531 3588 "KingsLanding.ml" 116 3531 3589
+type(
+  int
+)
+"KingsLanding.ml" 116 3531 3558 "KingsLanding.ml" 116 3531 3589
+type(
+  bool
+)
+"KingsLanding.ml" 116 3531 3595 "KingsLanding.ml" 116 3531 3607
+type(
+  int
+)
+ident(
+  int_ref steal_amount "KingsLanding.ml" 115 3449 3476 "KingsLanding.ml" 115 3449 3488
+)
+"KingsLanding.ml" 116 3531 3613 "KingsLanding.ml" 116 3531 3624
+type(
+  int
+)
+ident(
+  ext_ref gold_amount
+)
+"KingsLanding.ml" 116 3531 3555 "KingsLanding.ml" 116 3531 3624
+type(
+  int
+)
+"KingsLanding.ml" 117 3630 3653 "KingsLanding.ml" 117 3630 3664
+type(
+  int
+)
+ident(
+  ext_ref gold_amount
+)
+"KingsLanding.ml" 117 3630 3665 "KingsLanding.ml" 117 3630 3666
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"KingsLanding.ml" 117 3630 3667 "KingsLanding.ml" 117 3630 3680
+type(
+  int
+)
+ident(
+  int_ref amount_stolen "KingsLanding.ml" 116 3531 3539 "KingsLanding.ml" 116 3531 3552
+)
+"KingsLanding.ml" 117 3630 3653 "KingsLanding.ml" 117 3630 3680
+type(
+  int
+)
+"KingsLanding.ml" 117 3630 3637 "KingsLanding.ml" 117 3630 3681
+type(
+  unit
+)
+"KingsLanding.ml" 117 3630 3683 "KingsLanding.ml" 117 3630 3687
+type(
+  'a
+)
+ident(
+  int_ref self "KingsLanding.ml" 26 698 706 "KingsLanding.ml" 26 698 710
+)
+"KingsLanding.ml" 117 3630 3683 "KingsLanding.ml" 117 3630 3694
+call(
+  stack
+)
+type(
+  world_object_i -> unit
+)
+"KingsLanding.ml" 117 3630 3695 "KingsLanding.ml" 117 3630 3700
+type(
+  world_object_i
+)
+ident(
+  int_ref thief "KingsLanding.ml" 115 3449 3497 "KingsLanding.ml" 115 3449 3502
+)
+"KingsLanding.ml" 117 3630 3683 "KingsLanding.ml" 117 3630 3700
+type(
+  unit
+)
+"KingsLanding.ml" 117 3630 3702 "KingsLanding.ml" 117 3630 3715
+type(
+  int
+)
+ident(
+  int_ref amount_stolen "KingsLanding.ml" 116 3531 3539 "KingsLanding.ml" 116 3531 3552
+)
+"KingsLanding.ml" 117 3630 3683 "KingsLanding.ml" 117 3630 3715
+type(
+  int
+)
+"KingsLanding.ml" 117 3630 3637 "KingsLanding.ml" 117 3630 3715
+type(
+  int
+)
+"KingsLanding.ml" 116 3531 3535 "KingsLanding.ml" 117 3630 3716
+type(
+  int
+)
+type(
+  int
+)
+"KingsLanding.ml" 115 3449 3496 "KingsLanding.ml" 117 3630 3716
+type(
+  world_object_i -> int
+)
+"KingsLanding.ml" 115 3449 3475 "KingsLanding.ml" 117 3630 3716
+type(
+  int -> world_object_i -> int
+)
+type(
+  int -> world_object_i -> int
+)
+"KingsLanding.ml" 115 3449 3451 "KingsLanding.ml" 117 3630 3716
+type(
+  'a -> int -> world_object_i -> int
 )

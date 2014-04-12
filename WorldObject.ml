@@ -87,6 +87,9 @@ object (self)
 
   method danger o = Event51.fire_event danger_event o
 
+  (* Useful for dragons telling people it is dying *)
+  method is_dying = false
+
 
 end
 

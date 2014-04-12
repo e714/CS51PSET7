@@ -73,5 +73,7 @@ object
       See Draw.status_bar for more info. *)
   method private draw_status_bar : Graphics.color -> float -> unit
 
+  method is_dying : bool
+
 
 end

@@ -1,0 +1,730 @@
+"Direwolf.ml" 9 132 136 "Direwolf.ml" 9 132 158
+type(
+  int option
+)
+ident(
+  def direwolf_inverse_speed "Direwolf.ml" 12 207 207 "Direwolf.ml" 1 0 -1
+)
+"Direwolf.ml" 9 132 166 "Direwolf.ml" 9 132 167
+type(
+  int
+)
+"Direwolf.ml" 9 132 161 "Direwolf.ml" 9 132 167
+type(
+  int option
+)
+"Direwolf.ml" 12 207 211 "Direwolf.ml" 12 207 225
+type(
+  int
+)
+ident(
+  def max_killed_lan "Direwolf.ml" 16 335 335 "Direwolf.ml" 1 0 -1
+)
+"Direwolf.ml" 12 207 228 "Direwolf.ml" 12 207 229
+type(
+  int
+)
+"Direwolf.ml" 16 335 350 "Direwolf.ml" 16 335 351
+type(
+  int * int
+)
+"Direwolf.ml" 16 335 353 "Direwolf.ml" 16 335 354
+type(
+  kings_landing
+)
+"Direwolf.ml" 16 335 384 "Direwolf.ml" 16 335 388
+type(
+  < get_pos : int * int; .. >
+)
+"Direwolf.ml" 17 404 412 "Direwolf.ml" 17 404 416
+type(
+  < danger : world_object_i -> unit; die : unit; draw : unit;
+    draw_z_axis : int; forfeit_gold : int option;
+    get_danger_event : world_object_i Event51.Event51.event;
+    get_die_event : unit Event51.Event51.event; get_name : string;
+    get_pos : int * int; is_dying : bool; is_obstacle : bool;
+    next_direction : Direction.direction option; receive_damage : unit;
+    receive_gold : int list -> int list; smells_like_gold : int option; .. >
+)
+"Direwolf.ml" 18 419 437 "Direwolf.ml" 18 419 438
+type(
+  int * int
+)
+ident(
+  int_ref p "Direwolf.ml" 16 335 350 "Direwolf.ml" 16 335 351
+)
+"Direwolf.ml" 18 419 439 "Direwolf.ml" 18 419 461
+type(
+  int option
+)
+ident(
+  int_ref direwolf_inverse_speed "Direwolf.ml" 9 132 136 "Direwolf.ml" 9 132 158
+)
+"Direwolf.ml" 26 617 651 "Direwolf.ml" 26 617 652
+type(
+  int
+)
+"Direwolf.ml" 35 802 806 "Direwolf.ml" 35 802 810
+type(
+  < danger : world_object_i -> unit; die : unit; draw : unit;
+    draw_z_axis : int; forfeit_gold : int option;
+    get_danger_event : world_object_i Event51.Event51.event;
+    get_die_event : unit Event51.Event51.event; get_name : string;
+    get_pos : int * int; is_dying : bool; is_obstacle : bool;
+    next_direction : Direction.direction option; receive_damage : unit;
+    receive_gold : int list -> int list; smells_like_gold : int option; .. >
+  as 'a
+)
+ident(
+  int_ref self "Direwolf.ml" 17 404 412 "Direwolf.ml" 17 404 416
+)
+"Direwolf.ml" 35 802 806 "Direwolf.ml" 35 802 827
+call(
+  tail
+)
+type(
+  unit Event51.Event51.event -> (unit -> unit) -> unit
+)
+"Direwolf.ml" 35 802 828 "Direwolf.ml" 35 802 846
+type(
+  unit Event51.Event51.event
+)
+ident(
+  ext_ref World.action_event
+)
+"Direwolf.ml" 35 802 847 "Direwolf.ml" 35 802 851
+type(
+  'a
+)
+ident(
+  int_ref self "Direwolf.ml" 17 404 412 "Direwolf.ml" 17 404 416
+)
+"Direwolf.ml" 35 802 847 "Direwolf.ml" 35 802 861
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"Direwolf.ml" 35 802 806 "Direwolf.ml" 35 802 861
+type(
+  'a -> unit
+)
+type(
+  unit
+)
+"Direwolf.ml" 43 1006 1033 "Direwolf.ml" 43 1006 1034
+type(
+  unit
+)
+"Direwolf.ml" 44 1045 1052 "Direwolf.ml" 44 1045 1056
+type(
+  'a
+)
+ident(
+  int_ref self "Direwolf.ml" 17 404 412 "Direwolf.ml" 17 404 416
+)
+"Direwolf.ml" 44 1045 1052 "Direwolf.ml" 44 1045 1066
+call(
+  stack
+)
+type(
+  bool
+)
+"Direwolf.ml" 45 1073 1085 "Direwolf.ml" 45 1073 1094
+type(
+  int * int -> world_object_i list
+)
+ident(
+  ext_ref World.get
+)
+"Direwolf.ml" 45 1073 1095 "Direwolf.ml" 45 1073 1099
+type(
+  'a
+)
+ident(
+  int_ref self "Direwolf.ml" 17 404 412 "Direwolf.ml" 17 404 416
+)
+"Direwolf.ml" 45 1073 1095 "Direwolf.ml" 45 1073 1107
+call(
+  stack
+)
+type(
+  int * int
+)
+"Direwolf.ml" 45 1073 1085 "Direwolf.ml" 45 1073 1107
+call(
+  stack
+)
+type(
+  world_object_i list
+)
+"Direwolf.ml" 46 1114 1122 "Direwolf.ml" 46 1114 1124
+type(
+  world_object_i list
+)
+"Direwolf.ml" 46 1114 1128 "Direwolf.ml" 46 1114 1130
+type(
+  unit
+)
+"Direwolf.ml" 47 1132 1140 "Direwolf.ml" 47 1132 1149
+type(
+  world_object_i list
+)
+ident(
+  def neighbors "Direwolf.ml" 47 1132 1154 "Direwolf.ml" 48 1215 1278
+)
+"Direwolf.ml" 47 1132 1154 "Direwolf.ml" 47 1132 1163
+type(
+  world_object_i list -> f:(world_object_i -> unit) -> unit
+)
+ident(
+  ext_ref Core.Std.List.iter
+)
+"Direwolf.ml" 47 1132 1164 "Direwolf.ml" 47 1132 1173
+type(
+  world_object_i list
+)
+ident(
+  int_ref neighbors "Direwolf.ml" 47 1132 1140 "Direwolf.ml" 47 1132 1149
+)
+"Direwolf.ml" 47 1132 1179 "Direwolf.ml" 47 1132 1180
+type(
+  world_object_i
+)
+ident(
+  def x "Direwolf.ml" 47 1132 1184 "Direwolf.ml" 48 1215 1277
+)
+"Direwolf.ml" 47 1132 1188 "Direwolf.ml" 47 1132 1189
+type(
+  world_object_i
+)
+ident(
+  int_ref x "Direwolf.ml" 47 1132 1179 "Direwolf.ml" 47 1132 1180
+)
+"Direwolf.ml" 47 1132 1188 "Direwolf.ml" 47 1132 1198
+call(
+  stack
+)
+type(
+  string
+)
+"Direwolf.ml" 47 1132 1199 "Direwolf.ml" 47 1132 1200
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Direwolf.ml" 47 1132 1201 "Direwolf.ml" 47 1132 1212
+type(
+  string
+)
+"Direwolf.ml" 47 1132 1188 "Direwolf.ml" 47 1132 1212
+type(
+  bool
+)
+"Direwolf.ml" 48 1215 1231 "Direwolf.ml" 48 1215 1232
+type(
+  world_object_i
+)
+ident(
+  int_ref x "Direwolf.ml" 47 1132 1179 "Direwolf.ml" 47 1132 1180
+)
+"Direwolf.ml" 48 1215 1231 "Direwolf.ml" 48 1215 1236
+call(
+  stack
+)
+type(
+  unit
+)
+"Direwolf.ml" 48 1215 1257 "Direwolf.ml" 48 1215 1274
+type(
+  int
+)
+ident(
+  ext_ref lannisters_killed
+)
+"Direwolf.ml" 48 1215 1274 "Direwolf.ml" 48 1215 1275
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Direwolf.ml" 48 1215 1275 "Direwolf.ml" 48 1215 1276
+type(
+  int
+)
+"Direwolf.ml" 48 1215 1257 "Direwolf.ml" 48 1215 1276
+type(
+  int
+)
+"Direwolf.ml" 48 1215 1238 "Direwolf.ml" 48 1215 1276
+type(
+  unit
+)
+"Direwolf.ml" 48 1215 1231 "Direwolf.ml" 48 1215 1276
+type(
+  unit
+)
+"Direwolf.ml" 47 1132 1184 "Direwolf.ml" 48 1215 1277
+type(
+  unit
+)
+type(
+  unit
+)
+"Direwolf.ml" 47 1132 1179 "Direwolf.ml" 48 1215 1277
+type(
+  world_object_i -> unit
+)
+"Direwolf.ml" 47 1132 1154 "Direwolf.ml" 48 1215 1278
+call(
+  tail
+)
+type(
+  unit
+)
+"Direwolf.ml" 45 1073 1079 "Direwolf.ml" 48 1215 1279
+type(
+  unit
+)
+"Direwolf.ml" 50 1292 1301 "Direwolf.ml" 50 1292 1305
+type(
+  < get_pos : int * int; .. > as 'b
+)
+ident(
+  int_ref home "Direwolf.ml" 16 335 384 "Direwolf.ml" 16 335 388
+)
+"Direwolf.ml" 50 1292 1301 "Direwolf.ml" 50 1292 1313
+call(
+  stack
+)
+type(
+  int * int
+)
+"Direwolf.ml" 50 1292 1314 "Direwolf.ml" 50 1292 1315
+type(
+  int * int -> int * int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Direwolf.ml" 50 1292 1316 "Direwolf.ml" 50 1292 1320
+type(
+  'a
+)
+ident(
+  int_ref self "Direwolf.ml" 17 404 412 "Direwolf.ml" 17 404 416
+)
+"Direwolf.ml" 50 1292 1316 "Direwolf.ml" 50 1292 1328
+call(
+  stack
+)
+type(
+  int * int
+)
+"Direwolf.ml" 50 1292 1301 "Direwolf.ml" 50 1292 1328
+type(
+  bool
+)
+"Direwolf.ml" 50 1292 1334 "Direwolf.ml" 50 1292 1338
+type(
+  'a
+)
+ident(
+  int_ref self "Direwolf.ml" 17 404 412 "Direwolf.ml" 17 404 416
+)
+"Direwolf.ml" 50 1292 1334 "Direwolf.ml" 50 1292 1342
+call(
+  tail
+)
+type(
+  unit
+)
+"Direwolf.ml" 50 1292 1347 "Direwolf.ml" 50 1292 1349
+type(
+  unit
+)
+"Direwolf.ml" 50 1292 1298 "Direwolf.ml" 50 1292 1349
+type(
+  unit
+)
+"Direwolf.ml" 44 1045 1049 "Direwolf.ml" 50 1292 1349
+type(
+  unit
+)
+type(
+  unit
+)
+"Direwolf.ml" 43 1006 1033 "Direwolf.ml" 50 1292 1349
+type(
+  unit -> unit
+)
+type(
+  unit -> unit
+)
+"Direwolf.ml" 43 1006 1008 "Direwolf.ml" 50 1292 1349
+type(
+  'a -> unit -> unit
+)
+"Direwolf.ml" 60 1557 1578 "Direwolf.ml" 60 1557 1588
+type(
+  string
+)
+type(
+  string
+)
+"Direwolf.ml" 60 1557 1559 "Direwolf.ml" 60 1557 1588
+type(
+  'a -> string
+)
+"Direwolf.ml" 62 1592 1609 "Direwolf.ml" 62 1592 1620
+type(
+  int * int -> int -> int -> int -> int -> string -> unit
+)
+ident(
+  ext_ref Draw.circle
+)
+"Direwolf.ml" 62 1592 1621 "Direwolf.ml" 62 1592 1625
+type(
+  'a
+)
+ident(
+  int_ref self "Direwolf.ml" 17 404 412 "Direwolf.ml" 17 404 416
+)
+"Direwolf.ml" 62 1592 1621 "Direwolf.ml" 62 1592 1633
+call(
+  stack
+)
+type(
+  int * int
+)
+"Direwolf.ml" 62 1592 1634 "Direwolf.ml" 62 1592 1649
+type(
+  int
+)
+ident(
+  ext_ref World.obj_width
+)
+"Direwolf.ml" 62 1592 1650 "Direwolf.ml" 62 1592 1666
+type(
+  int
+)
+ident(
+  ext_ref World.obj_height
+)
+"Direwolf.ml" 63 1669 1679 "Direwolf.ml" 63 1669 1693
+type(
+  int
+)
+ident(
+  ext_ref Graphics.black
+)
+"Direwolf.ml" 63 1669 1694 "Direwolf.ml" 63 1669 1708
+type(
+  int
+)
+ident(
+  ext_ref Graphics.white
+)
+"Direwolf.ml" 63 1669 1710 "Direwolf.ml" 63 1669 1723
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"Direwolf.ml" 63 1669 1724 "Direwolf.ml" 63 1669 1741
+type(
+  int
+)
+ident(
+  ext_ref lannisters_killed
+)
+"Direwolf.ml" 63 1669 1710 "Direwolf.ml" 63 1669 1741
+call(
+  stack
+)
+type(
+  string
+)
+"Direwolf.ml" 62 1592 1609 "Direwolf.ml" 63 1669 1742
+call(
+  tail
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"Direwolf.ml" 62 1592 1594 "Direwolf.ml" 63 1669 1742
+type(
+  'a -> unit
+)
+"Direwolf.ml" 65 1746 1770 "Direwolf.ml" 65 1746 1771
+type(
+  int
+)
+type(
+  int
+)
+"Direwolf.ml" 65 1746 1748 "Direwolf.ml" 65 1746 1771
+type(
+  'a -> int
+)
+"Direwolf.ml" 77 1988 1995 "Direwolf.ml" 77 1988 1999
+type(
+  'a
+)
+ident(
+  int_ref self "Direwolf.ml" 17 404 412 "Direwolf.ml" 17 404 416
+)
+"Direwolf.ml" 77 1988 1995 "Direwolf.ml" 77 1988 2009
+call(
+  stack
+)
+type(
+  bool
+)
+"Direwolf.ml" 78 2016 2027 "Direwolf.ml" 78 2016 2037
+type(
+  int -> int
+)
+ident(
+  ext_ref World.rand
+)
+"Direwolf.ml" 78 2016 2038 "Direwolf.ml" 78 2016 2048
+type(
+  int
+)
+ident(
+  ext_ref World.size
+)
+"Direwolf.ml" 78 2016 2027 "Direwolf.ml" 78 2016 2048
+call(
+  stack
+)
+type(
+  int
+)
+"Direwolf.ml" 78 2016 2049 "Direwolf.ml" 78 2016 2050
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Direwolf.ml" 78 2016 2051 "Direwolf.ml" 78 2016 2052
+type(
+  int
+)
+"Direwolf.ml" 78 2016 2027 "Direwolf.ml" 78 2016 2052
+type(
+  bool
+)
+"Direwolf.ml" 78 2016 2054 "Direwolf.ml" 78 2016 2056
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"Direwolf.ml" 78 2016 2058 "Direwolf.ml" 78 2016 2068
+type(
+  int -> int
+)
+ident(
+  ext_ref World.rand
+)
+"Direwolf.ml" 78 2016 2069 "Direwolf.ml" 78 2016 2079
+type(
+  int
+)
+ident(
+  ext_ref World.size
+)
+"Direwolf.ml" 78 2016 2058 "Direwolf.ml" 78 2016 2079
+call(
+  stack
+)
+type(
+  int
+)
+"Direwolf.ml" 78 2016 2080 "Direwolf.ml" 78 2016 2081
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Direwolf.ml" 78 2016 2082 "Direwolf.ml" 78 2016 2083
+type(
+  int
+)
+"Direwolf.ml" 78 2016 2058 "Direwolf.ml" 78 2016 2083
+type(
+  bool
+)
+"Direwolf.ml" 78 2016 2026 "Direwolf.ml" 78 2016 2084
+type(
+  bool
+)
+"Direwolf.ml" 79 2091 2099 "Direwolf.ml" 79 2091 2116
+type(
+  int * int -> int * int -> Direction.direction option
+)
+ident(
+  ext_ref Direction.natural
+)
+"Direwolf.ml" 79 2091 2117 "Direwolf.ml" 79 2091 2121
+type(
+  'a
+)
+ident(
+  int_ref self "Direwolf.ml" 17 404 412 "Direwolf.ml" 17 404 416
+)
+"Direwolf.ml" 79 2091 2117 "Direwolf.ml" 79 2091 2129
+call(
+  stack
+)
+type(
+  int * int
+)
+"Direwolf.ml" 79 2091 2130 "Direwolf.ml" 79 2091 2131
+type(
+  kings_landing
+)
+ident(
+  int_ref k "Direwolf.ml" 16 335 353 "Direwolf.ml" 16 335 354
+)
+"Direwolf.ml" 79 2091 2130 "Direwolf.ml" 79 2091 2139
+call(
+  stack
+)
+type(
+  int * int
+)
+"Direwolf.ml" 79 2091 2099 "Direwolf.ml" 79 2091 2139
+call(
+  tail
+)
+type(
+  Direction.direction option
+)
+"Direwolf.ml" 80 2141 2158 "Direwolf.ml" 80 2141 2174
+type(
+  (int -> int) -> Direction.direction
+)
+ident(
+  ext_ref Direction.random
+)
+"Direwolf.ml" 80 2141 2175 "Direwolf.ml" 80 2141 2185
+type(
+  int -> int
+)
+ident(
+  ext_ref World.rand
+)
+"Direwolf.ml" 80 2141 2158 "Direwolf.ml" 80 2141 2185
+call(
+  stack
+)
+type(
+  Direction.direction
+)
+"Direwolf.ml" 80 2141 2152 "Direwolf.ml" 80 2141 2186
+type(
+  Direction.direction option
+)
+"Direwolf.ml" 78 2016 2023 "Direwolf.ml" 80 2141 2186
+type(
+  Direction.direction option
+)
+"Direwolf.ml" 81 2189 2198 "Direwolf.ml" 81 2189 2221
+type(
+  int * int -> int * int -> Direction.direction option
+)
+ident(
+  ext_ref World.direction_from_to
+)
+"Direwolf.ml" 81 2189 2222 "Direwolf.ml" 81 2189 2226
+type(
+  'a
+)
+ident(
+  int_ref self "Direwolf.ml" 17 404 412 "Direwolf.ml" 17 404 416
+)
+"Direwolf.ml" 81 2189 2222 "Direwolf.ml" 81 2189 2234
+call(
+  stack
+)
+type(
+  int * int
+)
+"Direwolf.ml" 81 2189 2235 "Direwolf.ml" 81 2189 2239
+type(
+  'b
+)
+ident(
+  int_ref home "Direwolf.ml" 16 335 384 "Direwolf.ml" 16 335 388
+)
+"Direwolf.ml" 81 2189 2235 "Direwolf.ml" 81 2189 2247
+call(
+  stack
+)
+type(
+  int * int
+)
+"Direwolf.ml" 81 2189 2198 "Direwolf.ml" 81 2189 2247
+call(
+  tail
+)
+type(
+  Direction.direction option
+)
+"Direwolf.ml" 77 1988 1992 "Direwolf.ml" 81 2189 2247
+type(
+  Direction.direction option
+)
+type(
+  Direction.direction option
+)
+"Direwolf.ml" 76 1959 1961 "Direwolf.ml" 81 2189 2247
+type(
+  'a -> Direction.direction option
+)
+"Direwolf.ml" 85 2297 2327 "Direwolf.ml" 85 2297 2344
+type(
+  int
+)
+ident(
+  ext_ref lannisters_killed
+)
+"Direwolf.ml" 85 2297 2345 "Direwolf.ml" 85 2297 2346
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Direwolf.ml" 85 2297 2347 "Direwolf.ml" 85 2297 2361
+type(
+  int
+)
+ident(
+  int_ref max_killed_lan "Direwolf.ml" 12 207 211 "Direwolf.ml" 12 207 225
+)
+"Direwolf.ml" 85 2297 2327 "Direwolf.ml" 85 2297 2361
+type(
+  bool
+)
+type(
+  bool
+)
+"Direwolf.ml" 85 2297 2299 "Direwolf.ml" 85 2297 2362
+type(
+  'a -> bool
+)

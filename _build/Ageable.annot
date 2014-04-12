@@ -1,0 +1,371 @@
+"Ageable.ml" 19 479 493 "Ageable.ml" 19 479 494
+type(
+  int * int
+)
+"Ageable.ml" 19 479 495 "Ageable.ml" 19 479 504
+type(
+  int option
+)
+"Ageable.ml" 19 479 505 "Ageable.ml" 19 479 522
+type(
+  int
+)
+"Ageable.ml" 19 479 523 "Ageable.ml" 19 479 535
+type(
+  int
+)
+"Ageable.ml" 20 551 559 "Ageable.ml" 20 551 563
+type(
+  < danger : WorldObjectI.world_object_i -> unit; die : unit; draw : 
+    unit; draw_picture : unit; draw_z_axis : int; forfeit_gold : int option;
+    get_danger_event : WorldObjectI.world_object_i Event51.Event51.event;
+    get_die_event : unit Event51.Event51.event; get_name : string;
+    get_pos : int * int; is_dying : bool; is_obstacle : bool;
+    next_direction : Direction.direction option; receive_damage : unit;
+    receive_gold : int list -> int list; reset_life : unit;
+    smells_like_gold : int option; .. >
+)
+"Ageable.ml" 21 566 592 "Ageable.ml" 21 566 593
+type(
+  int * int
+)
+ident(
+  int_ref p "Ageable.ml" 19 479 493 "Ageable.ml" 19 479 494
+)
+"Ageable.ml" 21 566 594 "Ageable.ml" 21 566 603
+type(
+  int option
+)
+ident(
+  int_ref inv_speed "Ageable.ml" 19 479 495 "Ageable.ml" 19 479 504
+)
+"Ageable.ml" 27 726 751 "Ageable.ml" 27 726 768
+type(
+  int
+)
+ident(
+  int_ref starting_lifetime "Ageable.ml" 19 479 505 "Ageable.ml" 19 479 522
+)
+"Ageable.ml" 36 914 918 "Ageable.ml" 36 914 922
+type(
+  < danger : WorldObjectI.world_object_i -> unit; die : unit; draw : 
+    unit; draw_picture : unit; draw_z_axis : int; forfeit_gold : int option;
+    get_danger_event : WorldObjectI.world_object_i Event51.Event51.event;
+    get_die_event : unit Event51.Event51.event; get_name : string;
+    get_pos : int * int; is_dying : bool; is_obstacle : bool;
+    next_direction : Direction.direction option; receive_damage : unit;
+    receive_gold : int list -> int list; reset_life : unit;
+    smells_like_gold : int option; .. >
+  as 'a
+)
+ident(
+  int_ref self "Ageable.ml" 20 551 559 "Ageable.ml" 20 551 563
+)
+"Ageable.ml" 36 914 918 "Ageable.ml" 36 914 939
+call(
+  tail
+)
+type(
+  unit Event51.Event51.event -> (unit -> unit) -> unit
+)
+"Ageable.ml" 36 914 940 "Ageable.ml" 36 914 958
+type(
+  unit Event51.Event51.event
+)
+ident(
+  ext_ref World.action_event
+)
+"Ageable.ml" 36 914 959 "Ageable.ml" 36 914 963
+type(
+  'a
+)
+ident(
+  int_ref self "Ageable.ml" 20 551 559 "Ageable.ml" 20 551 563
+)
+"Ageable.ml" 36 914 959 "Ageable.ml" 36 914 970
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"Ageable.ml" 36 914 918 "Ageable.ml" 36 914 970
+type(
+  'a -> unit
+)
+type(
+  unit
+)
+"Ageable.ml" 44 1111 1135 "Ageable.ml" 44 1111 1136
+type(
+  unit
+)
+"Ageable.ml" 45 1148 1164 "Ageable.ml" 45 1148 1172
+type(
+  int
+)
+ident(
+  ext_ref lifetime
+)
+"Ageable.ml" 45 1148 1172 "Ageable.ml" 45 1148 1173
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Ageable.ml" 45 1148 1173 "Ageable.ml" 45 1148 1174
+type(
+  int
+)
+"Ageable.ml" 45 1148 1164 "Ageable.ml" 45 1148 1174
+type(
+  int
+)
+"Ageable.ml" 45 1148 1152 "Ageable.ml" 45 1148 1174
+type(
+  unit
+)
+"Ageable.ml" 46 1177 1186 "Ageable.ml" 46 1177 1194
+type(
+  int
+)
+ident(
+  ext_ref lifetime
+)
+"Ageable.ml" 46 1177 1195 "Ageable.ml" 46 1177 1197
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"Ageable.ml" 46 1177 1198 "Ageable.ml" 46 1177 1199
+type(
+  int
+)
+"Ageable.ml" 46 1177 1186 "Ageable.ml" 46 1177 1199
+type(
+  bool
+)
+"Ageable.ml" 47 1202 1213 "Ageable.ml" 47 1202 1217
+type(
+  'a
+)
+ident(
+  int_ref self "Ageable.ml" 20 551 559 "Ageable.ml" 20 551 563
+)
+"Ageable.ml" 47 1202 1213 "Ageable.ml" 47 1202 1221
+call(
+  tail
+)
+type(
+  unit
+)
+"Ageable.ml" 48 1223 1234 "Ageable.ml" 48 1223 1236
+type(
+  unit
+)
+"Ageable.ml" 46 1177 1183 "Ageable.ml" 48 1223 1236
+type(
+  unit
+)
+"Ageable.ml" 45 1148 1152 "Ageable.ml" 48 1223 1236
+type(
+  unit
+)
+type(
+  unit
+)
+"Ageable.ml" 44 1111 1135 "Ageable.ml" 48 1223 1237
+type(
+  unit -> unit
+)
+type(
+  unit -> unit
+)
+"Ageable.ml" 44 1111 1113 "Ageable.ml" 48 1223 1237
+type(
+  'a -> unit -> unit
+)
+"Ageable.ml" 55 1377 1385 "Ageable.ml" 55 1377 1386
+type(
+  float
+)
+ident(
+  def v "Ageable.ml" 56 1444 1448 "Ageable.ml" 56 1444 1483
+)
+"Ageable.ml" 55 1377 1389 "Ageable.ml" 55 1377 1401
+type(
+  int -> float
+)
+ident(
+  ext_ref Core.Std.Float.of_int
+)
+"Ageable.ml" 55 1377 1402 "Ageable.ml" 55 1377 1410
+type(
+  int
+)
+ident(
+  ext_ref lifetime
+)
+"Ageable.ml" 55 1377 1389 "Ageable.ml" 55 1377 1410
+call(
+  stack
+)
+type(
+  float
+)
+"Ageable.ml" 55 1377 1411 "Ageable.ml" 55 1377 1413
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( /. )
+)
+"Ageable.ml" 55 1377 1414 "Ageable.ml" 55 1377 1426
+type(
+  int -> float
+)
+ident(
+  ext_ref Core.Std.Float.of_int
+)
+"Ageable.ml" 55 1377 1427 "Ageable.ml" 55 1377 1439
+type(
+  int
+)
+ident(
+  int_ref max_lifetime "Ageable.ml" 19 479 523 "Ageable.ml" 19 479 535
+)
+"Ageable.ml" 55 1377 1414 "Ageable.ml" 55 1377 1439
+call(
+  stack
+)
+type(
+  float
+)
+"Ageable.ml" 55 1377 1389 "Ageable.ml" 55 1377 1439
+type(
+  float
+)
+"Ageable.ml" 56 1444 1448 "Ageable.ml" 56 1444 1452
+type(
+  'a
+)
+ident(
+  int_ref self "Ageable.ml" 20 551 559 "Ageable.ml" 20 551 563
+)
+"Ageable.ml" 56 1444 1448 "Ageable.ml" 56 1444 1468
+call(
+  tail
+)
+type(
+  int -> float -> unit
+)
+"Ageable.ml" 56 1444 1469 "Ageable.ml" 56 1444 1481
+type(
+  int
+)
+ident(
+  ext_ref Graphics.red
+)
+"Ageable.ml" 56 1444 1482 "Ageable.ml" 56 1444 1483
+type(
+  float
+)
+ident(
+  int_ref v "Ageable.ml" 55 1377 1385 "Ageable.ml" 55 1377 1386
+)
+"Ageable.ml" 56 1444 1448 "Ageable.ml" 56 1444 1483
+type(
+  unit
+)
+"Ageable.ml" 55 1377 1381 "Ageable.ml" 56 1444 1483
+type(
+  unit
+)
+type(
+  unit
+)
+"Ageable.ml" 54 1340 1342 "Ageable.ml" 56 1444 1483
+type(
+  'a -> unit
+)
+"Ageable.ml" 63 1628 1633 "Ageable.ml" 63 1628 1637
+type(
+  'a
+)
+ident(
+  int_ref self "Ageable.ml" 20 551 559 "Ageable.ml" 20 551 563
+)
+"Ageable.ml" 63 1628 1633 "Ageable.ml" 63 1628 1650
+call(
+  stack
+)
+type(
+  unit
+)
+"Ageable.ml" 64 1654 1658 "Ageable.ml" 64 1654 1662
+type(
+  'a
+)
+ident(
+  int_ref self "Ageable.ml" 20 551 559 "Ageable.ml" 20 551 563
+)
+"Ageable.ml" 64 1654 1658 "Ageable.ml" 64 1654 1672
+call(
+  tail
+)
+type(
+  unit
+)
+"Ageable.ml" 63 1628 1633 "Ageable.ml" 64 1654 1672
+type(
+  unit
+)
+type(
+  unit
+)
+"Ageable.ml" 62 1603 1605 "Ageable.ml" 64 1654 1673
+type(
+  'a -> unit
+)
+"Ageable.ml" 71 1814 1845 "Ageable.ml" 71 1814 1849
+type(
+  'a
+)
+ident(
+  int_ref self "Ageable.ml" 20 551 559 "Ageable.ml" 20 551 563
+)
+"Ageable.ml" 71 1814 1845 "Ageable.ml" 71 1814 1854
+call(
+  tail
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"Ageable.ml" 71 1814 1816 "Ageable.ml" 71 1814 1854
+type(
+  'a -> unit
+)
+"Ageable.ml" 72 1856 1890 "Ageable.ml" 72 1856 1902
+type(
+  int
+)
+ident(
+  int_ref max_lifetime "Ageable.ml" 19 479 523 "Ageable.ml" 19 479 535
+)
+"Ageable.ml" 72 1856 1878 "Ageable.ml" 72 1856 1902
+type(
+  unit
+)
+type(
+  unit
+)
+"Ageable.ml" 72 1856 1858 "Ageable.ml" 72 1856 1902
+type(
+  'a -> unit
+)

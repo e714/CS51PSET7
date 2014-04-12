@@ -8,8 +8,9 @@ type(
     draw_z_axis : int; forfeit_gold : int option;
     get_danger_event : world_object_i Event51.Event51.event;
     get_die_event : unit Event51.Event51.event; get_name : string;
-    get_pos : int * int; is_obstacle : bool; receive_damage : unit;
-    receive_gold : int list -> int list; smells_like_gold : int option; .. >
+    get_pos : int * int; is_dying : bool; is_obstacle : bool;
+    receive_damage : unit; receive_gold : int list -> int list;
+    smells_like_gold : int option; .. >
 )
 "Pond.ml" 8 155 178 "Pond.ml" 8 155 179
 type(
@@ -17,4 +18,115 @@ type(
 )
 ident(
   int_ref p "Pond.ml" 6 109 120 "Pond.ml" 6 109 121
+)
+"Pond.ml" 15 335 356 "Pond.ml" 15 335 362
+type(
+  string
+)
+type(
+  string
+)
+"Pond.ml" 15 335 337 "Pond.ml" 15 335 362
+type(
+  (< danger : world_object_i -> unit; die : unit; draw : unit;
+     draw_z_axis : int; forfeit_gold : int option;
+     get_danger_event : world_object_i Event51.Event51.event;
+     get_die_event : unit Event51.Event51.event; get_name : string;
+     get_pos : int * int; is_dying : bool; is_obstacle : bool;
+     receive_damage : unit; receive_gold : int list -> int list;
+     smells_like_gold : int option; .. >
+   as 'a) ->
+  string
+)
+"Pond.ml" 17 364 381 "Pond.ml" 17 364 392
+type(
+  int * int -> int -> int -> int -> int -> string -> unit
+)
+ident(
+  ext_ref Draw.circle
+)
+"Pond.ml" 17 364 393 "Pond.ml" 17 364 396
+type(
+  'a
+)
+ident(
+  int_ref old "Pond.ml" 8 155 165 "Pond.ml" 8 155 179
+)
+"Pond.ml" 17 364 393 "Pond.ml" 17 364 404
+call(
+  stack
+)
+type(
+  int * int
+)
+type(
+  int * int
+)
+"Pond.ml" 17 364 405 "Pond.ml" 17 364 420
+type(
+  int
+)
+ident(
+  ext_ref World.obj_width
+)
+"Pond.ml" 17 364 421 "Pond.ml" 17 364 437
+type(
+  int
+)
+ident(
+  ext_ref World.obj_height
+)
+"Pond.ml" 18 439 446 "Pond.ml" 18 439 459
+type(
+  int
+)
+ident(
+  ext_ref Graphics.blue
+)
+"Pond.ml" 18 439 460 "Pond.ml" 18 439 474
+type(
+  int
+)
+ident(
+  ext_ref Graphics.black
+)
+"Pond.ml" 18 439 475 "Pond.ml" 18 439 477
+type(
+  string
+)
+"Pond.ml" 17 364 381 "Pond.ml" 18 439 477
+call(
+  tail
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"Pond.ml" 17 364 366 "Pond.ml" 18 439 477
+type(
+  'a -> unit
+)
+"Pond.ml" 20 479 503 "Pond.ml" 20 479 504
+type(
+  int
+)
+type(
+  int
+)
+"Pond.ml" 20 479 481 "Pond.ml" 20 479 504
+type(
+  'a -> int
+)
+"Pond.ml" 22 506 530 "Pond.ml" 22 506 534
+type(
+  bool
+)
+type(
+  bool
+)
+"Pond.ml" 22 506 508 "Pond.ml" 22 506 534
+type(
+  'a -> bool
 )

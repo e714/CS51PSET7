@@ -158,14 +158,17 @@ object(self)
 
   (* ### TODO: Part 6 Custom Events ### *)
   method private begin_attack (thief: world_object_i): unit =
-    under_attack <- Some thief;
-    (self#do_action (); ())
+    match under_attack with
+    | None -> under_attack <- Some thief; (self#do_action (); ())
+    | Some s -> ()
 
   method private is_dragon (obj : world_object_i) : unit =
     match under_attack with
     | None -> ()
-    | Some drag -> if obj#get_name = "dragon" then
-                     drag#receive_damage; self#die; ()
+    | Some drag -> if drag#is_dying = true then under_attack <- None else
+                   if obj#get_name = "dragon" then
+                     (drag#receive_damage; self#die; ())
+                   else ()
 
 
   (***********************)

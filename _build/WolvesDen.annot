@@ -1,0 +1,540 @@
+"WolvesDen.ml" 7 104 108 "WolvesDen.ml" 7 104 117
+type(
+  int
+)
+ident(
+  def lan_limit "WolvesDen.ml" 11 215 215 "WolvesDen.ml" 1 0 -1
+)
+"WolvesDen.ml" 7 104 120 "WolvesDen.ml" 7 104 121
+type(
+  int
+)
+"WolvesDen.ml" 11 215 232 "WolvesDen.ml" 11 215 233
+type(
+  int * int
+)
+"WolvesDen.ml" 11 215 234 "WolvesDen.ml" 11 215 238
+type(
+  KingsLanding.kings_landing
+)
+"WolvesDen.ml" 12 258 266 "WolvesDen.ml" 12 258 270
+type(
+  < danger : world_object_i -> unit; die : unit; draw : unit;
+    draw_z_axis : int; forfeit_gold : int option;
+    get_danger_event : world_object_i Event51.Event51.event;
+    get_die_event : unit Event51.Event51.event; get_name : string;
+    get_pos : int * int; is_dying : bool; is_obstacle : bool;
+    receive_damage : unit; receive_gold : int list -> int list;
+    smells_like_gold : int option; .. >
+)
+"WolvesDen.ml" 13 273 296 "WolvesDen.ml" 13 273 297
+type(
+  int * int
+)
+ident(
+  int_ref p "WolvesDen.ml" 11 215 232 "WolvesDen.ml" 11 215 233
+)
+"WolvesDen.ml" 28 614 618 "WolvesDen.ml" 28 614 622
+type(
+  < danger : world_object_i -> unit; die : unit; draw : unit;
+    draw_z_axis : int; forfeit_gold : int option;
+    get_danger_event : world_object_i Event51.Event51.event;
+    get_die_event : unit Event51.Event51.event; get_name : string;
+    get_pos : int * int; is_dying : bool; is_obstacle : bool;
+    receive_damage : unit; receive_gold : int list -> int list;
+    smells_like_gold : int option; .. >
+  as 'a
+)
+ident(
+  int_ref self "WolvesDen.ml" 12 258 266 "WolvesDen.ml" 12 258 270
+)
+"WolvesDen.ml" 28 614 618 "WolvesDen.ml" 28 614 639
+call(
+  tail
+)
+type(
+  unit Event51.Event51.event -> (unit -> unit) -> unit
+)
+"WolvesDen.ml" 28 614 640 "WolvesDen.ml" 28 614 658
+type(
+  unit Event51.Event51.event
+)
+ident(
+  ext_ref World.action_event
+)
+"WolvesDen.ml" 28 614 659 "WolvesDen.ml" 28 614 663
+type(
+  'a
+)
+ident(
+  int_ref self "WolvesDen.ml" 12 258 266 "WolvesDen.ml" 12 258 270
+)
+"WolvesDen.ml" 28 614 659 "WolvesDen.ml" 28 614 673
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"WolvesDen.ml" 28 614 618 "WolvesDen.ml" 28 614 673
+type(
+  'a -> unit
+)
+type(
+  unit
+)
+"WolvesDen.ml" 36 825 852 "WolvesDen.ml" 36 825 854
+type(
+  unit
+)
+"WolvesDen.ml" 37 858 867 "WolvesDen.ml" 37 858 873
+type(
+  int
+)
+ident(
+  def tcount "WolvesDen.ml" 39 971 976 "WolvesDen.ml" 42 1137 1197
+)
+"WolvesDen.ml" 37 858 876 "WolvesDen.ml" 37 858 886
+type(
+  (world_object_i -> int -> int) -> int -> int
+)
+ident(
+  ext_ref World.fold
+)
+"WolvesDen.ml" 37 858 892 "WolvesDen.ml" 37 858 895
+type(
+  world_object_i
+)
+ident(
+  def obj "WolvesDen.ml" 37 858 896 "WolvesDen.ml" 38 935 963
+)
+"WolvesDen.ml" 37 858 896 "WolvesDen.ml" 37 858 899
+type(
+  int
+)
+ident(
+  def sum "WolvesDen.ml" 37 858 903 "WolvesDen.ml" 38 935 963
+)
+"WolvesDen.ml" 37 858 906 "WolvesDen.ml" 37 858 909
+type(
+  world_object_i
+)
+ident(
+  int_ref obj "WolvesDen.ml" 37 858 892 "WolvesDen.ml" 37 858 895
+)
+"WolvesDen.ml" 37 858 906 "WolvesDen.ml" 37 858 918
+call(
+  stack
+)
+type(
+  string
+)
+"WolvesDen.ml" 37 858 919 "WolvesDen.ml" 37 858 920
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"WolvesDen.ml" 37 858 921 "WolvesDen.ml" 37 858 932
+type(
+  string
+)
+"WolvesDen.ml" 37 858 906 "WolvesDen.ml" 37 858 932
+type(
+  bool
+)
+"WolvesDen.ml" 38 935 947 "WolvesDen.ml" 38 935 950
+type(
+  int
+)
+ident(
+  int_ref sum "WolvesDen.ml" 37 858 896 "WolvesDen.ml" 37 858 899
+)
+"WolvesDen.ml" 38 935 951 "WolvesDen.ml" 38 935 952
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"WolvesDen.ml" 38 935 953 "WolvesDen.ml" 38 935 954
+type(
+  int
+)
+"WolvesDen.ml" 38 935 947 "WolvesDen.ml" 38 935 954
+type(
+  int
+)
+"WolvesDen.ml" 38 935 960 "WolvesDen.ml" 38 935 963
+type(
+  int
+)
+ident(
+  int_ref sum "WolvesDen.ml" 37 858 896 "WolvesDen.ml" 37 858 899
+)
+"WolvesDen.ml" 37 858 903 "WolvesDen.ml" 38 935 963
+type(
+  int
+)
+"WolvesDen.ml" 37 858 896 "WolvesDen.ml" 38 935 963
+type(
+  int -> int
+)
+"WolvesDen.ml" 37 858 892 "WolvesDen.ml" 38 935 963
+type(
+  world_object_i -> int -> int
+)
+"WolvesDen.ml" 38 935 965 "WolvesDen.ml" 38 935 966
+type(
+  int
+)
+"WolvesDen.ml" 37 858 876 "WolvesDen.ml" 38 935 966
+call(
+  stack
+)
+type(
+  int
+)
+"WolvesDen.ml" 39 971 979 "WolvesDen.ml" 39 971 988
+type(
+  int
+)
+ident(
+  int_ref lan_limit "WolvesDen.ml" 7 104 108 "WolvesDen.ml" 7 104 117
+)
+"WolvesDen.ml" 39 971 989 "WolvesDen.ml" 39 971 990
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"WolvesDen.ml" 39 971 991 "WolvesDen.ml" 39 971 997
+type(
+  int
+)
+ident(
+  int_ref tcount "WolvesDen.ml" 37 858 867 "WolvesDen.ml" 37 858 873
+)
+"WolvesDen.ml" 39 971 979 "WolvesDen.ml" 39 971 997
+type(
+  bool
+)
+"WolvesDen.ml" 39 971 998 "WolvesDen.ml" 39 971 1000
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"WolvesDen.ml" 39 971 1002 "WolvesDen.ml" 39 971 1012
+type(
+  (world_object_i -> bool -> bool) -> bool -> bool
+)
+ident(
+  ext_ref World.fold
+)
+"WolvesDen.ml" 39 971 1018 "WolvesDen.ml" 39 971 1021
+type(
+  world_object_i
+)
+ident(
+  def obj "WolvesDen.ml" 39 971 1022 "WolvesDen.ml" 39 971 1058
+)
+"WolvesDen.ml" 39 971 1022 "WolvesDen.ml" 39 971 1023
+type(
+  bool
+)
+ident(
+  def b "WolvesDen.ml" 39 971 1027 "WolvesDen.ml" 39 971 1058
+)
+"WolvesDen.ml" 39 971 1027 "WolvesDen.ml" 39 971 1030
+type(
+  world_object_i
+)
+ident(
+  int_ref obj "WolvesDen.ml" 39 971 1018 "WolvesDen.ml" 39 971 1021
+)
+"WolvesDen.ml" 39 971 1027 "WolvesDen.ml" 39 971 1039
+call(
+  stack
+)
+type(
+  string
+)
+"WolvesDen.ml" 39 971 1040 "WolvesDen.ml" 39 971 1042
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"WolvesDen.ml" 39 971 1043 "WolvesDen.ml" 39 971 1053
+type(
+  string
+)
+"WolvesDen.ml" 39 971 1027 "WolvesDen.ml" 39 971 1053
+type(
+  bool
+)
+"WolvesDen.ml" 39 971 1054 "WolvesDen.ml" 39 971 1056
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"WolvesDen.ml" 39 971 1057 "WolvesDen.ml" 39 971 1058
+type(
+  bool
+)
+ident(
+  int_ref b "WolvesDen.ml" 39 971 1022 "WolvesDen.ml" 39 971 1023
+)
+"WolvesDen.ml" 39 971 1027 "WolvesDen.ml" 39 971 1058
+type(
+  bool
+)
+"WolvesDen.ml" 39 971 1022 "WolvesDen.ml" 39 971 1058
+type(
+  bool -> bool
+)
+"WolvesDen.ml" 39 971 1018 "WolvesDen.ml" 39 971 1058
+type(
+  world_object_i -> bool -> bool
+)
+"WolvesDen.ml" 39 971 1060 "WolvesDen.ml" 39 971 1064
+type(
+  bool
+)
+"WolvesDen.ml" 39 971 1002 "WolvesDen.ml" 39 971 1064
+call(
+  stack
+)
+type(
+  bool
+)
+"WolvesDen.ml" 39 971 979 "WolvesDen.ml" 39 971 1065
+type(
+  bool
+)
+"WolvesDen.ml" 41 1080 1087 "WolvesDen.ml" 41 1080 1093
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"WolvesDen.ml" 41 1080 1094 "WolvesDen.ml" 41 1080 1107
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Core.Std.Printf.printf
+)
+"WolvesDen.ml" 41 1080 1108 "WolvesDen.ml" 41 1080 1121
+type(
+  (unit, out_channel, unit) format
+)
+"WolvesDen.ml" 41 1080 1094 "WolvesDen.ml" 41 1080 1121
+call(
+  stack
+)
+type(
+  unit
+)
+"WolvesDen.ml" 41 1080 1122 "WolvesDen.ml" 41 1080 1131
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.flush_all
+)
+"WolvesDen.ml" 41 1080 1131 "WolvesDen.ml" 41 1080 1133
+type(
+  unit
+)
+"WolvesDen.ml" 41 1080 1122 "WolvesDen.ml" 41 1080 1133
+call(
+  stack
+)
+type(
+  unit
+)
+"WolvesDen.ml" 41 1080 1094 "WolvesDen.ml" 41 1080 1133
+type(
+  unit
+)
+"WolvesDen.ml" 41 1080 1087 "WolvesDen.ml" 41 1080 1134
+type(
+  unit
+)
+"WolvesDen.ml" 42 1137 1144 "WolvesDen.ml" 42 1137 1150
+type(
+  Direwolf.direwolf -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"WolvesDen.ml" 42 1137 1151 "WolvesDen.ml" 42 1137 1172
+type(
+  int * int -> KingsLanding.kings_landing -> 'a -> Direwolf.direwolf
+)
+"WolvesDen.ml" 42 1137 1173 "WolvesDen.ml" 42 1137 1177
+type(
+  'a
+)
+ident(
+  int_ref self "WolvesDen.ml" 12 258 266 "WolvesDen.ml" 12 258 270
+)
+"WolvesDen.ml" 42 1137 1173 "WolvesDen.ml" 42 1137 1185
+call(
+  stack
+)
+type(
+  int * int
+)
+"WolvesDen.ml" 42 1137 1186 "WolvesDen.ml" 42 1137 1190
+type(
+  KingsLanding.kings_landing
+)
+ident(
+  int_ref city "WolvesDen.ml" 11 215 234 "WolvesDen.ml" 11 215 238
+)
+"WolvesDen.ml" 42 1137 1191 "WolvesDen.ml" 42 1137 1195
+type(
+  'a
+)
+ident(
+  int_ref self "WolvesDen.ml" 12 258 266 "WolvesDen.ml" 12 258 270
+)
+"WolvesDen.ml" 42 1137 1151 "WolvesDen.ml" 42 1137 1195
+call(
+  stack
+)
+type(
+  Direwolf.direwolf
+)
+"WolvesDen.ml" 42 1137 1144 "WolvesDen.ml" 42 1137 1196
+type(
+  unit
+)
+"WolvesDen.ml" 41 1080 1087 "WolvesDen.ml" 42 1137 1196
+type(
+  unit
+)
+"WolvesDen.ml" 39 971 976 "WolvesDen.ml" 42 1137 1197
+type(
+  unit
+)
+type(
+  unit
+)
+"WolvesDen.ml" 37 858 863 "WolvesDen.ml" 42 1137 1197
+type(
+  unit
+)
+"WolvesDen.ml" 36 825 852 "WolvesDen.ml" 42 1137 1197
+type(
+  unit -> unit
+)
+type(
+  unit -> unit
+)
+"WolvesDen.ml" 36 825 827 "WolvesDen.ml" 42 1137 1197
+type(
+  'a -> unit -> unit
+)
+"WolvesDen.ml" 51 1361 1382 "WolvesDen.ml" 51 1361 1387
+type(
+  string
+)
+type(
+  string
+)
+"WolvesDen.ml" 51 1361 1363 "WolvesDen.ml" 51 1361 1387
+type(
+  'a -> string
+)
+"WolvesDen.ml" 53 1391 1408 "WolvesDen.ml" 53 1391 1419
+type(
+  int * int -> int -> int -> int -> int -> string -> unit
+)
+ident(
+  ext_ref Draw.circle
+)
+"WolvesDen.ml" 53 1391 1420 "WolvesDen.ml" 53 1391 1423
+type(
+  'a
+)
+ident(
+  int_ref old "WolvesDen.ml" 13 273 283 "WolvesDen.ml" 13 273 297
+)
+"WolvesDen.ml" 53 1391 1420 "WolvesDen.ml" 53 1391 1431
+call(
+  stack
+)
+type(
+  int * int
+)
+type(
+  int * int
+)
+"WolvesDen.ml" 53 1391 1432 "WolvesDen.ml" 53 1391 1447
+type(
+  int
+)
+ident(
+  ext_ref World.obj_width
+)
+"WolvesDen.ml" 53 1391 1448 "WolvesDen.ml" 53 1391 1464
+type(
+  int
+)
+ident(
+  ext_ref World.obj_height
+)
+"WolvesDen.ml" 54 1467 1478 "WolvesDen.ml" 54 1467 1492
+type(
+  int
+)
+ident(
+  ext_ref Graphics.black
+)
+"WolvesDen.ml" 54 1467 1493 "WolvesDen.ml" 54 1467 1509
+type(
+  int
+)
+ident(
+  ext_ref Graphics.magenta
+)
+"WolvesDen.ml" 54 1467 1510 "WolvesDen.ml" 54 1467 1513
+type(
+  string
+)
+"WolvesDen.ml" 53 1391 1408 "WolvesDen.ml" 54 1467 1513
+call(
+  tail
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"WolvesDen.ml" 53 1391 1393 "WolvesDen.ml" 54 1467 1513
+type(
+  'a -> unit
+)
+"WolvesDen.ml" 56 1517 1541 "WolvesDen.ml" 56 1517 1542
+type(
+  int
+)
+type(
+  int
+)
+"WolvesDen.ml" 56 1517 1519 "WolvesDen.ml" 56 1517 1542
+type(
+  'a -> int
+)

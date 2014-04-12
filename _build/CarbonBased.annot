@@ -1,0 +1,176 @@
+"CarbonBased.ml" 6 128 147 "CarbonBased.ml" 6 128 148
+type(
+  int * int
+)
+"CarbonBased.ml" 6 128 149 "CarbonBased.ml" 6 128 158
+type(
+  int option
+)
+"CarbonBased.ml" 6 128 159 "CarbonBased.ml" 6 128 176
+type(
+  int
+)
+"CarbonBased.ml" 6 128 177 "CarbonBased.ml" 6 128 189
+type(
+  int
+)
+"CarbonBased.ml" 8 217 225 "CarbonBased.ml" 8 217 229
+type(
+  < danger : world_object_i -> unit; die : unit; draw : unit;
+    draw_picture : unit; draw_z_axis : int; forfeit_gold : int option;
+    get_danger_event : world_object_i Event51.Event51.event;
+    get_die_event : unit Event51.Event51.event; get_name : string;
+    get_pos : int * int; is_dying : bool; is_obstacle : bool;
+    next_direction : Direction.direction option; receive_damage : unit;
+    receive_gold : int list -> int list; reset_life : unit;
+    smells_like_gold : int option; .. >
+)
+"CarbonBased.ml" 9 232 258 "CarbonBased.ml" 9 232 259
+type(
+  int * int
+)
+ident(
+  int_ref p "CarbonBased.ml" 6 128 147 "CarbonBased.ml" 6 128 148
+)
+"CarbonBased.ml" 9 232 260 "CarbonBased.ml" 9 232 269
+type(
+  int option
+)
+ident(
+  int_ref inv_speed "CarbonBased.ml" 6 128 149 "CarbonBased.ml" 6 128 158
+)
+"CarbonBased.ml" 9 232 270 "CarbonBased.ml" 9 232 287
+type(
+  int
+)
+ident(
+  int_ref starting_lifetime "CarbonBased.ml" 6 128 159 "CarbonBased.ml" 6 128 176
+)
+"CarbonBased.ml" 9 232 288 "CarbonBased.ml" 9 232 300
+type(
+  int
+)
+ident(
+  int_ref max_lifetime "CarbonBased.ml" 6 128 177 "CarbonBased.ml" 6 128 189
+)
+"CarbonBased.ml" 16 408 412 "CarbonBased.ml" 16 408 416
+type(
+  < danger : world_object_i -> unit; die : unit; draw : unit;
+    draw_picture : unit; draw_z_axis : int; forfeit_gold : int option;
+    get_danger_event : world_object_i Event51.Event51.event;
+    get_die_event : unit Event51.Event51.event; get_name : string;
+    get_pos : int * int; is_dying : bool; is_obstacle : bool;
+    next_direction : Direction.direction option; receive_damage : unit;
+    receive_gold : int list -> int list; reset_life : unit;
+    smells_like_gold : int option; .. >
+  as 'a
+)
+ident(
+  int_ref self "CarbonBased.ml" 8 217 225 "CarbonBased.ml" 8 217 229
+)
+"CarbonBased.ml" 16 408 412 "CarbonBased.ml" 16 408 433
+call(
+  tail
+)
+type(
+  unit Event51.Event51.event -> (unit -> unit) -> unit
+)
+"CarbonBased.ml" 16 408 434 "CarbonBased.ml" 16 408 438
+type(
+  'a
+)
+ident(
+  int_ref self "CarbonBased.ml" 8 217 225 "CarbonBased.ml" 8 217 229
+)
+"CarbonBased.ml" 16 408 434 "CarbonBased.ml" 16 408 452
+call(
+  stack
+)
+type(
+  unit Event51.Event51.event
+)
+"CarbonBased.ml" 17 455 466 "CarbonBased.ml" 17 455 467
+type(
+  unit
+)
+"CarbonBased.ml" 17 455 471 "CarbonBased.ml" 17 455 480
+type(
+  int * int -> world_object_i -> unit
+)
+ident(
+  ext_ref World.add
+)
+"CarbonBased.ml" 17 455 481 "CarbonBased.ml" 17 455 485
+type(
+  'a
+)
+ident(
+  int_ref self "CarbonBased.ml" 8 217 225 "CarbonBased.ml" 8 217 229
+)
+"CarbonBased.ml" 17 455 481 "CarbonBased.ml" 17 455 493
+call(
+  stack
+)
+type(
+  int * int
+)
+"CarbonBased.ml" 17 455 496 "CarbonBased.ml" 17 455 504
+type(
+  int * int -> string -> dust
+)
+"CarbonBased.ml" 17 455 505 "CarbonBased.ml" 17 455 509
+type(
+  'a
+)
+ident(
+  int_ref self "CarbonBased.ml" 8 217 225 "CarbonBased.ml" 8 217 229
+)
+"CarbonBased.ml" 17 455 505 "CarbonBased.ml" 17 455 517
+call(
+  stack
+)
+type(
+  int * int
+)
+"CarbonBased.ml" 17 455 518 "CarbonBased.ml" 17 455 522
+type(
+  'a
+)
+ident(
+  int_ref self "CarbonBased.ml" 8 217 225 "CarbonBased.ml" 8 217 229
+)
+"CarbonBased.ml" 17 455 518 "CarbonBased.ml" 17 455 531
+call(
+  stack
+)
+type(
+  string
+)
+"CarbonBased.ml" 17 455 496 "CarbonBased.ml" 17 455 531
+call(
+  stack
+)
+type(
+  world_object_i
+)
+type(
+  dust
+)
+"CarbonBased.ml" 17 455 471 "CarbonBased.ml" 17 455 551
+call(
+  tail
+)
+type(
+  unit
+)
+"CarbonBased.ml" 17 455 466 "CarbonBased.ml" 17 455 551
+type(
+  unit -> unit
+)
+"CarbonBased.ml" 16 408 412 "CarbonBased.ml" 17 455 552
+type(
+  'a -> unit
+)
+type(
+  unit
+)

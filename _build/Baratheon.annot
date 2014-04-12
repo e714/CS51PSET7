@@ -1,0 +1,92 @@
+"Baratheon.ml" 6 109 125 "Baratheon.ml" 6 109 126
+type(
+  int * int
+)
+"Baratheon.ml" 6 109 127 "Baratheon.ml" 6 109 131
+type(
+  world_object_i
+)
+"Baratheon.ml" 7 151 159 "Baratheon.ml" 7 151 163
+type(
+  < danger : world_object_i -> unit; die : unit; draw : unit;
+    draw_picture : unit; draw_z_axis : int; forfeit_gold : int option;
+    get_danger_event : world_object_i Event51.Event51.event;
+    get_die_event : unit Event51.Event51.event; get_name : string;
+    get_pos : int * int; is_dying : bool; is_obstacle : bool;
+    next_direction : Direction.direction option; receive_damage : unit;
+    receive_gold : int list -> int list; reset_life : unit;
+    smells_like_gold : int option; .. >
+)
+"Baratheon.ml" 8 166 189 "Baratheon.ml" 8 166 190
+type(
+  int * int
+)
+ident(
+  int_ref p "Baratheon.ml" 6 109 125 "Baratheon.ml" 6 109 126
+)
+"Baratheon.ml" 9 192 214 "Baratheon.ml" 9 192 215
+type(
+  int * int
+)
+ident(
+  int_ref p "Baratheon.ml" 6 109 125 "Baratheon.ml" 6 109 126
+)
+"Baratheon.ml" 9 192 216 "Baratheon.ml" 9 192 220
+type(
+  world_object_i
+)
+ident(
+  int_ref city "Baratheon.ml" 6 109 127 "Baratheon.ml" 6 109 131
+)
+"Baratheon.ml" 22 530 551 "Baratheon.ml" 22 530 562
+type(
+  string
+)
+type(
+  string
+)
+"Baratheon.ml" 22 530 532 "Baratheon.ml" 22 530 562
+type(
+  (< danger : world_object_i -> unit; die : unit; draw : unit;
+     draw_picture : unit; draw_z_axis : int; forfeit_gold : int option;
+     get_danger_event : world_object_i Event51.Event51.event;
+     get_die_event : unit Event51.Event51.event; get_name : string;
+     get_pos : int * int; is_dying : bool; is_obstacle : bool;
+     next_direction : Direction.direction option; receive_damage : unit;
+     receive_gold : int list -> int list; reset_life : unit;
+     smells_like_gold : int option; .. >
+   as 'a) ->
+  string
+)
+"Baratheon.ml" 29 696 745 "Baratheon.ml" 29 696 761
+type(
+  (int -> int) -> Direction.direction
+)
+ident(
+  ext_ref Direction.random
+)
+"Baratheon.ml" 29 696 762 "Baratheon.ml" 29 696 772
+type(
+  int -> int
+)
+ident(
+  ext_ref World.rand
+)
+"Baratheon.ml" 29 696 745 "Baratheon.ml" 29 696 772
+call(
+  stack
+)
+type(
+  Direction.direction
+)
+"Baratheon.ml" 29 696 739 "Baratheon.ml" 29 696 773
+type(
+  Direction.direction option
+)
+type(
+  Direction.direction option
+)
+"Baratheon.ml" 29 696 698 "Baratheon.ml" 29 696 773
+type(
+  'a -> Direction.direction option
+)

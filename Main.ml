@@ -34,6 +34,12 @@ let gen_city () =
   (* Don't ignore, since we will need to pass the city to some other objects. *)
   new KingsLanding.kings_landing (World.size/2,World.size/2)
 
+let gen_wolves_den city =
+  new WolvesDen.wolves_den (0, World.size-1) city
+
+let gen_direwolf kings den =
+  new Direwolf.direwolf (0, World.size-1) kings den
+
 (* Initializer functions *)
 let part1_initializer () : unit =
   ignore (new Pond.pond (0,0));
@@ -76,8 +82,9 @@ let part4_initializer () : unit =
 
 let final_initializer () : unit =
   let kings = gen_city () in
-  let _= gen_dany kings in
+  let _ = gen_dany kings in
   let _ = gen_wall kings in
+  let _ = gen_wolves_den kings in
   ignore (gen_ponds ());
   ignore (gen_towns ())
 

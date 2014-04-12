@@ -29,6 +29,7 @@ object (self)
 
   (* ### TODO: Part 6 Events ### *)
   val mutable life : int = dragon_starting_life
+  val mutable almost_dead : bool = false
 
   (***********************)
   (***** Initializer *****)
@@ -46,24 +47,20 @@ object (self)
   (* ### TODO: Part 3 Actions ### *)
 
   method private do_action _ : unit =
-     let neighbors = World.get self#get_pos in
-     if self#is_dany neighbors then
-      (stolen_gold <- 0; ())
-    else
-      if k#get_gold < gold_theft_amount/2 then
-        self#die else
+     self#is_dany;
 
      if self#get_pos = k#get_pos 
      then stolen_gold<-stolen_gold +
        (k#forfeit_treasury gold_theft_amount
-        (self:>WorldObjectI.world_object_i))
+        (self:> world_object_i))
      else ();   
 
   (* ### TODO: Part 6 Custom Events ### *)
-  method private is_dany (hmm : world_object_i list) : bool =
-    match hmm with
-    | [] -> false
-    | x :: xs -> if x#get_name = "dany" then true else self#is_dany xs
+  method private is_dany : unit =
+    if List.fold_right ~f:(fun o xs -> o#get_name <> "dany") ~init:true (World.get self#get_pos) 
+    then  ()
+    else  stolen_gold <- 0;
+          if k#get_gold < gold_theft_amount/2 then self#die else ()
 
   (********************************)
   (***** WorldObjectI Methods *****)
@@ -84,9 +81,13 @@ object (self)
   (* ### TODO: Part 6 Custom Events ### *)
   method! receive_damage : unit =
     life <- life-1;
-    if life <= 0 then
+    if life = 1 then
+      (almost_dead <- true; ())
+    else if life <= 0 then
       (self#die; ())
     else ();
+
+  method! is_dying = almost_dead
 
   (***************************)
   (***** Movable Methods *****)
